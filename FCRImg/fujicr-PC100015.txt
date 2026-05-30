@@ -1,0 +1,7 @@
+Patient ID:01209
+Patient Name:JUNAD
+Sex:M
+Date of Exposure:10.FEB.2026
+Anatomical Region:LOW_EXM
+Exposure Menu Name:ANKLE AP
+Modality:CR

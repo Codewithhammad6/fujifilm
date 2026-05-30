@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="shift_jis" ?>
+<Data>
+  <!-- 共通メッセージ -->
+  <Messages>
+    <!-- エラーメッセージ -->
+    <Message>
+      <ID>HMIMME001</ID>
+      <Value>An error occurred.</Value>
+      <Detail>例外エラーが発生しました。</Detail>
+    </Message>
+		<Message>
+			<ID>HMIMME002</ID>
+			<Value>Convert error process failed. Continue processing.</Value>
+			<Detail>コンバート処理中のエラー処理に失敗しました。処理は続行します。</Detail>
+		</Message>
+		<Message>
+      <ID>HMIMME010</ID>
+      <Value>Select a Drive.</Value>
+      <Detail>ドライブを選択して下さい</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME011</ID>
+      <Value>Drive is not selected.</Value>
+      <Detail>ドライブが選択されてません</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME012</ID>
+      <Value>No Study to be convert.</Value>
+      <Detail>コンバート対象の検査がありません</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME013</ID>
+      <Value>No data in a folder.</Value>
+      <Detail>コンバート元フォルダにデータが存在しません</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME014</ID>
+      <Value>Disk space is not enough.</Value>
+      <Detail>コンバート先のディスク容量が不足してます。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME015</ID>
+      <Value>Getting the system image folder failed.</Value>
+      <Detail>システムイメージフォルダの取得に失敗しました。Hobbitバージョンを確認して下さい</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME016</ID>
+      <Value>Creating folder failed.</Value>
+      <Detail>コンバート先フォルダの作成に失敗しました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME017</ID>
+      <Value> DB update(URL) was failed(conversion processing).</Value>
+      <Detail>コンバート処理中にDataBeseのURL更新が出来ませんでした。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME018</ID>
+      <Value> Error occurred in DB update(automatic deletion).</Value>
+      <Detail>自動削除のDB更新でエラーが発生しました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME019</ID>
+      <Value> Conversion processing was failed.</Value>
+      <Detail>コンバート処理が失敗しました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME020</ID>
+      <Value> System Image drive does not exist.</Value>
+      <Detail>コンバート元ドライブが存在しません。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME021</ID>
+      <Value> NAS drive is not found. Stop Convert. NAS Path:{0}</Value>
+      <Detail>拡張NASドライブが見つかりません、処理を停止します。Path {0} </Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME022</ID>
+      <Value> Copying was failed. file:{0}</Value>
+      <Detail>コンバートの複写が失敗しました。 file:{0} </Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME023</ID>
+      <Value> Cannot select the same folder as the destination folder.</Value>
+      <Detail> コンバート先フォルダと全く同一フォルダは選択できません。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME024</ID>
+      <Value> Error occurred in DB update(URL).</Value>
+      <Detail>URLのDB更新でエラーが発生しました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME025</ID>
+      <Value> Error occurred in Operation to file.</Value>
+      <Detail>ファイル操作でエラーが発生しました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME026</ID>
+      <Value> Error occurred in DataBase search. {0}</Value>
+      <Detail>DBの検索でエラーが発生しました。{0}</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME027</ID>
+      <Value> Error occurred in USB Disk search.</Value>
+      <Detail>USBディスクの検索でエラーが発生しました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME028</ID>
+      <Value> Error occurred in end processing. Please confirm detailed log.</Value>
+      <Detail>終了処理でエラーが発生しました。エラー内容は詳細ログを確認下さい。</Detail>
+    </Message>
+		<Message>
+			<ID>HMIMME029</ID>
+			<Value> Error occurred in delete folder processing. Folder path:{0}</Value>
+			<Detail>コンバート元のサブフォルダ削除処理に失敗しました。フォルダパス：{0}</Detail>
+		</Message>
+		<Message>
+			<ID>HMIMME030</ID>
+			<Value> Error occurred in delete file processing. File path:{0}</Value>
+			<Detail>ファイル削除処理に失敗しました。ファイルパス：{0}</Detail>
+		</Message>
+    <!-- ▼FF奥野追加 -->
+    <Message>
+      <ID>HMIMME031</ID>
+      <Value> Error occurred in connection to database.</Value>
+      <Detail>データベースへの接続に失敗しました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME032</ID>
+      <Value> Error occurred in get datafile from database.</Value>
+      <Detail>データベースからのファイル情報の取得に失敗しました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME033</ID>
+      <Value> Error occurred in open ddofile. file={0}</Value>
+      <Detail>DDOファイルのオープンに失敗しました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME034</ID>
+      <Value> Error occurred in read tag from ddofile. file={0} {1}</Value>
+      <Detail>DDOファイルのタグ読み込みに失敗しました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMME035</ID>
+      <Value> Error occurred in get filename from filepath. filepath={0}</Value>
+      <Detail>ファイル名の取得に失敗しました。</Detail>
+    </Message>
+    <!-- ▲FF奥野追加 -->
+    <!-- インフォメーションメッセージ -->
+    <Message>
+      <ID>HMIMMI001</ID>
+      <Value>Processing completed.</Value>
+      <Detail>処理が正常に終了しました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI002</ID>
+      <Value>Exit the Tool?</Value>
+      <Detail>ツールを終了しても良いですか？</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI003</ID>
+      <Value>Processing canceled.</Value>
+      <Detail>処理はキャンセルされました</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI004</ID>
+      <Value>Convert processing was completed. Result:{0} </Value>
+      <Detail>コンバート処理が完了しました。{0}は結果件数</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI005</ID>
+      <Value>Convert Start. </Value>
+      <Detail>コンバート処理を開始しました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI006</ID>
+      <Value>Start of the drive choice processing</Value>
+      <Detail>ドライブの選択処理を開始しました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI007</ID>
+      <Value>Convert processing was completed. Error outbreak, cf. detailed log Result:{0}</Value>
+      <Detail>コンバート処理が終了しました。エラー発生したデータが存在します。エラー内容は詳細ログを確認下さい。{0}は結果件数</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI008</ID>
+      <Value>In convert processing, automatic deletion was performed.</Value>
+      <Detail>コンバート処理で自動削除を実施しました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI009</ID>
+      <Value>Target file was not found in source folder. The processing continuation.</Value>
+      <Detail>コンバート対象のファイルがコンバート元フォルダに存在しませんでした。処理は続行します。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI010</ID>
+      <Value>The following abnormal files exist and move to Image folder.</Value>
+      <Detail>コンバート処理完了後、以下の異常なファイルがコンバート元フォルダに存在したため、コンバート先フォルダへ移動します。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI011</ID>
+      <Value>The following normal files exist and move to Image folder.</Value>
+      <Detail>コンバート処理完了後、以下の正常なファイルがコンバート元フォルダに存在したため、コンバート先フォルダへ移動します。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI012</ID>
+      <Value>Folder was successfully created.</Value>
+      <Detail>コンバート先フォルダの作成処理が成功しました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI013</ID>
+      <Value>DDO file tag editing error occurred.</Value>
+      <Detail>DDOファイルタグ編集エラーが発生しました</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI014</ID>
+      <Value>Shut down was carried out.</Value>
+      <Detail>シャットダウンが実施されました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI015</ID>
+      <Value>Logoff was carried out.</Value>
+      <Detail>ログオフが実施されました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI016</ID>
+      <Value>Same file exists in destination folder.</Value>
+      <Detail>コンバート先に同一ファイルが存在しました。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI017</ID>
+      <Value>【Start conversion for a fixed drive.】</Value>
+      <Detail>固定ドライブにコンバートを開始します。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI018</ID>
+      <Value>【Start conversion for a NAS drive.】</Value>
+      <Detail>NASドライブにコンバートを開始します。</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMI019</ID>
+      <Value>【Start automatic deletion.】</Value>
+      <Detail>自動削除を開始します。</Detail>
+    </Message>
+		<Message>
+			<ID>HMIMMI020</ID>
+			<Value>Convert processing was failed. Error occurred in DataBase search. \n{0}</Value>
+			<Detail>コンバート処理が失敗しました。データベース検索によるエラーです。{0}は失敗箇所</Detail>
+		</Message>
+		<!-- 確認メッセージ -->
+    <Message>
+      <ID>HMIMMQ001</ID>
+      <Value>Processing starts now?.</Value>
+      <Detail>ドライブ選択処理を実施しても良いですか？</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMQ002</ID>
+      <Value>Image folder exists. Do you wish continue processing?.{0}</Value>
+      <Detail>既にImageが存在します。処理を続行しますか？ {0}はパス</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMQ003</ID>
+      <Value>Do you wish to start folder capacity checking?</Value>
+      <Detail>Check Folderを実行してもよいですか？</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMQ004</ID>
+      <Value>Cancellation was pushed. Finish?</Value>
+      <Detail>キャンセルが押されました。終了しますか？</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMQ005</ID>
+      <Value>Shut down was carried out. Finish after conversion(one study) is complete?</Value>
+      <Detail>シャットダウンが実施されました。1検査のコンバート完了後に自動終了しますか？</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMQ006</ID>
+      <Value>Logoff was carried out. Finish after conversion(one study) is complete?</Value>
+      <Detail>ログオフが実施されました。1検査のコンバート完了後に自動終了しますか？</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMQ007</ID>
+      <Value>Shut down was carried out. Finish?</Value>
+      <Detail>シャットダウンが実施されました。終了しますか？</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMQ008</ID>
+      <Value>Logoff was carried out. Finish?</Value>
+      <Detail>ログオフが実施されました。終了しますか？</Detail>
+    </Message>
+    <Message>
+      <ID>HMIMMQ009</ID>
+      <Value>Do you wish to start Convert?</Value>
+      <Detail>Convert処理を実行してもよいですか？</Detail>
+    </Message>
+  </Messages>
+</Data>

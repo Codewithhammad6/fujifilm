@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ConvertDisplayVersion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Model name="VW">
+    <ExposeObject>0</ExposeObject>
+    <Language name="ChineseSimplified">
+      <DisplayMajorVersion>2</DisplayMajorVersion>
+      <DisplayMinorVersion>00</DisplayMinorVersion>
+      <DisplayRevision>0000</DisplayRevision>
+    </Language>
+  </Model>
+  <Model name="PRIMA">
+    <ExposeObject>0</ExposeObject>
+    <Language name="ChineseSimplified">
+      <DisplayMajorVersion>2</DisplayMajorVersion>
+      <DisplayMinorVersion>00</DisplayMinorVersion>
+      <DisplayRevision>0000</DisplayRevision>
+    </Language>
+  </Model>
+</ConvertDisplayVersion>

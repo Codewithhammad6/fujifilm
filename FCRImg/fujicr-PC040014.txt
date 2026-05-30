@@ -1,0 +1,7 @@
+Patient ID:01150
+Patient Name:shameem
+Sex:F
+Date of Exposure:04.FEB.2026
+Anatomical Region:NECK
+Exposure Menu Name:C-SPINE AP
+Modality:CR

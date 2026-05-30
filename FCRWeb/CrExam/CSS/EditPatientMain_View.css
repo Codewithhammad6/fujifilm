@@ -1,0 +1,523 @@
+﻿/******************************************************************************
+  EditPatientId_View.css 
+
+  	EditPatientId_Viewのスタイルシート
+
+
+
+     更新履歴    担当       Ver.        内容
+     2004/12/20   畑       -----       新規作成
+     2009/04/12  山本      V5.0        多国語対応
+
+******************************************************************************/
+/* ボディ */
+BODY
+{  
+  CURSOR	          : default;
+  BACKGROUND-COLOR  : #F4E6DC;
+}
+DIV
+{
+  OVERFLOW   : hidden;
+  WORD-BREAK : break-all;
+}
+/* コマンドボタン領域の色 */
+DIV#DIV_CommandBackGround
+{
+  POSITION   : absolute;
+  TOP        : 425px;
+  LEFT       : 0px;
+  HEIGHT     : 105px;
+  WIDTH      : 800px; 
+  background-color:#F4EEE4;
+}
+/* リストとコマンドボタンの境界 */
+IMG#IMG_List-Command_Border
+{
+  POSITION   : absolute;
+  TOP        : 419px;
+  LEFT       : 0px;
+  HEIGHT     : 7px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+}
+/*2005/05/24-ST*/
+/* メッセージと主要画面の境界 */
+TD#DIV_List_Border
+{
+  POSITION   : absolute;
+  TOP        : 1px;
+  LEFT       : 0px;
+  HEIGHT     : 5px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR : #ECC2AC;
+}
+/*2005/05/24-EN*/
+/* 患者情報背景 */
+DIV#DIV_Back_Black{
+  background : black;
+  /* 2005/06/28 004 H.SAITO PVCS#579
+  width      : 535px;
+  */
+  width      : 575px;
+  height     : 280px;
+  position   : absolute;
+  top        : 40px;
+  /* 2005/06/28 004 H.SAITO PVCS#579
+  left       : 140px;
+  */
+  left       : 100px;
+}
+/* 患者情報背景*/
+IMG#Img_Patient
+{
+  Z-INDEX   : 60; 
+  /* 2005/06/28 004 H.SAITO PVCS#579
+  LEFT      : 152px; 
+  */
+  LEFT      : 112px; 
+  TOP       : 56px;
+  POSITION  : absolute; 
+}
+/* 患者情報背景*/
+IMG#Img_Patient2
+{
+  Z-INDEX   : 60; 
+  /* 2005/06/28 004 H.SAITO PVCS#579
+  LEFT      : 162px; 
+  */
+  LEFT      : 122px; 
+  TOP       : 56px;
+  POSITION  : absolute; 
+  HEIGHT    : 255px;
+  /* 2005/06/28 004 H.SAITO PVCS#579
+  WIDTH     : 405px;
+  */
+  WIDTH     : 445px;
+}
+/* 患者情報背景*/
+IMG#Img_Patient3
+{
+  Z-INDEX   : 60; 
+  /* 2005/06/28 004 H.SAITO PVCS#579
+  LEFT      : 152px; 
+  */
+  LEFT      : 112px; 
+  TOP       : 56px;
+  POSITION  : absolute; 
+  visibility  : hidden;
+}
+/* 患者情報背景*/
+IMG#Img_Patient4
+{
+  Z-INDEX   : 60; 
+  /* 2005/06/28 004 H.SAITO PVCS#579
+  LEFT      : 162px; 
+  */
+  LEFT      : 122px; 
+  TOP       : 56px;
+  POSITION  : absolute; 
+  HEIGHT    : 205px;
+  WIDTH     : 405px;
+  visibility  : hidden;
+}
+
+/* 患者IDテキスト*/
+DIV#divPatId_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  /* 2005/06/28 004 H.SAITO PVCS#579
+  LEFT        : 168px; 
+  */
+  LEFT        : 123px; 
+  WIDTH       : 96px; 
+  POSITION    : absolute; 
+  TOP         : 66px; 
+  HEIGHT      : 24px;
+  text-align  : left;
+}
+
+/* 患者名テキスト*/
+DIV#divPatName_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  /* 2005/06/28 004 H.SAITO PVCS#579
+  LEFT        : 168px; 
+  */
+  LEFT        : 123px; 
+  WIDTH       : 96px; 
+  POSITION    : absolute; 
+  TOP         : 172px; 
+  HEIGHT      : 24px;
+  text-align  : left;
+}
+/* 漢字患者名テキスト*/
+DIV#divPatKanjiName_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  /* 2005/06/28 004 H.SAITO PVCS#579
+  LEFT        : 168px; 
+  */
+  LEFT        : 123px; 
+  WIDTH       : 130px; 
+  POSITION    : absolute; 
+  TOP         : 116px; 
+  HEIGHT      : 24px;
+  text-align  : left;
+}
+
+/* 患者性別テキスト*/
+DIV#divPatSex_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  /* 2005/06/28 004 H.SAITO PVCS#579
+  LEFT        : 168px; 
+  */
+  LEFT        : 123px; 
+  WIDTH       : 96px; 
+  POSITION    : absolute; 
+  TOP         : 220px; 
+  HEIGHT      : 24px;
+  text-align  : left;
+}
+/* 患者生年月日テキスト*/
+DIV#divPatBirth_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  /* 2005/06/28 004 H.SAITO PVCS#579
+  LEFT        : 168px; 
+  */
+  LEFT        : 123px; 
+  WIDTH       : 96px; 
+  POSITION    : absolute; 
+  TOP         : 268px; 
+  HEIGHT      : 24px;
+  text-align  : left;
+}
+
+/* 患者情報枠組み */
+DIV#divPatInfo0_Frame
+{
+  Z-INDEX     : 70; 
+  /* 2005/06/28 006 H.SAITO PVCS#579
+  LEFT        : 278px; 
+  WIDTH       : 287px; 
+  */
+  LEFT        : 238px; 
+  WIDTH       : 327px; 
+  POSITION    : absolute; 
+  TOP         : 62px; 
+  HEIGHT      : 25px;
+  BACKGROUND-COLOR : #FFFFFF;
+	BORDER-TOP     : #706a64 1px solid;
+	BORDER-LEFT    : #706a64 1px solid;
+}
+/* 患者情報枠組み */
+DIV#divPatInfo2_Frame
+{
+  Z-INDEX     : 70; 
+  /* 2005/06/28 006 H.SAITO PVCS#579
+  LEFT        : 278px; 
+  WIDTH       : 287px; 
+  */
+  LEFT        : 238px; 
+  WIDTH       : 327px; 
+  POSITION    : absolute; 
+  TOP         : 168px; 
+  HEIGHT      : 25px;
+  BACKGROUND-COLOR : #FFFFFF;
+	BORDER-TOP     : #706a64 1px solid;
+	BORDER-LEFT    : #706a64 1px solid;
+}
+/* 患者情報枠組み */
+DIV#divPatInfo1_Frame
+{
+  Z-INDEX     : 70; 
+  /* 2005/06/28 006 H.SAITO PVCS#579
+  LEFT        : 278px; 
+  WIDTH       : 287px; 
+  */
+  LEFT        : 238px; 
+  WIDTH       : 327px; 
+  POSITION    : absolute; 
+  TOP         : 112px; 
+  HEIGHT      : 25px;
+  BACKGROUND-COLOR : #FFFFFF;
+	BORDER-TOP     : #706a64 1px solid;
+	BORDER-LEFT    : #706a64 1px solid;
+}
+/* 患者情報枠組み */
+DIV#divPatInfo3_Frame
+{
+  Z-INDEX     : 70; 
+  /* 2005/06/28 006 H.SAITO PVCS#579
+  LEFT        : 278px; 
+  WIDTH       : 287px; 
+  */
+  LEFT        : 238px; 
+  WIDTH       : 327px; 
+  POSITION    : absolute; 
+  TOP         : 216px; 
+  HEIGHT      : 25px;
+  BACKGROUND-COLOR : #FFFFFF;
+	BORDER-TOP     : #706a64 1px solid;
+	BORDER-LEFT    : #706a64 1px solid;
+}
+/* 患者情報枠組み */
+DIV#divPatInfo4_Frame
+{
+  Z-INDEX     : 70; 
+  /* 2005/06/28 006 H.SAITO PVCS#579
+  LEFT        : 278px; 
+  WIDTH       : 287px; 
+  */
+  LEFT        : 238px; 
+  WIDTH       : 327px; 
+  POSITION    : absolute; 
+  TOP         : 264px; 
+  HEIGHT      : 25px;
+  BACKGROUND-COLOR : #FFFFFF;
+	BORDER-TOP     : #706a64 1px solid;
+	BORDER-LEFT    : #706a64 1px solid;
+}
+/* 患者IDテキストボックス*/
+DIV#divPatInfo0
+{
+  FONT-WEIGHT : bold; 
+  /* 2005/06/23 003 H.SAITO Design Change.
+  FONT-SIZE   : 125%; 
+  */
+  Z-INDEX     : 80; 
+  /* 2005/06/28 006 H.SAITO PVCS#579
+  LEFT        : 280px; 
+  WIDTH       : 284px; 
+  */
+  LEFT        : 240px; 
+  WIDTH       : 324px; 
+  POSITION    : absolute; 
+  TOP         : 64px; 
+  HEIGHT      : 22px;
+}
+
+/* 漢字患者名テキストボックス*/
+DIV#divPatInfo1
+{
+  FONT-WEIGHT : bold; 
+  /* 2005/06/23 003 H.SAITO Design Change.
+  FONT-SIZE   : 125%; 
+  */
+  Z-INDEX     : 80; 
+  /* 2005/06/28 006 H.SAITO PVCS#579
+  LEFT        : 280px; 
+  WIDTH       : 284px; 
+  */
+  LEFT        : 240px; 
+  WIDTH       : 324px; 
+  POSITION    : absolute; 
+  TOP         : 114px; 
+  HEIGHT      : 22px;
+}
+
+/* 患者名テキストボックス*/
+DIV#divPatInfo2
+{
+  FONT-WEIGHT : bold; 
+  /* 2005/06/23 003 H.SAITO Design Change.
+  FONT-SIZE   : 125%; 
+  */
+  Z-INDEX     : 80; 
+  /* 2005/06/28 006 H.SAITO PVCS#579
+  LEFT        : 280px; 
+  WIDTH       : 284px; 
+  */
+  LEFT        : 240px; 
+  WIDTH       : 324px; 
+  POSITION    : absolute; 
+  TOP         : 170px; 
+  HEIGHT      : 22px;
+}
+
+/* 患者性別テキストボックス*/
+DIV#divPatInfo3
+{
+  FONT-WEIGHT : bold; 
+  /* 2005/06/23 003 H.SAITO Design Change.
+  FONT-SIZE   : 125%; 
+  */
+  Z-INDEX     : 80; 
+  /* 2005/06/28 006 H.SAITO PVCS#579
+  LEFT        : 280px; 
+  WIDTH       : 284px; 
+  */
+  LEFT        : 240px; 
+  WIDTH       : 324px; 
+  POSITION    : absolute; 
+  TOP         : 218px; 
+  HEIGHT      : 22px;
+}
+/* 患者生年月日テキストボックス*/
+DIV#divPatInfo4
+{
+  FONT-WEIGHT : bold; 
+  /* 2005/06/23 003 H.SAITO Design Change.
+  FONT-SIZE   : 125%; 
+  */
+  Z-INDEX     : 80; 
+  /* 2005/06/28 006 H.SAITO PVCS#579
+  LEFT        : 280px; 
+  WIDTH       : 284px; 
+  */
+  LEFT        : 240px; 
+  WIDTH       : 324px; 
+  POSITION    : absolute; 
+  TOP         : 266px; 
+  HEIGHT      : 22px;
+}
+
+/* 患者ID編集ボタンImage*/
+IMG#imgEditId
+{
+  Z-INDEX : 60; 
+  LEFT    : 576px; 
+  TOP     : 56px;
+  POSITION: absolute; 
+  WIDTH   : 85px; 
+  HEIGHT  : 40px;
+}
+
+/* 患者詳細編集ボタンImage*/
+IMG#imgEditDetail
+{
+  Z-INDEX   : 60; 
+  LEFT      : 576px; 
+  TOP       : 104px; 
+  POSITION  : absolute; 
+  WIDTH     : 85px; 
+  HEIGHT    : 205px;
+}
+
+/* 患者ID編集テキスト*/
+DIV#divEditId_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 576px; 
+  WIDTH       : 85px; 
+  POSITION    : absolute; 
+  TOP         : 66px; 
+  HEIGHT      : 24px;
+  text-align  : center;
+ }
+
+/* 患者詳細編集テキスト*/
+DIV#divEditDetail_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 576px; 
+  WIDTH       : 85px; 
+  POSITION    : absolute; 
+  TOP         : 186px; 
+  HEIGHT      : 24px;
+  text-align  : center;
+ }
+
+/* 患者変更ボタンImage*/
+IMG#imgChangePatient
+{
+  Z-INDEX  : 60; 
+/* 2005/08/13 Kanno UPDATE ST デザイン修正 */
+/*
+  LEFT     : 340px; 
+*/
+  LEFT     : 100px;
+/* 2005/08/13 Kanno UPDATE ED デザイン修正 */
+  POSITION : absolute; 
+  TOP      : 336px; 
+}
+
+/* 患者変更ボタンテキスト*/
+DIV#divChange_Value
+{
+  FONT-WEIGHT: bold; 
+  Z-INDEX    : 80; 
+/* 2005/08/13 Kanno UPDATE ST デザイン修正 */
+/******
+  LEFT     : 340px; 
+******/
+  LEFT     : 100px;
+/* 2005/08/13 Kanno UPDATE ED デザイン修正 */
+  WIDTH      : 109px; 
+  POSITION   : absolute; 
+  TOP        : 344px; 
+  HEIGHT     : 24px;
+  text-align : center; 
+}
+
+
+/* 戻るボタン背景 */
+IMG#IMG_Back_BackGround 
+{
+  POSITION   : absolute;
+  TOP        : 470px;
+  LEFT       : 10px;    
+  Z-INDEX    : 10;
+}
+/* 戻るボタンテキスト*/
+DIV#divBack_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 18px; 
+  TOP         : 484px; 
+  POSITION    : absolute; 
+  WIDTH       : 102px; 
+  HEIGHT      : 19px;
+  text-align  : center;
+}
+
+/* 戻るボタンIMG*/
+IMG#imgBack
+{
+  Z-INDEX          : 60;
+  LEFT             : 18px;
+  POSITION         : absolute; 
+  TOP              : 476px; 
+  BACKGROUND-COLOR : transparent;
+}
+
+/* 次へボタンテキスト*/
+DIV#divStart_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 704px; 
+  TOP         : 440px; 
+  POSITION    : absolute; 
+  WIDTH       : 80px; 
+  HEIGHT      : 16px;
+  text-align  : center;
+}
+
+/* 次へボタンIMG*/
+IMG#imgNext
+{
+  Z-INDEX          : 60; 
+  LEFT             : 696px; 
+  TOP              : 400px; 
+  POSITION         : absolute; 
+  BACKGROUND-COLOR : transparent;
+}
+
+
+
+
+
+
+

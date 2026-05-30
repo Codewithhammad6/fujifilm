@@ -1,0 +1,188 @@
+/******************************************************************************
+  Information_View.css 
+
+  	Information_Viewのスタイルシート
+
+     更新履歴    担当       Ver.        内容
+     2004/12/08  齋藤      -----       新規作成
+     2007/04/06  神立      英語版      #1672 名前/生年月日/年齢の縦位置調整
+     2009/12/11  FFS黒田   V1.1(B)     インジケータ切り離し、避妊情報表示
+     2012/02/08  NDD       V2.2(B)     HF0002 多国語文字切れ対応
+
+******************************************************************************/
+BODY
+{
+  CURSOR     : default;
+  COLOR      : #FFFFFF;
+  BACKGROUND-COLOR  : #F5F5FC;/*2009/12/11 FFS黒田 インジケーター切り離し対応 #F7F1E6から変更*/
+}
+DIV
+{
+  OVERFLOW   : hidden;
+  WORD-BREAK : break-all;
+}
+/* 患者ＩＤテキスト */
+DIV#DIV_PatientIDText
+{
+  POSITION   : absolute;
+  /* 2005/06/22 003 H.SAITO Design Change.
+  TOP        : 3px;
+  */
+  TOP        : 4px;
+  LEFT       : 5px;    
+  HEIGHT     : 22px;
+  WIDTH      : 385px;
+  Z-INDEX    : 20;
+  /* 2005/06/22 003 H.SAITO Design Change.
+  FONT-SIZE  : 140%;
+  */
+  FONT-WEIGHT: bold;
+  LETTER-SPACING:3px;
+}
+/* 患者名テキスト */
+DIV#DIV_PatientNameText
+{
+  POSITION   : absolute;
+  /* 2005/06/22 003 H.SAITO Design Change.
+  TOP        : 25px;
+  */
+  TOP        : 25px; /*27px;*//*Kandachi@070406*/
+  line-height: 1.1;/*Kandachi@070406*/
+  LEFT       : 5px;
+  HEIGHT     : 22px;
+  WIDTH      : 386px;
+  /* 2005/06/22 003 H.SAITO Design Change.
+  FONT-SIZE  : 140%;
+  */
+  FONT-WEIGHT: bold;
+  Z-INDEX    : 20;
+}
+/* 性別テキスト */
+DIV#DIV_PatientSexText
+{
+  POSITION   : absolute;
+  /* 2005/06/22 003 H.SAITO Design Change.
+  TOP        : 5px;
+  */
+  TOP        : 4px;
+  LEFT       : 322px; /*2009/12/11 FFS黒田 インジケータ切り離し、避妊情報表示 400pxから変更*/
+  HEIGHT     : 28px;
+  WIDTH      : 205px; /*2009/12/11 FFS黒田 インジケータ切り離し、避妊情報表示 133pxから変更*/
+  /* 2005/06/22 003 H.SAITO Design Change.
+  FONT-SIZE  : 120%;
+  */
+  FONT-WEIGHT: bold;
+  Z-INDEX    : 20;
+}
+/* 生年月日テキスト */
+DIV#DIV_PatientBirthDateText
+{
+  POSITION   : absolute;
+  /* 2005/06/22 003 H.SAITO Design Change.
+  TOP        : 29px;
+  */
+  TOP        : 25px; /*27px;*//*Kandachi@070406*/
+  line-height: 1.1;/*Kandachi@070406*/
+  LEFT       : 322px; /*2009/12/11 FFS黒田 インジケータ切り離し、避妊情報表示 400pxから変更*/
+  HEIGHT     : 28px;
+  /* 2005/09/16 115->120 Design Change. */
+  WIDTH      : 120px;
+  /* 2005/06/22 003 H.SAITO Design Change.
+  FONT-SIZE  : 120%;
+  */
+  FONT-WEIGHT: bold;
+  Z-INDEX    : 25;
+}
+/* 年齢テキスト */
+DIV#DIV_PatientAgeText
+{
+  POSITION   : absolute;
+  /* 2005/06/22 004 H.SAITO Design Change.
+  TOP        : 29px;
+  */
+  TOP        : 25px; /*27px;*//*Kandachi@070406*/
+  line-height: 1.1;/*Kandachi@070406*/
+  LEFT       : 442px; /*2009/12/11 FFS黒田 インジケータ切り離し、避妊情報表示 520pxから変更*/
+  HEIGHT     : 28px;
+  WIDTH      : 115px;
+  /* 2005/06/22 003 H.SAITO Design Change.
+  FONT-SIZE  : 120%;
+  */
+  FONT-WEIGHT: bold;
+  Z-INDEX    : 20;
+}
+/* 患者情報背景 */
+DIV#DIV_BackGround
+{
+  POSITION   : absolute;
+  TOP        : 3px;
+  LEFT       : 0px;    
+  HEIGHT     : 44px;
+  WIDTH      : 527px; /*2009/12/11 FFS黒田 インジケータ切り離し、避妊情報表示 575pxから変更*/
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR : #443E3C;
+}
+/* 患者情報背景 */
+IMG#IMG_BackGround_Gray_Patient
+{
+  POSITION   : absolute;
+  TOP        : 3px;
+  LEFT       : 527px;  /*2009/12/11 FFS黒田 インジケータ切り離し、避妊情報表示 575pxから変更*/
+  Z-INDEX    : 10;
+}
+/*2005/05/24-ST*/
+/* 患者情報画面の境界ライン */
+TD#DIV_BackGround_Border
+{
+  POSITION   : absolute;
+  TOP        : 24px;
+  LEFT       : 2px;
+  HEIGHT     : 1px;
+  WIDTH      : 575px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR : #F7F1E6;
+}
+/*2005/05/24-EN*/
+/* 現在時刻 */
+DIV#DIV_DateTimeText
+{
+  POSITION   : absolute;
+  TOP        : 5px;
+  LEFT       : 5px;    
+  HEIGHT     : 28px;
+  WIDTH      : 300px;
+  /* 2005/06/22 003 H.SAITO Design Change.
+  FONT-SIZE  : 120%;
+  */
+  FONT-WEIGHT: bold;
+  Z-INDEX    : 20;
+}
+/* ユーザガイダンス */
+DIV#DIV_UserGuidance
+{
+  POSITION   : absolute;
+  TOP        : 52px;
+  LEFT       : 0px;
+  HEIGHT     : 28px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR : #003366;
+}
+/* ユーザガイダンステキスト */
+DIV#DIV_UserGuidanceText
+{
+  POSITION   : absolute;
+  /* 2005/06/22 003 H.SAITO Design Change.
+  TOP        : 54px;
+  */
+  TOP        : 56px;
+  LEFT       : 15px;    
+  HEIGHT     : 23px;
+  WIDTH      : 800px;
+  /* 2005/06/22 003 H.SAITO Design Change.
+  FONT-SIZE  : 140%;
+  */
+  FONT-WEIGHT: bold;
+  Z-INDEX    : 20;
+  FONT-SIZE  : 95%;  /* 2012.02.08 多国語文字切れ対応 */
+}

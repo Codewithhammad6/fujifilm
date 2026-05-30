@@ -1,0 +1,39 @@
+/******************************************************************************
+  ErrorEnd.css 
+
+  	ErrorEndのスタイルシート
+
+
+     更新履歴    担当       Ver.        内容
+     2005/04/25   畑       -----       新規作成
+
+******************************************************************************/
+BODY
+{ 
+  BACKGROUND-COLOR  : #FFE79F;
+}
+/* 処理フレーム */
+IFRAME#ERROREND_PROC
+{ 
+  HEIGHT            : 0px;
+  WIDTH             : 0px;
+  VISIBILITY        : hidden;
+}
+/* 処理中画面ボックス */
+TABLE#TABLE_ProcBox
+{
+  POSITION          : absolute;
+  TOP               : 0px;
+  LEFT              : 0px; 
+  HEIGHT            : 280px;
+  WIDTH             : 400px;
+  BACKGROUND-COLOR  : #FFE79F;
+  BORDER-COLOR      : gray;
+  BORDER-STYLE      : solid;
+  BORDER-WIDTH      : 1px;
+  TEXT-ALIGN        : center;
+  FONT-SIZE         : 200%;
+  FONT-WEIGHT       : bold;
+  COLOR             : #000000;
+  VISIBILITY        : visible;
+}

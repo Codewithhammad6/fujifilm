@@ -1,0 +1,195 @@
+/****************************************************************************
+
+  @file RUStatus_View.css 
+
+  @brief RUStatus_Viewのスタイルシート
+
+
+  @author YSK菅野
+
+  Copyright(c) 2004-2006 FUJI PHOTO FILM CO., LTD. All rights reseved.
+
+         更新履歴  担当        Ver.       内容
+  -----  --------  ----------  --------   -------------------------------
+  @date  04/12/21  YSK菅野     XX-XX      新規作成
+
+****************************************************************************/
+
+BODY
+{
+  FONT-WEIGHT      : bold;
+  FONT-SIZE        : 16px;
+  CURSOR           : default;
+  BACKGROUND-COLOR : transparent;
+}
+
+/* ステータスラベル */
+TABLE#tblRuStatus
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 103;
+  LEFT        : 40px;
+  WIDTH       : 144px;
+  POSITION    : absolute;
+  TOP         : 20px;
+  HEIGHT      : 40px;
+}
+
+/* 詳細ラベル */
+TABLE#tblRuDetail
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 104;
+  LEFT        : 40px;
+  WIDTH       : 144px;
+  POSITION    : absolute;
+  TOP         : 129px;
+  HEIGHT      : 40px;
+}
+
+/* 詳細テキスト */
+DIV#divDetail
+{
+  Z-INDEX          : 105;
+  LEFT             : 200px;
+  TEXT-ALIGN       : left;
+  BORDER-TOP       : #6B6B6B 2px solid;
+  BORDER-BOTTOM    : #A1A1A1 1px solid;
+  BORDER-LEFT      : #6B6B6B 2px solid;
+  BORDER-RIGHT     : #A1A1A1 1px solid;
+  BACKGROUND-COLOR : white;
+  WIDTH            : 496px;
+  POSITION         : absolute;
+  TOP              : 129px;
+  HEIGHT           : 94px;
+  OVERFLOW         : auto;
+}
+
+/* ステータステキスト */
+DIV#divStatus
+{
+  Z-INDEX          : 106;
+  TEXT-ALIGN       : left;
+  BORDER-TOP       : #6B6B6B 2px solid;
+  BORDER-BOTTOM    : #A1A1A1 1px solid;
+  BORDER-LEFT      : #6B6B6B 2px solid;
+  BORDER-RIGHT     : #A1A1A1 1px solid;
+  BACKGROUND-COLOR : white;
+  LEFT             : 200px;
+  WIDTH            : 496px;
+  POSITION         : absolute;
+  TOP              : 20px;
+  HEIGHT           : 95px;
+  OVERFLOW         : auto;
+}
+
+/* ボタン1 */
+IMG#imgRUButton1
+{
+  Z-INDEX    : 110;
+  LEFT       : 84px;
+  VISIBILITY : hidden;
+  WIDTH      : 158px;
+  POSITION   : absolute;
+  TOP        : 234px;
+  HEIGHT     : 41px;
+}
+
+/* ボタン1ラベル */
+TABLE#tblRUButton1
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 120;
+  LEFT        : 84px;
+  VISIBILITY  : hidden;
+  WIDTH       : 158px;
+  POSITION    : absolute;
+  TOP         : 234px;
+  HEIGHT      : 41px;
+  TEXT-ALIGN  : center;
+}
+
+/* ボタン2 */
+IMG#imgRUButton2
+{
+  Z-INDEX    : 110;
+  LEFT       : 242px;
+  VISIBILITY : hidden;
+  WIDTH      : 158px;
+  POSITION   : absolute;
+  TOP        : 234px;
+  HEIGHT     : 41px;
+}
+
+/* ボタン2ラベル */
+TABLE#tblRUButton2
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 120;
+  LEFT        : 242px;
+  VISIBILITY  : hidden;
+  WIDTH       : 158px;
+  POSITION    : absolute;
+  TOP         : 234px;
+  HEIGHT      : 41px;
+  TEXT-ALIGN  : center;
+}
+
+
+/* ボタン3 */
+IMG#imgRUButton3
+{
+  Z-INDEX    : 110;
+  LEFT       : 400px;
+  VISIBILITY : hidden;
+  WIDTH      : 158px;
+  POSITION   : absolute;
+  TOP        : 234px;
+  HEIGHT     : 41px;
+}
+
+/* ボタン3ラベル */
+TABLE#tblRUButton3
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 120;
+  LEFT        : 400px;
+  VISIBILITY  : hidden;
+  WIDTH       : 158px;
+  POSITION    : absolute;
+  TOP         : 234px;
+  HEIGHT      : 41px;
+  TEXT-ALIGN  : center;
+}
+
+/* ボタン4 */
+IMG#imgRUButton4
+{
+  Z-INDEX    : 110;
+  LEFT       : 558px;
+  VISIBILITY : hidden;
+  WIDTH      : 158px;
+  POSITION   : absolute;
+  TOP        : 234px;
+  HEIGHT     : 41px;
+}
+
+/* ボタン4ラベル */
+TABLE#tblRUButton4
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 120;
+  LEFT        : 558px;
+  VISIBILITY  : hidden;
+  WIDTH       : 158px;
+  POSITION    : absolute;
+  TOP         : 234px;
+  HEIGHT      : 41px;
+  TEXT-ALIGN  : center;
+}

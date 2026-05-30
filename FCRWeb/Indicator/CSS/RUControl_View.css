@@ -1,0 +1,67 @@
+﻿/****************************************************************************
+
+  @file RUControl_View.css 
+
+  @brief RUControl_Viewのスタイルシート
+
+
+
+  @author YSK菅野
+
+  Copyright(c) 2004-2006 FUJI PHOTO FILM CO., LTD. All rights reseved.
+
+         更新履歴  担当        Ver.       内容
+  -----  --------  ----------  --------   -------------------------------
+  @date  04/12/21  YSK菅野     XX-XX      新規作成
+
+****************************************************************************/
+
+BODY
+{
+  FONT-WEIGHT      : bold;
+  FONT-SIZE        : 16px;
+  BACKGROUND-COLOR : Transparent;
+  CURSOR           : default;
+}
+
+/* スキャナクリーニングラベル */
+TABLE#tblRUCleaning
+{
+  DISPLAY        : inline;
+  Z-INDEX        : 110;
+  LEFT           : 80px;
+  WIDTH          : 261px;
+  POSITION       : absolute;
+  TOP            : 80px;
+  HEIGHT         : 41px;
+  TEXT-ALIGN     : right;
+  VERTICAL-ALIGN : middle;
+  FONT-WEIGHT    : bold;
+  FONT-SIZE      : 16px;
+}
+
+/* スキャナクリーニングボタン */
+IMG#imgRUExecution
+{
+  Z-INDEX  : 110;
+  LEFT     : 368px;
+  WIDTH    : 261px;
+  POSITION : absolute;
+  TOP      : 80px;
+  HEIGHT   : 41px;
+}
+
+TABLE#tblRUExecution
+{
+  DISPLAY        : inline;
+  Z-INDEX        : 120;
+  LEFT           : 368px;
+  WIDTH          : 260px;
+  POSITION       : absolute;
+  TOP            : 80px;
+  HEIGHT         : 40px;
+  TEXT-ALIGN     : center;
+  VERTICAL-ALIGN : middle;
+  FONT-WEIGHT    : bold;
+  FONT-SIZE      : 16px;
+}

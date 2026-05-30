@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="shift_jis" ?>
+<Data>
+  <Resources>
+    <Resource><ID>HRMDR0101</ID><Value>Rebuild Media</Value></Resource>
+    <Resource><ID>HRMDR0102</ID><Value>Convert Data</Value></Resource>
+    <Resource><ID>HRMDR0103</ID><Value>Rebuild DICOMDIR</Value></Resource>
+    <Resource><ID>HRMDR0104</ID><Value>Exit</Value></Resource>
+
+    <Resource><ID>HRMDR0201</ID><Value>Convert Data</Value></Resource>
+    <Resource><ID>HRMDR0202</ID><Value>Select root folder</Value></Resource>
+    <Resource><ID>HRMDR0203</ID><Value>...</Value></Resource>
+    <Resource><ID>HRMDR0204</ID><Value>Select input folder</Value></Resource>
+    <Resource><ID>HRMDR0205</ID><Value>Select output folder</Value></Resource>
+    <Resource><ID>HRMDR0206</ID><Value>Start</Value></Resource>
+    <Resource><ID>HRMDR0207</ID><Value>Close</Value></Resource>
+    <Resource><ID>HRMDR0208</ID><Value>Type</Value></Resource>
+    <Resource><ID>HRMDR0209</ID><Value>NAS</Value></Resource>
+    <Resource><ID>HRMDR0210</ID><Value>DVD</Value></Resource>
+    
+    <Resource><ID>HRMDR0301</ID><Value>Convert Data</Value></Resource>
+
+    <Resource><ID>HRMDR0401</ID><Value>Rebuild DICOMDIR</Value></Resource>
+    <Resource><ID>HRMDR0402</ID><Value>AE Name</Value></Resource>
+    <Resource><ID>HRMDR0403</ID><Value>Select root folder</Value></Resource>
+    <Resource><ID>HRMDR0404</ID><Value>...</Value></Resource>
+    <Resource><ID>HRMDR0405</ID><Value>Select rebuild folder</Value></Resource>
+    <Resource><ID>HRMDR0406</ID><Value>Start</Value></Resource>
+    <Resource><ID>HRMDR0407</ID><Value>Close</Value></Resource>
+
+    <Resource><ID>HRMDR0501</ID><Value>Rebuild DICOMDIR</Value></Resource>
+
+  </Resources>
+</Data>

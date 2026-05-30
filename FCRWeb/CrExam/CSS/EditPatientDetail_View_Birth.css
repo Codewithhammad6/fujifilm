@@ -1,0 +1,162 @@
+/******************************************************************************
+  EditPatientDetail_View_Button.css 
+
+  	生年月日(和暦ボタン非表示)のスタイルシート
+
+     更新履歴    担当       Ver.        内容
+     2004/12/20   畑       -----       新規作成
+
+******************************************************************************/
+
+
+/* 生年月日テキスト*/
+DIV#DivPatientBirth_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80;
+  LEFT        : 48px;
+  WIDTH       : 200px;
+  POSITION    : absolute;
+  TOP         : 128px;
+  HEIGHT      : 8px;
+  TEXT-ALIGN  : left
+}
+
+/* 和暦(明治)ボタンテキスト*/
+DIV#DivEraMeiji_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80; 
+  LEFT        : 56px; 
+  TOP         : 158px; 
+  POSITION    : absolute; 
+  WIDTH       : 65px; 
+  HEIGHT      : 16px;
+  TEXT-ALIGN  : center;
+  visibility  : hidden;
+}
+
+/* 和暦(明治)ボタンIMG*/
+IMG.EraMeiji
+{
+  Z-INDEX          : 60; 
+  LEFT             : 48px; 
+  POSITION         : absolute; 
+  TOP              : 148px; 
+  BACKGROUND-COLOR : transparent;
+  visibility  : hidden;
+}
+
+/* 和暦(大正)ボタンテキスト*/
+DIV#DivEraTaisho_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80; 
+  LEFT        : 144px; 
+  TOP         : 158px; 
+  POSITION    : absolute; 
+  WIDTH       : 65px; 
+  HEIGHT      : 16px;
+  TEXT-ALIGN  : center;
+  visibility  : hidden;
+}
+
+/* 和暦(大正)ボタンIMG*/
+IMG.EraTaisho
+{
+  Z-INDEX          : 60; 
+  LEFT             : 136px; 
+  POSITION         : absolute; 
+  TOP              : 148px; 
+  BACKGROUND-COLOR : transparent;
+  visibility  : hidden;
+}
+
+/* 和暦(昭和)ボタンテキスト*/
+DIV#DivEraShowa_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80; 
+  LEFT        : 232px; 
+  TOP         : 158px; 
+  POSITION    : absolute; 
+  WIDTH       : 65px; 
+  HEIGHT      : 16px;
+  TEXT-ALIGN  : center;
+  visibility  : hidden;
+}
+
+/* 和暦(昭和)ボタンIMG*/
+IMG.EraShowa
+{
+  Z-INDEX          : 60; 
+  LEFT             : 224px; 
+  POSITION         : absolute; 
+  TOP              : 148px; 
+  BACKGROUND-COLOR : transparent;
+  visibility  : hidden;
+}
+
+/* 和暦(平成)ボタンテキスト*/
+DIV#DivEraHeisei_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80; 
+  LEFT        : 320px; 
+  TOP         : 158px; 
+  POSITION    : absolute; 
+  WIDTH       : 65px; 
+  HEIGHT      : 16px;
+  TEXT-ALIGN  : center;
+  visibility  : hidden;
+}
+
+/* 和暦(平成)ボタンIMG*/
+IMG.EraHeisei
+{
+  Z-INDEX          : 60; 
+  LEFT             : 312px; 
+  POSITION         : absolute; 
+  TOP              : 148px; 
+  BACKGROUND-COLOR : transparent;
+  visibility  : hidden;
+}
+
+
+/* 生年月日テキスト(和暦以外)*/
+INPUT#txtPatientBirth
+{
+ FONT-WEIGHT : bold;
+ FONT-SIZE   : 125%; 
+ Z-INDEX     : 70; 
+ LEFT        : 48px; 
+ WIDTH       : 208px; 
+ POSITION    : absolute; 
+ TOP         : 148px; 
+ HEIGHT      : 31px;
+ color       : #AAAAAA;
+ background-color : #ECC2AC;
+  ime-mode    : inactive;
+}
+
+/* 生年月日例(下線)*/
+FONT#fontExample
+{
+  text-decoration : underline;
+  color           : "#339933";
+}
+
+/* 生年月日例(和暦以外)*/
+DIV#divExample
+{
+  color       : #339933;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80; 
+  LEFT        : 265px; 
+  WIDTH       : 200px; 
+  POSITION    : absolute; 
+  TOP         : 158px; 
+  HEIGHT      : 16px; 
+  text-align  : left;
+}
+

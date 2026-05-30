@@ -1,0 +1,7 @@
+Patient ID:0100
+Patient Name:ABU HURAIRA
+Sex:M
+Date of Exposure:12.JAN.2026
+Anatomical Region:CHEST
+Exposure Menu Name:CHEST PA
+Modality:CR

@@ -1,0 +1,53 @@
+@ECHO OFF
+CD C:\WINDOWS\SYSTEM32
+ECHO The deletion of the firewall is started. 
+
+ECHO Setting Rejected Echo(Ping)...
+CALL netsh firewall set icmpsetting type=8 mode=DISABLE
+
+ECHO Deleting Web Server...
+CALL netsh firewall delete portopening protocol=TCP port=80 profile=STANDARD
+
+ECHO Deleting FFBackupUtility...
+CALL netsh firewall delete allowedprogram program="C:\Program Files\FujiFilm\Hobbit\System\FFBackupUtility.exe" profile=STANDARD
+
+ECHO Deleting FFDiskCopy...
+CALL netsh firewall delete allowedprogram program="C:\Program Files\FujiFilm\Hobbit\System\FFDiskCopy.exe" profile=STANDARD
+
+ECHO Deleting FFInput...
+CALL netsh firewall delete allowedprogram program="C:\Program Files\FujiFilm\Hobbit\System\FFInput.exe" profile=STANDARD
+
+ECHO Deleting FFMediaControl...
+CALL netsh firewall delete allowedprogram program="C:\Program Files\FujiFilm\Hobbit\System\FFMediaControl.exe" profile=STANDARD
+
+ECHO Deleting FFMediaValidation...
+CALL netsh firewall delete allowedprogram program="C:\Program Files\FujiFilm\Hobbit\System\FFMediaValidation.exe" profile=STANDARD
+
+ECHO Deleting FFOUTPUT...
+CALL netsh firewall delete allowedprogram program="C:\Program Files\FujiFilm\Hobbit\System\FFOUTPUT.exe" profile=STANDARD
+
+ECHO Deleting FFRetrieve...
+CALL netsh firewall delete allowedprogram program="C:\Program Files\FujiFilm\Hobbit\System\FFRetrieve.exe" profile=STANDARD
+
+ECHO Deleting FFRoutine...
+CALL netsh firewall delete allowedprogram program="C:\Program Files\FujiFilm\Hobbit\System\FFRoutine.exe" profile=STANDARD
+
+ECHO Deleting FFServiceUtility...
+CALL netsh firewall delete allowedprogram program="C:\Program Files\FujiFilm\Hobbit\System\FFServiceUtility.exe" profile=STANDARD
+
+ECHO Deleting FFUPSEvent...
+CALL netsh firewall delete allowedprogram program="C:\Program Files\FujiFilm\Hobbit\System\FFUPSEvent.exe" profile=STANDARD
+
+ECHO Deleting FFUserUtility...
+CALL netsh firewall delete allowedprogram program="C:\Program Files\FujiFilm\Hobbit\System\FFUserUtility.exe" profile=STANDARD
+
+ECHO Deleting FMTAutoEdit...
+CALL netsh firewall delete allowedprogram program="C:\Program Files\FujiFilm\Hobbit\System\FMTAutoEdit.exe" profile=STANDARD
+
+ECHO Deleting Hobbit...
+CALL netsh firewall delete allowedprogram program="C:\Program Files\FujiFilm\Hobbit\System\Hobbit.exe" profile=STANDARD
+
+ECHO Deleting RestartServiceUtility...
+CALL netsh firewall delete allowedprogram program="C:\Program Files\FujiFilm\Hobbit\System\RestartServiceUtility.exe" profile=STANDARD
+
+EXIT

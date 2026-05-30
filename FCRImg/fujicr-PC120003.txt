@@ -1,0 +1,7 @@
+Patient ID:B22
+Patient Name:GH SAKINA
+Sex:F
+Date of Exposure:12.SEP.2025
+Anatomical Region:PELVIS
+Exposure Menu Name:PELVIS
+Modality:CR

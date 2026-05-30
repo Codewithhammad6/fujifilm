@@ -1,0 +1,1364 @@
+/******************************************************************************
+  Study_View.css 
+
+  	Study_Viewのスタイルシート
+
+
+     更新履歴    担当       Ver.        内容
+     2004/11/09  齋藤      -----       新規作成
+     2008/04/25  HSK由比     4.0       ガイダンス表示対応
+     2009/04/14  HSK山本     5.0       多国語対応
+     2009/06/12  FF 西川     6.0       撮影画面最小化対応
+     2009/09/20  FF 西川     6.0       PVCS#3421
+     2012/02/08  NDD       V2.2(B)     HF0002 多国語文字切れ対応
+     2014/03/05  TYS沼     V3.0(B)     DR直結対応
+
+******************************************************************************/
+BODY
+{
+  CURSOR            : default;
+  BACKGROUND-COLOR  : #F7F1E6; 
+}
+/* ヘッダ */
+DIV#DIV_Study_Header
+{
+  POSITION   : absolute;
+  TOP        : 1px;
+/* 2005/08/13 Kanno UPDATE ST デザイン修正 */
+/*
+  LEFT       : 3px;    
+  HEIGHT     : 508px;
+*/
+  LEFT       : 0px;
+  HEIGHT     : 517px;
+/* 2005/08/13 Kanno UPDATE ST デザイン修正 */
+  WIDTH      : 795px;
+  Z-INDEX    : 0;
+  BACKGROUND-COLOR  : #333333; 
+}
+/* リスト縁左（灰） ボタンを立体的にするための背景*/
+DIV#DIV_BackGround_Gray_Left
+{
+  POSITION   : absolute;
+  TOP        : 469px;
+/* 080513 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  LEFT       : 416px;
+/*  LEFT       : 93px;    */
+/* 080513 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  HEIGHT     : 39px;
+/* 080513 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  WIDTH      : 81px;
+/*  WIDTH      : 55px;*/
+/* 080513 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  Z-INDEX    : 20;
+  BACKGROUND-COLOR  : #F7F1E6; 
+}
+/* リスト縁右（緑） */
+DIV#DIV_BackGround_Green_Right
+{
+  POSITION   : absolute;
+  TOP        : 4px;
+  LEFT       : 492px;    
+  HEIGHT     : 468px;
+  WIDTH      : 5px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR  : #CCFFCC; 
+}
+/* リスト背景（灰） ボタンを立体的にするための背景*/
+DIV#DIV_BackGround_Gray
+{
+  POSITION   : absolute;
+  TOP        : 379px;
+  LEFT       : 508px;    
+/* 2005/08/13 Kanno UPDATE ST デザイン修正 */
+/*  HEIGHT     : 130px; */
+  HEIGHT     : 139px;
+/* 2005/08/13 Kanno UPDATE ST デザイン修正 */
+  WIDTH      : 290px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR  : #F7F1E6; 
+}
+/* リスト背景（紫） */
+DIV#DIV_BackGround_Purple
+{
+  POSITION   : absolute;
+  TOP        : 317px;
+  LEFT       : 508px;    
+  HEIGHT     : 20;
+  WIDTH      : 290;
+  Z-INDEX    : 10;
+/*2005/05/24-ST*/
+  BACKGROUND-COLOR  : #DACEC2;
+/*2005/05/24-ED*/
+}
+/* 画像表示エリア */
+DIV#DIV_PatientFilm
+{
+	POSITION          : absolute;
+	LEFT              : 5px;
+	TOP               : 4px;		
+  HEIGHT            : 464px;
+  WIDTH             : 488px; 
+  BACKGROUND-COLOR  : black;
+  VISIBILITY        : visible;
+  Z-INDEX           : 10;
+}
+/* 画像 */
+DIV#DIV_PatientFilmImage
+{
+	POSITION          : absolute;
+	LEFT              : 20px;
+	TOP               : 9px;		
+  HEIGHT            : 454px;
+  WIDTH             : 454px;
+  Z-INDEX           : 20;
+}
+/* 080424 HSK由比 ガイダンス表示対応 ADD-ST */
+/* 撮影ガイダンス画像 */
+DIV#DIV_GuidanceImage
+{
+  POSITION          : absolute;
+  LEFT              : 20px;
+  TOP               : 9px;		
+  HEIGHT            : 454px;
+  WIDTH             : 454px;
+  Z-INDEX           : 20;
+}
+/* 080424 HSK由比 ガイダンス表示対応 ADD-ED */
+/* ボタン１ */
+IMG#IMG_StudyMenu1
+{
+  POSITION          : absolute;
+  TOP               : 17px;
+  LEFT              : 507px;    
+	Z-INDEX	          : 20;
+  VISIBILITY        : hidden;
+}
+/* テキスト１ */
+INPUT#DIV_StudyText1 
+{
+  POSITION          : absolute;
+  /* 2005/06/23 004 H.SAITO Design Change.
+  TOP               : 21px;
+  */
+  TOP               : 22px;
+  LEFT              : 567px;    
+  /* 2005/06/23 004 H.SAITO Design Change.
+  HEIGHT            : 22px;
+  */
+  HEIGHT            : 21px;
+  WIDTH             : 208px;
+  FONT-WEIGHT       : bold;
+  BORDER            : 0,0,0,0;
+  CURSOR            : default;
+  Z-INDEX           : 40;
+  VISIBILITY        : hidden;
+  OVERFLOW          : hidden;
+}
+/* 写真１ */
+DIV#DIV_StudyFilm1 
+{
+  POSITION          : absolute;
+  TOP               : 19px;
+  LEFT              : 509px;    
+  Z-INDEX	          : 50;
+  VISIBILITY        : hidden;
+} 
+/* 写真１ */
+IMG#IMG_FilmImage1
+{
+  POSITION          : absolute;
+  TOP               : 19px;
+  LEFT              : 509px;    
+  Z-INDEX	          : 50;
+  VISIBILITY        : hidden;
+} 
+/* 写損マーク１ */
+IMG#IMG_DeleteImage1 
+{
+  POSITION          : absolute;
+  TOP               : 45px;
+  LEFT              : 565px;    
+  Z-INDEX	          : 40;
+  VISIBILITY        : hidden; 
+}
+/* ボタン２ */
+IMG#IMG_StudyMenu2
+{
+  POSITION          : absolute;
+  TOP               : 90px;
+  LEFT              : 507px;    
+	Z-INDEX	          : 20;
+  VISIBILITY        : hidden;
+}
+/* テキスト２ */
+INPUT#DIV_StudyText2 
+{
+  POSITION          : absolute;
+  /* 2005/06/23 004 H.SAITO Design Change.
+  TOP               : 94px;
+  */
+  TOP               : 95px;
+  LEFT              : 567px;    
+  /* 2005/06/23 004 H.SAITO Design Change.
+  HEIGHT            : 22px;
+  */
+  HEIGHT            : 21px;
+  WIDTH             : 208px;
+  FONT-WEIGHT       : bold;
+  BORDER            : 0,0,0,0;
+  CURSOR            : default;
+  Z-INDEX           : 40;
+  VISIBILITY        : hidden;
+  OVERFLOW          : hidden;
+}
+/* 写真２ */
+DIV#DIV_StudyFilm2
+{
+  POSITION          : absolute;
+  TOP               : 92px;
+  LEFT              : 509px;   
+  Z-INDEX	          : 50;
+  VISIBILITY        : hidden;
+} 
+/* 写真２ */
+IMG#IMG_FilmImage2
+{
+  POSITION          : absolute;
+  TOP               : 92px;
+  LEFT              : 509px;   
+  Z-INDEX	          : 50;
+  VISIBILITY        : hidden;
+} 
+/* 写損マーク２ */
+IMG#IMG_DeleteImage2 
+{
+  POSITION          : absolute;
+  TOP               : 118px;
+  LEFT              : 565px;    
+  Z-INDEX	          : 40;
+  VISIBILITY        : hidden;
+}
+/* ボタン３ */
+IMG#IMG_StudyMenu3
+{
+  POSITION          : absolute;
+  TOP               : 163px;
+  LEFT              : 507px;    
+	Z-INDEX	          : 20;
+  VISIBILITY        : hidden;
+}
+/* テキスト３ */
+INPUT#DIV_StudyText3 
+{
+  POSITION          : absolute;
+  /* 2005/06/23 004 H.SAITO Design Change.
+  TOP               : 167px;
+  */
+  TOP               : 168px;
+  LEFT              : 567px;    
+  /* 2005/06/23 004 H.SAITO Design Change.
+  HEIGHT            : 22px;
+  */
+  HEIGHT            : 21px;
+  WIDTH             : 208px;
+  FONT-WEIGHT       : bold;
+  BORDER            : 0,0,0,0;
+  CURSOR            : default;
+  Z-INDEX           : 40;
+  VISIBILITY        : hidden;
+  OVERFLOW          : hidden;
+}
+/* 写真３ */
+DIV#DIV_StudyFilm3 
+{
+  POSITION          : absolute;
+  TOP               : 165px;
+  LEFT              : 509px;    
+  Z-INDEX	          : 50;
+  VISIBILITY        : hidden;
+} 
+/* 写真３ */
+IMG#IMG_FilmImage3
+{
+  POSITION          : absolute;
+  TOP               : 165px;
+  LEFT              : 509px;    
+  Z-INDEX	          : 50;
+  VISIBILITY        : visible;
+} 
+/* 写損マーク３ */
+IMG#IMG_DeleteImage3 
+{
+  POSITION          : absolute;
+  TOP               : 191px;
+  LEFT              : 565px;    
+  Z-INDEX	          : 40;
+  VISIBILITY        : hidden;
+}
+/* ボタン４ */
+IMG#IMG_StudyMenu4
+{
+  POSITION          : absolute;
+  TOP               : 236px;
+  LEFT              : 507px;    
+	Z-INDEX	          : 20;
+  VISIBILITY        : hidden;
+}
+/* テキスト４ */
+INPUT#DIV_StudyText4 
+{
+  POSITION          : absolute;
+  /* 2005/06/23 004 H.SAITO Design Change.
+  TOP               : 240px;
+  */
+  TOP               : 241px;
+  LEFT              : 567px;    
+  /* 2005/06/23 004 H.SAITO Design Change.
+  HEIGHT            : 22px;
+  */
+  HEIGHT            : 21px;
+  WIDTH             : 208px;
+  FONT-WEIGHT       : bold;
+  BORDER            : 0,0,0,0;
+  CURSOR            : default;
+  Z-INDEX           : 40;
+  VISIBILITY        : hidden;
+  OVERFLOW          : hidden;
+}
+/* 写真４ */
+DIV#DIV_StudyFilm4 
+{
+  POSITION          : absolute;
+  TOP               : 238px;
+  LEFT              : 509px;    
+  Z-INDEX	          : 50;
+  VISIBILITY        : hidden;
+} 
+/* 写真４ */
+IMG#IMG_FilmImage4
+{
+  POSITION          : absolute;
+  TOP               : 238px;
+  LEFT              : 509px;    
+  Z-INDEX	          : 50;
+  VISIBILITY        : hidden;
+} 
+/* 写損マーク４ */
+IMG#IMG_DeleteImage4 
+{
+  POSITION          : absolute;
+  TOP               : 264px;
+  LEFT              : 565px;    
+  Z-INDEX	          : 40;
+  VISIBILITY        : hidden;
+}
+/* 隠しボタン 選択ボタン */
+DIV#DIV_StudyMenu5
+{
+  POSITION          : absolute;
+  TOP               : 276px;
+  LEFT              : 497px;    
+	Z-INDEX	          : 30;
+	VISIBILITY        : hidden;
+}
+/* 隠し画像 次取り込み画像 */
+DIV#DIV_StudyFilm5
+{
+  POSITION          : absolute;
+  TOP               : 174px;
+  LEFT              : 518px;    
+  Z-INDEX	          : 50;
+  VISIBILITY        : hidden;
+}
+/* 総数テキスト */
+DIV#DIV_TextCnt 
+{
+  POSITION          : absolute;
+  FONT-WEIGHT       : bold;
+  /* 2005/06/22 004 H.SAITO Design Change.
+  TOP               : 318px;
+  */
+  TOP               : 322px;
+  /* 2005/06/22 004 H.SAITO Design Change.
+  LEFT              : 500px;    
+  */
+  LEFT              : 508px;    
+  /* 2005/06/22 004 H.SAITO Design Change.
+  WIDTH             : 290px;
+  */
+  WIDTH             : 288px;
+  TEXT-ALIGN        : center;  
+  Z-INDEX	          : 20;
+  OVERFLOW          : hidden;
+}
+/* 修正ボタン(クリック箇所) */
+TABLE#TABLE_ModifyBtn
+{
+  POSITION          : absolute;
+  TOP               : 338px;
+  LEFT              : 508px;    
+  HEIGHT            : 40px;
+  WIDTH             : 109px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 50;
+}
+/* 修正ボタン Enable */
+IMG#IMG_ModifyBtn_Enable
+{
+  POSITION          : absolute;
+  TOP               : 338px;
+  LEFT              : 508px;    
+  HEIGHT            : 40px;
+  WIDTH             : 113px;
+	VISIBILITY        : visible;
+}
+/* 修正ボタン Disable */
+IMG#IMG_ModifyBtn_Disable
+{
+  POSITION          : absolute;
+  TOP               : 338px;
+  LEFT              : 508px;    
+  HEIGHT            : 40px;
+  WIDTH             : 113px;
+	VISIBILITY        : hidden;
+}
+/* 修正ボタンテキスト */
+DIV#DIV_ModifyText
+{
+  POSITION          : absolute;
+  TOP               : 360px;
+  LEFT              : 508px;    
+  HEIGHT            : 20px;
+  WIDTH             : 113px;
+  COLOR             : gray;
+	VISIBILITY        : visible;
+	TEXT-ALIGN        : center;
+}
+/* ↑ボタン Enable */
+IMG#IMG_UpBtn_Enable
+{
+  POSITION          : absolute;
+  TOP               : 338px;
+  LEFT              : 622px;    
+	VISIBILITY        : hidden;
+}
+/* ↑ボタン Disable */
+IMG#IMG_UpBtn_Disable
+{
+  POSITION          : absolute;
+  TOP               : 338px;
+  LEFT              : 622px;    
+	VISIBILITY        : hidden;
+}
+/* ↓ボタン Enable*/
+IMG#IMG_DownBtn_Enable 
+{
+  POSITION          : absolute;
+  TOP               : 338px;
+  LEFT              : 710px;    
+	VISIBILITY        : hidden;
+}
+/* ↓ボタン Disable*/
+IMG#IMG_DownBtn_Disable 
+{
+  POSITION          : absolute;
+  TOP               : 338px;
+  LEFT              : 710px;    
+  VISIBILITY        : hidden;
+}
+/* 元に戻すボタン(クリック箇所) */
+TABLE#TABLE_UndoBtn
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+  LEFT              : 5px;    
+  HEIGHT            : 40px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  WIDTH             : 82px;
+/*  WIDTH             : 87px;*/
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  VISIBILITY        : hidden;
+  Z-INDEX           : 40;
+}
+/* 元に戻すボタン Enable */
+IMG#IMG_UndoBtn_Enable
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+  LEFT              : 5px;    
+  VISIBILITY        : hidden; 
+  Z-INDEX           : 20;
+}
+/* 元に戻すボタン Disable */
+IMG#IMG_UndoBtn_Disable
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+  LEFT              : 5px;    
+  VISIBILITY        : visible; 
+  Z-INDEX           : 20;
+}
+/* 080516 HSK由比 ガイダンス表示対応 DELETE-ST */
+/* 元に戻すボタンテキスト */
+/*DIV#DIV_UndoText
+{
+  POSITION          : absolute;*/
+  /* 2005/06/22 004 H.SAITO Design Change.
+  TOP               : 489px;
+  */
+/*  TOP               : 490px;
+  LEFT              : 5px;    
+  WIDTH             : 87px;
+  COLOR             : gray;
+  TEXT-ALIGN        : center;
+	VISIBILITY        : visible;
+  Z-INDEX           : 30;
+}*/
+/* 080516 HSK由比 ガイダンス表示対応 DELETE-ED */
+/* 左９０°回転ボタン(クリック箇所) */
+TABLE#TABLE_TurnLeftBtn
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  LEFT              : 87px;
+/*  LEFT              : 149px;    */
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  HEIGHT            : 40px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  WIDTH             : 82px;
+/*  WIDTH             : 87px;*/
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  VISIBILITY        : hidden;
+  Z-INDEX           : 40;
+}
+/* 左９０°回転ボタン Enable */
+IMG#IMG_TurnLeftBtn_Enable
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  LEFT              : 87px;
+/*  LEFT              : 149px;    */
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  VISIBILITY        : hidden; 
+  Z-INDEX           : 20;
+}
+/* 左９０°回転ボタン Disable */
+IMG#IMG_TurnLeftBtn_Disable
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  LEFT              : 87px;
+/*  LEFT              : 149px;    */
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  VISIBILITY        : visible; 
+  Z-INDEX           : 20;
+}
+/* 080516 HSK由比 ガイダンス表示対応 DELETE-ST */
+/* 左９０°回転ボタンテキスト */
+/*DIV#DIV_TurnLeftText
+{
+  POSITION          : absolute;*/
+  /* 2005/06/22 004 H.SAITO Design Change.
+  TOP               : 489px;
+  */
+/*  TOP               : 490px;
+  LEFT              : 149px;    
+	VISIBILITY        : visible;
+  WIDTH             : 87px;
+  COLOR             : gray;
+  TEXT-ALIGN        : center;
+  Z-INDEX           : 30;
+}*/
+/* 080516 HSK由比 ガイダンス表示対応 DELETE-ED */
+/* 右９０°回転ボタン(クリック箇所) */
+TABLE#TABLE_TurnRightBtn
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  LEFT              : 169px;
+/*  LEFT              : 236px;    */
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  HEIGHT            : 40px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  WIDTH             : 82px;
+/*  WIDTH             : 87px;*/
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  VISIBILITY        : hidden;
+  Z-INDEX           : 40;
+}
+/* 右９０°回転ボタン Enable */
+IMG#IMG_TurnRightBtn_Enable
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  LEFT              : 169px;
+/*  LEFT              : 236px;    */
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  VISIBILITY        : hidden; 
+  Z-INDEX           : 20;
+}
+/* 右９０°回転ボタン Disable */
+IMG#IMG_TurnRightBtn_Disable
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  LEFT              : 169px;
+/*  LEFT              : 236px;    */
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  VISIBILITY        : visible; 
+  Z-INDEX           : 20;
+}
+/* 080516 HSK由比 ガイダンス表示対応 DELETE-ST */
+/* 右９０°回転ボタンテキスト */
+/*DIV#DIV_TurnRightText
+{
+  POSITION          : absolute;*/
+  /* 2005/06/22 004 H.SAITO Design Change.
+  TOP               : 489px;
+  */
+/*  TOP               : 490px;
+  LEFT              : 236px;    
+	VISIBILITY        : visible;
+  WIDTH             : 87px;
+  COLOR             : gray;
+  TEXT-ALIGN        : center;
+  Z-INDEX           : 30;
+}*/
+/* 080516 HSK由比 ガイダンス表示対応 DELETE-ED */
+/* １８０°回転ボタン(クリック箇所) */
+TABLE#TABLE_Turn180Btn
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  LEFT              : 251px;
+/*  LEFT              : 323px;    */
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  HEIGHT            : 40px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  WIDTH             : 82px;
+/*  WIDTH             : 87px;*/
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  VISIBILITY        : hidden;
+  Z-INDEX           : 40;
+}
+/* １８０°回転ボタン Enable */
+IMG#IMG_Turn180Btn_Enable
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  LEFT              : 251px;
+/*  LEFT              : 323px;    */
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  VISIBILITY        : hidden; 
+  Z-INDEX           : 20;
+}
+/* １８０°回転ボタン Disable */
+IMG#IMG_Turn180Btn_Disable
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  LEFT              : 251px;
+/*  LEFT              : 323px;    */
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  VISIBILITY        : visible; 
+  Z-INDEX           : 20;
+}
+/* 080516 HSK由比 ガイダンス表示対応 DELETE-ST */
+/* １８０°回転ボタンテキスト */
+/*DIV#DIV_Turn180Text
+{
+  POSITION          : absolute;*/
+  /* 2005/06/22 004 H.SAITO Design Change.
+  TOP               : 489px;
+  */
+/*  TOP               : 490px;
+  LEFT              : 323px;    
+	VISIBILITY        : visible;
+  WIDTH             : 87px;
+  COLOR             : gray;
+  TEXT-ALIGN        : center;
+  Z-INDEX           : 30;
+}*/
+/* 080516 HSK由比 ガイダンス表示対応 DELETE-ED */
+/* 左右回転ボタン(クリック箇所) */
+TABLE#TABLE_ReverseBtn
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  LEFT              : 333px;
+/*  LEFT              : 410px;    */
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  HEIGHT            : 40px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  WIDTH             : 82px;
+/*  WIDTH             : 87px;*/
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  VISIBILITY        : hidden;
+  Z-INDEX           : 40;
+}
+/* 左右回転ボタン Enable */
+IMG#IMG_ReverseBtn_Enable
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  LEFT              : 333px;
+/*  LEFT              : 410px;    */
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  VISIBILITY        : hidden; 
+  Z-INDEX           : 20;
+}
+/* 左右回転ボタン Disable */
+IMG#IMG_ReverseBtn_Disable
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ST */
+  LEFT              : 333px;
+/*  LEFT              : 410px;    */
+/* 080425 HSK由比 ガイダンス表示対応 CHANGE-ED */
+  VISIBILITY        : visible; 
+  Z-INDEX           : 20;
+}
+/* 080516 HSK由比 ガイダンス表示対応 DELETE-ST */
+/* 左右回転ボタンテキスト */
+/*DIV#DIV_ReverseText
+{
+  POSITION          : absolute;*/
+  /* 2005/06/22 004 H.SAITO Design Change.
+  TOP               : 489px;
+  */
+/*  TOP               : 490px;
+  LEFT              : 410px;    
+	VISIBILITY        : visible;
+  WIDTH             : 87px;
+  COLOR             : gray;
+  TEXT-ALIGN        : center;
+  Z-INDEX           : 30;
+}*/
+/* 080516 HSK由比 ガイダンス表示対応 DELETE-ED */
+/* 080425 HSK由比 ガイダンス表示対応 ADD-ST */
+/* 撮影ガイダンスボタン(クリック箇所) */
+TABLE#TABLE_GuidanceToggleBtn
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+  LEFT              : 415px;
+  HEIGHT            : 40px;
+  WIDTH             : 82px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 40;
+}
+/* 撮影ガイダンスボタン Enable */
+IMG#IMG_GuidanceToggleBtn_Enable
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+  LEFT              : 415px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 20;
+}
+/* 撮影ガイダンスボタン Disable */
+IMG#IMG_GuidanceToggleBtn_Disable
+{
+  POSITION          : absolute;
+  TOP               : 468px;
+  LEFT              : 415px;
+  VISIBILITY        : visible;
+  Z-INDEX           : 20;
+}
+/* 撮影ガイダンスボタンテキスト */
+/*DIV#DIV_GuidanceToggleBtnText
+{
+  POSITION          : absolute;
+  TOP               : 490px;
+  LEFT              : 415px;
+  WIDTH             : 82px;
+  COLOR             : gray;
+  TEXT-ALIGN        : center;
+  VISIBILITY        : visible;
+  Z-INDEX           : 30;
+}*/
+/* 080425 HSK由比 ガイダンス表示対応 ADD-ED */
+/* 2014/03/05 TYS沼 DR直結対応 ADD-START */
+/* DR撮影画面切替ボタン */
+TABLE#TABLE_DRChangeBtn
+{
+  POSITION          : absolute;
+  TOP               : 380px;
+  LEFT              : 520px;
+  HEIGHT            : 32px;
+  WIDTH             : 154px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 40;
+}
+/* DR撮影画面切替ボタン(ビューアーモード表示時) */
+IMG#IMG_DRChangeBtn_Enable
+{
+  POSITION          : absolute;
+  TOP               : 380px;
+  LEFT              : 520px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 20;
+}
+/* DR撮影画面切替ボタン(ビューアーモード表示時) */
+IMG#IMG_DRChangeBtn_Disable
+{
+  POSITION          : absolute;
+  TOP               : 380px;
+  LEFT              : 520px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 20;
+}
+/* DR撮影画面切替ボタンテキスト(ビューアーモード表示時) */
+DIV#DIV_DrChangeText
+{
+  FONT-WEIGHT       : bold;
+  POSITION          : absolute;
+  TOP               : 388px;
+  LEFT              : 521px;
+  HEIGHT            : 18px;
+  WIDTH             : 150px;
+  TEXT-ALIGN        : center;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 30;
+  OVERFLOW          : visible;
+}
+/* 2014/03/05 TYS沼 DR直結対応 ADD-END */
+/* 保留ボタン(クリック箇所)(ビューアーモード表示時) */
+TABLE#TABLE_SuspendBtn
+{
+  POSITION          : absolute;
+  TOP               : 475px;
+  LEFT              : 520px;    
+  HEIGHT            : 32px;
+  WIDTH             : 77px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 40;
+}
+/* 保留ボタン(ビューアーモード表示時) */
+IMG#IMG_SuspendBtn_Enable
+{
+  POSITION          : absolute;
+  TOP               : 475px;
+  LEFT              : 520px; 
+  VISIBILITY        : hidden;
+  Z-INDEX           : 20;
+}
+/* 保留ボタン(ビューアーモード表示時) */
+IMG#IMG_SuspendBtn_Disable
+{
+  POSITION          : absolute;
+  TOP               : 475px;
+  LEFT              : 520px; 
+  VISIBILITY        : hidden;
+  Z-INDEX           : 20;
+}
+/* 保留ボタンテキスト(ビューアーモード表示時) */
+DIV#DIV_SuspendText
+{
+  FONT-WEIGHT       : bold;
+  POSITION          : absolute;
+  /* 2005/06/22 004 H.SAITO Design Change.
+  TOP               : 482px;
+  */
+  TOP               : 483px;
+  LEFT              : 512px; /* 2012.02.08 多国語文字切れ対応 */
+  HEIGHT            : 18px;
+  WIDTH             : 93px;  /* 2012.02.08 多国語文字切れ対応 */
+  TEXT-ALIGN        : center;
+	VISIBILITY        : hidden;
+  Z-INDEX           : 30;
+  OVERFLOW          : visible;  /* 2012.02.08 多国語文字切れ対応 */
+}
+/* 保留ボタン(クリック箇所)(ビューアーモード非表示時) */
+TABLE#TABLE_SuspendBtn2
+{
+  POSITION          : absolute;
+  /* 2005/06/23 004 H.SAITO Design Change.
+  TOP               : 475px;
+  */
+  TOP               : 472px;
+  LEFT              : 595px;    
+  HEIGHT            : 32px;
+  WIDTH             : 102px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 40;
+}
+/* 保留ボタン(ビューアーモード非表示時)  */
+IMG#IMG_SuspendBtn2_Enable
+{
+  POSITION          : absolute;
+  /* 2005/06/23 004 H.SAITO Design Change.
+  TOP               : 475px; 
+  */
+  TOP               : 472px;
+  LEFT              : 595px; 
+  VISIBILITY        : hidden;
+  Z-INDEX           : 20;
+}
+IMG#IMG_SuspendBtn2_Disable
+{
+  POSITION          : absolute;
+  /* 2005/06/23 004 H.SAITO Design Change.
+  TOP               : 475px; 
+  */
+  TOP               : 472px;
+  LEFT              : 595px; 
+  VISIBILITY        : hidden;
+  Z-INDEX           : 20;
+}
+/* 保留ボタンテキスト(ビューアーモード非表示時)  */
+DIV#DIV_SuspendText2
+{
+  FONT-WEIGHT       : bold;
+  POSITION          : absolute;
+  /* 2009/09/20 Nishikawa Update-ST PVCS#3421 */
+  TOP               : 480px;
+  /* 2009/09/20 Nishikawa Update-ED PVCS#3421 */
+  LEFT              : 595px;
+  HEIGHT            : 18px;
+  WIDTH             : 102px;
+  TEXT-ALIGN        : center;
+	VISIBILITY        : hidden;
+  Z-INDEX           : 30;
+  OVERFLOW          : hidden;
+}
+
+/* 2009/06/12 Nishikawa Update-ST V6.0撮影画面最小化対応
+/* 簡易撮影画面ボタン(クリック箇所) */
+TABLE#TABLE_SimpleBtn
+{
+  POSITION          : absolute;
+  TOP               : 425px;
+  LEFT              : 520px;    
+  HEIGHT            : 32px;
+  WIDTH             : 77px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 40;
+}
+/* 簡易撮影画面ボタン */
+IMG#IMG_SimpleBtn_Enable
+{
+  POSITION          : absolute;
+  TOP               : 425px;
+  LEFT              : 520px; 
+  VISIBILITY        : hidden;
+  Z-INDEX           : 20;
+}
+/* 簡易撮影画面ボタン */
+IMG#IMG_SimpleBtn_Disable
+{
+  POSITION          : absolute;
+  TOP               : 425px;
+  LEFT              : 520px; 
+  VISIBILITY        : hidden;
+  Z-INDEX           : 20;
+}
+
+/* 簡易撮影画面ボタンテキスト */
+DIV#DIV_SimpleText
+{
+  FONT-WEIGHT       : bold;
+  POSITION          : absolute;
+  TOP               : 433px;
+  LEFT              : 512px;  /* 2012.02.08 多国語文字切れ対応 */
+  HEIGHT            : 18px;
+  WIDTH             : 93px;  /* 2012.02.08 多国語文字切れ対応 */
+  TEXT-ALIGN        : center;
+	VISIBILITY        : hidden;
+  Z-INDEX           : 30;
+  OVERFLOW          : visible;  /* 2012.02.08 多国語文字切れ対応 */
+}
+/* 簡易撮影画面ボタン(クリック箇所)(画像確認モニタ) */
+TABLE#TABLE_SimpleBtn2
+{
+  POSITION          : absolute;
+  TOP               : 422px;
+  LEFT              : 595px;    
+  HEIGHT            : 32px;
+  WIDTH             : 102px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 40;
+}
+/* 簡易撮影画面ボタン(画像確認モニタ)  */
+IMG#IMG_SimpleBtn2_Enable
+{
+  POSITION          : absolute;
+  TOP               : 422px;
+  LEFT              : 595px; 
+  VISIBILITY        : hidden;
+  Z-INDEX           : 20;
+}
+/* 簡易撮影画面ボタン(画像確認モニタ)  */
+IMG#IMG_SimpleBtn2_Disable
+{
+  POSITION          : absolute;
+  TOP               : 422px;
+  LEFT              : 595px; 
+  VISIBILITY        : hidden;
+  Z-INDEX           : 20;
+}
+/* 簡易撮影画面ボタンテキスト(画像確認モニタ)  */
+DIV#DIV_SimpleText2
+{
+  FONT-WEIGHT       : bold;
+  POSITION          : absolute;
+  TOP               : 422px;
+  LEFT              : 595px;
+  HEIGHT            : 18px;
+  WIDTH             : 102px;
+  TEXT-ALIGN        : center;
+	VISIBILITY        : hidden;
+  Z-INDEX           : 30;
+  OVERFLOW          : hidden;
+}
+/* 2009/06/12 Nishikawa Update-ED V6.0撮影画面最小化対応
+
+/* ビューアーモードボタン */
+TABLE#TABLE_ViewBtn
+{
+  POSITION          : absolute;
+  TOP               : 417px;
+  LEFT              : 596px;    
+  HEIGHT            : 95px;
+  WIDTH             : 95px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 40;
+}
+/* ビューアーモードボタン */
+IMG#IMG_ViewBtn_Enable
+{
+  POSITION          : absolute;
+  TOP               : 415px;
+  LEFT              : 607px;    
+  VISIBILITY        : hidden; 
+  Z-INDEX           : 20;
+}
+/* ビューアーモードボタン */
+IMG#IMG_ViewBtn_Disable
+{
+  POSITION          : absolute;
+  TOP               : 415px;
+  LEFT              : 607px;    
+  VISIBILITY        : hidden; 
+  Z-INDEX           : 20;
+}
+/* ビューアーモードボタンテキスト */
+DIV#DIV_ViewText
+{
+  FONT-WEIGHT       : bold;
+  POSITION          : absolute;
+  TOP               : 448px;
+  LEFT              : 612px;  /* 2012.02.08 多国語文字切れ対応 */
+  HEIGHT            : 40px;
+  WIDTH             : 80px;  /* 2012.02.08 多国語文字切れ対応 */
+  FONT-WEIGHT       : bold;
+  TEXT-ALIGN        : center;
+	VISIBILITY        : hidden;
+  Z-INDEX           : 30;
+  OVERFLOW          : visible;  /* 2012.02.08 多国語文字切れ対応 */
+ }
+/* 確認ボタン */
+TABLE#TABLE_UpdateBtn
+{
+  POSITION          : absolute;
+  TOP               : 417px;
+  LEFT              : 695px;
+  HEIGHT            : 95px;
+  WIDTH             : 95px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 40;
+}
+/* 確認ボタン Enable*/
+IMG#IMG_UpdateBtn_Enable
+{
+  POSITION          : absolute;
+  TOP               : 415px;
+  LEFT              : 702px;    
+  VISIBILITY        : hidden; 
+  Z-INDEX           : 20;
+}
+/* 確認ボタン Disable*/
+IMG#IMG_UpdateBtn_Disable
+{
+  POSITION          : absolute;
+  TOP               : 415px;
+  LEFT              : 702px;    
+  VISIBILITY        : hidden; 
+  Z-INDEX           : 20;
+}
+/* 確認ボタンテキスト */
+DIV#DIV_UpdateText
+{
+  FONT-WEIGHT       : bold;
+  POSITION          : absolute;
+  TOP               : 454px;
+  LEFT              : 702px;    
+  HEIGHT            : 30px;
+  WIDTH             : 90px; 
+  FONT-WEIGHT       : bold;
+  TEXT-ALIGN        : center;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 30;
+  OVERFLOW          : hidden;
+}
+/* ２連ボタン背景 */
+IMG#IMG_DoubleBackBtn
+{
+  POSITION          : absolute;
+  TOP               : 410px;
+  LEFT              : 587px;    
+  VISIBILITY        : hidden;
+  Z-INDEX           : 10; 
+}
+/* ３連ボタン背景 */
+IMG#IMG_TripleBackBtn
+{
+  POSITION          : absolute;
+  TOP               : 410px;
+  LEFT              : 510px;    
+  VISIBILITY        : hidden;
+  Z-INDEX           : 10; 
+}
+/* 2005/07/13 005 H.SAITO ReSend. */
+/* 確認ダイアログボックス */
+TABLE#TABLE_ConfirmBox_ReSend
+{
+  POSITION          : absolute;
+  TOP               : 100px;
+  LEFT              : 175px; 
+  HEIGHT            : 300px;
+  WIDTH             : 450px;
+  TEXT-ALIGN        : left;
+  COLOR             : #000000;
+  FONT-SIZE         : 130%;
+  FONT-WEIGHT       : bold;
+  /* 2005/08/01 004 H.SAITO Design Change.
+  BACKGROUND-COLOR  : #FFB6C1;
+  */
+  BACKGROUND-COLOR  : #FFE79F;
+  BORDER-COLOR      : gray;
+  BORDER-STYLE      : solid;
+  BORDER-WIDTH      : 1px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 220;
+}
+TD#TD_ConfirmTitle1_ReSend
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 15px;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_ConfirmTitle2_ReSend
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 18px;
+  FONT-WEIGHT       : bold;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_ConfirmText_ReSend
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 18px;
+  FONT-WEIGHT       : bold;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_ConfirmCode_ReSend
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 15px;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+/* ＯＫボタン */
+IMG#IMG_ConfirmOkButton_ReSend
+{
+  POSITION          : absolute;
+  TOP               : 340px;
+  LEFT              : 500px; 
+  VISIBILITY        : hidden;
+  Z-INDEX           : 220;
+}
+TABLE#TABLE_ConfirmOkButton_ReSend
+{
+  POSITION          : absolute;
+  TOP               : 290px;
+  LEFT              : 420px; 
+  HEIGHT            : 40px;
+  WIDTH             : 110px;
+  BACKGROUND-COLOR  : #000000;
+  BORDER-COLOR      : gray;
+  BORDER-STYLE      : solid;
+  BORDER-WIDTH      : 1px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 220;
+}
+/* ＯＫボタンテキスト */
+DIV#DIV_ConfirmOkText_ReSend
+{
+  POSITION          : absolute;
+  TOP               : 350px;
+  LEFT              : 500px; 
+  HEIGHT            : 18px;
+  WIDTH             : 102px;
+  TEXT-ALIGN        : center;
+  COLOR             : #000000;
+  FONT-WEIGHT       : bold;
+  OVERFLOW          : hidden; 
+  VISIBILITY        : hidden;
+  Z-INDEX           : 225;
+}
+/* キャンセルボタン */
+IMG#IMG_ConfirmCancelButton_ReSend
+{
+  POSITION          : absolute;
+  TOP               : 340px;
+  LEFT              : 190px; 
+  VISIBILITY        : hidden;
+  Z-INDEX           : 220;
+}
+TABLE#TABLE_ConfirmCancelButton_ReSend
+{
+  POSITION          : absolute;
+  TOP               : 290px;
+  LEFT              : 290px; 
+  HEIGHT            : 40px;
+  WIDTH             : 110px;
+  BACKGROUND-COLOR  : aliceblue;
+  BORDER-COLOR      : gray;
+  BORDER-STYLE      : solid;
+  BORDER-WIDTH      : 1px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 220;
+}
+/* キャンセルボタンテキスト */
+DIV#DIV_ConfirmCancelText_ReSend
+{
+  POSITION          : absolute;
+  TOP               : 350px;
+  LEFT              : 190px; 
+  HEIGHT            : 18px;
+  WIDTH             : 102px;
+  TEXT-ALIGN        : center;
+  COLOR             : #000000;
+  FONT-WEIGHT       : bold;
+  OVERFLOW          : hidden; 
+  VISIBILITY        : hidden;
+  Z-INDEX           : 225;
+}
+/* 2005/08/03 #790 Ru Self Exclusive Error.
+/* エラー画面テーブル */
+TABLE#TABLE_ErrorFrame_SelfRu
+{
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;    
+  HEIGHT     : 600px;
+  WIDTH      : 800px;
+  VISIBILITY : hidden;
+  Z-INDEX    : 200;
+}
+/* エラー画面ボックス */
+TABLE#TABLE_ErrorBox_SelfRu
+{
+  POSITION          : absolute;
+  TOP               : 125px;
+  LEFT              : 125px; 
+  HEIGHT            : 250px;
+  WIDTH             : 550px;
+  BACKGROUND-COLOR  : #FFE79F;
+  BORDER-COLOR      : gray;
+  BORDER-STYLE      : solid;
+  BORDER-WIDTH      : 1px;
+  TEXT-ALIGN        : center;
+  FONT-SIZE         : 25px;
+  FONT-WEIGHT       : bold;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_ErrorTitle1_SelfRu
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 15px;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_ErrorTitle2_SelfRu
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 18px;
+  FONT-WEIGHT       : bold;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_ErrorText_SelfRu
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 18px;
+  FONT-WEIGHT       : bold;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_ErrorCode_SelfRu
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 15px;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+/* エラー画面ボタン */
+IMG#IMG_ErrorButton_SelfRu
+{
+  POSITION          : absolute;
+  TOP               : 325px;
+  LEFT              : 340px; 
+  Z-INDEX           : 220;
+}
+TABLE#TABLE_ErrorButton_SelfRu
+{
+  POSITION          : absolute;
+  TOP               : 240px;
+  LEFT              : 370px; 
+  HEIGHT            : 40px;
+  WIDTH             : 90px;
+  BACKGROUND-COLOR  : aliceblue;
+  BORDER-COLOR      : gray;
+  BORDER-STYLE      : solid;
+  BORDER-WIDTH      : 1px;
+  TEXT-ALIGN        : center;
+  FONT-SIZE         : 20px;
+  FONT-WEIGHT       : bold;
+  COLOR             : dodgerblue;
+  Z-INDEX           : 220;
+  VISIBILITY        : hidden;
+}
+/* エラーＯＫボタンテキスト */
+DIV#DIV_ErrorOkText_SelfRu
+{
+  POSITION          : absolute;
+  TOP               : 335px;
+  LEFT              : 340px; 
+  HEIGHT            : 18px;
+  WIDTH             : 102px;
+  TEXT-ALIGN        : center;
+  COLOR             : #000000;
+  FONT-SIZE         : 16px;
+  FONT-WEIGHT       : bold;
+  OVERFLOW          : hidden; 
+  Z-INDEX           : 230;
+}

@@ -1,0 +1,192 @@
+/****************************************************************************
+
+  @file Tub.css 
+
+  @brief Tubのスタイルシート
+
+
+
+  @author YSK菅野
+
+  Copyright(c) 2004-2008 FUJIFILM Corporation All rights reserved.
+
+         更新履歴  担当        Ver.       内容
+  -----  --------  ----------  --------   -------------------------------
+  @date  04/12/21  YSK菅野     XX-XX      新規作成
+  @date  08/02/29  HSK由比     V3.2       RU非接続時のRUアイコンとタブ非表示対応
+  @date  14/03/11  TYK石井     V3.0(B)    DR装置画面対応
+****************************************************************************/
+
+BODY
+{
+  FONT-WEIGHT      : bold;
+  FONT-SIZE        : 16px;
+  CURSOR           : default;
+}
+
+/* 装置タブ */
+/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 imgRUTubpx→imgDeviceTubに変更*/
+IMG#imgDeviceTub
+{
+  z-index  : 100;
+  position : absolute;
+  top      : 14px;
+  left     : 0px;
+  height   : 48px;
+  width    : 160px;
+}
+
+/* 装置タブテキスト */
+/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 divDeviceTubText→divRuTubTextに変更*/
+DIV#divDeviceTubText
+{
+  z-index  : 110;
+  position : absolute;
+  top      : 30px;
+  left     : 50px;
+  height   : 32px;
+  width    : 88px;
+}
+
+/* 装置タブ非表示 */
+/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 imgRUTubHidden→imgDeviceTubHiddenに変更*/
+IMG#imgDeviceTubHidden
+{
+  z-index  : 120;
+  position : absolute;
+  top      : 14px;
+  left     : 0px;
+  height   : 48px;
+  width    : 160px;
+}
+
+/* メディアタブ */
+IMG#imgMediaTub
+{
+  z-index  : 100;
+  position : absolute;
+  top      : 14px;
+  left     : 160px;
+  height   : 48px;
+  width    : 160px;
+}
+
+/* メディアタブテキスト */
+DIV#divMediaTubText
+{
+  z-index  : 110;
+  position : absolute;
+  top      : 30px;
+  left     : 210px;
+  height   : 32px;
+  width    : 88px;
+}
+
+/* プリンタタブ */
+IMG#imgPrinterTub
+{
+  z-index  : 100;
+  position : absolute;
+  top      : 14px;
+  left     : 320px;
+  height   : 48px;
+  width    : 160px;
+}
+
+/* プリンタタブテキスト */
+DIV#divPrinterTubText
+{
+  z-index  : 110;
+  position : absolute;
+  top      : 30px;
+  left     : 370px;
+  height   : 32px;
+  width    : 88px;
+}
+
+/* プリンタタブ非表示 */
+IMG#imgPrinterTubHidden
+{
+  z-index  : 120;
+  position : absolute;
+  top      : 14px;
+  left     : 320px;
+  height   : 48px;
+  width    : 160px;
+}
+
+/* 出力キュータブ */
+IMG#imgQueueTub
+{
+  z-index  : 100;
+  position : absolute;
+  top      : 14px;
+  left     : 480px;
+  height   : 48px;
+  width    : 160px;
+}
+
+/* 出力キュータブテキスト */
+DIV#divQueueTubText
+{
+  z-index  : 110;
+  position : absolute;
+  top      : 30px;
+  left     : 530px;
+  height   : 32px;
+  width    : 88px;
+}
+
+/* イベント情報タブ */
+IMG#imgEventTub
+{
+  z-index  : 100;
+  position : absolute;
+  top      : 14px;
+  left     : 640px;
+  height   : 48px;
+  width    : 160px;
+}
+
+/* イベント情報タブテキスト */
+DIV#divEventTubText
+{
+  z-index  : 110;
+  position : absolute;
+  top      : 30px;
+  left     : 690px;
+  height   : 32px;
+  width    : 88px;
+}
+
+/* タブ操作制御用テーブル */
+TABLE#tblTubDisable
+{
+  Z-INDEX    : 200;
+  LEFT       : 0px;
+  VISIBILITY : hidden;
+  WIDTH      : 800px;
+  POSITION   : absolute;
+  TOP        : 0px;
+  HEIGHT     : 62px;
+}
+
+/* 背景 */
+DIV#divBackGround
+{
+  Z-INDEX          : 0;
+  LEFT             : 0px;
+  WIDTH            : 800px;
+  POSITION         : absolute;
+  TOP              : 0px;
+  HEIGHT           : 62px;
+  BACKGROUND-COLOR : #F7F1E6;
+}
+
+/* ログ出力用フレーム */
+IFRAME#LOGGER_PROC
+{
+  VISIBILITY : hidden;
+  WIDTH      : 0px;
+  HEIGHT     : 0px;
+}

@@ -1,0 +1,7 @@
+Patient ID:00367
+Patient Name:HUZAIFA
+Sex:M
+Date of Exposure:16.MAR.2026
+Anatomical Region:CHEST
+Exposure Menu Name:CHEST PA
+Modality:CR

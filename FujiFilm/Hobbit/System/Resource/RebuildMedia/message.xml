@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="shift_jis" ?>
+<Data>
+  <Messages>
+    <!-- 共通メッセージ -->
+    <Message>
+      <ID>HRMDME001</ID>
+      <Value>An error occurred.</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDME002</ID>
+      <Value>An error occurred.</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDME011</ID>
+      <Value>The folder cannot be selected.</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDME012</ID>
+      <Value>Select a folder.</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDME013</ID>
+      <Value>Same folder cannot be selected.</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDME014</ID>
+      <Value>Select a Label.</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDME015</ID>
+      <Value>Data error occurred.</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDME016</ID>
+      <Value>Folder path too long.(Max length : 20 bytes)</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDME017</ID>
+      <Value>Zip data error.\r\n{0} note exists.</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDME018</ID>
+      <Value>Failure System Error</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDME019</ID>
+      <Value>Zip data error.\r\{0} note exists.</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDME020</ID>
+      <Value>The same volume label is selected.</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDME021</ID>
+      <Value>Shortage of storage capacities.</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDMI001</ID>
+      <Value>Processing starts now?</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDMI002</ID>
+      <Value>Processing completed.</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDMI003</ID>
+      <Value>Exit the application.</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDMI004</ID>
+      <Value>Success</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDMI005</ID>
+      <Value>Processing canceled.</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDMI006</ID>
+      <Value>With no processing.</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDMI011</ID>
+      <Value>The label exists in output folder.\r\nDoes it delete and continue?</Value>
+      <Detail></Detail>
+    </Message>
+    <Message>
+      <ID>HRMDMI012</ID>
+      <Value>The label exists DICOMDIR.\r\nDoes it delete and continue?</Value>
+      <Detail></Detail>
+    </Message>
+  </Messages>
+</Data>

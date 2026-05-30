@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<Data>
+  <DisplayPosTop>350</DisplayPosTop>
+  <DisplayPosLeft>400</DisplayPosLeft>
+  <ConvertDirPathIn></ConvertDirPathIn>
+  <ConvertDirPathOut></ConvertDirPathOut>
+  <DicomDirPathIn></DicomDirPathIn>
+  <AEName>MEDIA</AEName>
+</Data>

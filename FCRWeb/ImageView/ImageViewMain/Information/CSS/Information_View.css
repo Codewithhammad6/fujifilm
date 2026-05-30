@@ -1,0 +1,96 @@
+/******************************************************************************
+  Information_View.css 
+
+  	Information_Viewのスタイルシート
+
+     更新履歴    担当       Ver.        内容
+     2004/12/08  齋藤      -----       新規作成
+
+******************************************************************************/
+BODY
+{
+  CURSOR     : default;
+  COLOR      : #FFFFFF;
+  FONT-FAMILY: MS UI Gothic;
+  FONT-WEIGHT: bold;
+}
+DIV
+{
+  OVERFLOW   : hidden;
+}
+/* 患者ＩＤテキスト */
+DIV#DIV_PatientIDText
+{
+  POSITION   : absolute;
+  TOP        : 3px;
+  LEFT       : 15px;    
+  HEIGHT     : 28px;
+  WIDTH      : 390px;
+  FONT-SIZE  : 18px;
+  Z-INDEX    : 20;
+  LETTER-SPACING:3px;
+}
+/* 患者名テキスト */
+DIV#DIV_PatientNameText
+{
+  POSITION   : absolute;
+  TOP        : 23px;
+  LEFT       : 12px;    
+  HEIGHT     : 28px;
+  WIDTH      : 396px;
+  FONT-SIZE  : 18px;
+  Z-INDEX    : 20;
+}
+/* 性別テキスト */
+DIV#DIV_PatientSexText
+{
+  POSITION   : absolute;
+  TOP        : 5px;
+  LEFT       : 412px;    
+  HEIGHT     : 28px;
+  WIDTH      : 133px;
+  FONT-SIZE  : 18px;
+  Z-INDEX    : 20;
+}
+/* 生年月日テキスト */
+DIV#DIV_PatientBirthDateText
+{
+  POSITION   : absolute;
+  TOP        : 29px;
+  LEFT       : 412px;    
+  HEIGHT     : 28px;
+  WIDTH      : 110px;
+  FONT-SIZE  : 18px;
+  Z-INDEX    : 20;
+}
+/* 年齢テキスト */
+DIV#DIV_PatientAgeText
+{
+  POSITION   : absolute;
+  TOP        : 29px;
+  LEFT       : 527px;    
+  HEIGHT     : 28px;
+  WIDTH      : 133px;
+  FONT-SIZE  : 18px;
+  Z-INDEX    : 20;
+}
+/* 患者情報背景 */
+IMG#IMG_BackGround_Gray_Patient
+{
+  POSITION   : absolute;
+  TOP        : 3px;
+  LEFT       : 0px;    
+  HEIGHT     : 45px;
+  WIDTH      : 600px;
+  Z-INDEX    : 10;
+}
+/* 患者情報背景 */
+IMG#imgInfoEditIcon
+{
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 500px;    
+  HEIGHT     : 45px;
+  WIDTH      : 91px;
+  Z-INDEX    : 10;
+}

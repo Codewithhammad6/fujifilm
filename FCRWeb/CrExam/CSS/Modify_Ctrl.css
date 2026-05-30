@@ -1,0 +1,210 @@
+/******************************************************************************
+  Modify_Ctrl.css 
+
+  	Modify_Ctrlのスタイルシート
+
+
+     更新履歴    担当       Ver.        内容
+     2004/12/21   畑       -----       新規作成
+     2006/08/09  HSK酒井   V1.4        CR検査部構造見直し[8]対応
+******************************************************************************/
+@import "Modify_Ctrl_Common.css"; 
+
+IFRAME#MODIFYMAIN_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#ADDMENU_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#CHANGEMENU_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#DELETEMENU_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#SORTMENU_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#CHANGEIMG_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#OUTPUT_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#OUTPUTDETAIL_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#EDITPATIENTMAIN_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#EDITPATIENTID_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#EDITPATIENTDETAIL_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#CHANGEPATIENTID_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#CHANGEPATIENTDETAIL_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#ADDMENU_UPDATE_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#CHANGEMENU_UPDATE_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#DELETEMENU_UPDATE_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#SORTMENU_UPDATE_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#CHANGEIMG_UPDATE_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#OUTPUT_UPDATE_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#OUTPUTDETAIL_UPDATE_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#EDITPATIENTID_UPDATE_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#EDITPATIENTDETAIL_UPDATE_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#SEARCHPATIENTDATA
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#ERROREND_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}

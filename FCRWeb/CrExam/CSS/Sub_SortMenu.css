@@ -1,0 +1,14 @@
+BODY
+{
+  OVERFLOW   : hidden;
+}
+IFRAME#SORTMENU_CTRL
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 0px;
+  HEIGHT     : 600px;
+  WIDTH      : 800px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}

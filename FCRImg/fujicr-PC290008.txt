@@ -1,0 +1,7 @@
+Patient ID:C012
+Patient Name:KISHWAR
+Sex:F
+Date of Exposure:29.DEC.2025
+Anatomical Region:CHEST
+Exposure Menu Name:CHEST PA
+Modality:CR

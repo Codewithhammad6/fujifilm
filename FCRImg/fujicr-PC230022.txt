@@ -1,0 +1,7 @@
+Patient ID:00409
+Patient Name:UMAR
+Sex:M
+Date of Exposure:23.MAR.2026
+Anatomical Region:ABDOMEN
+Exposure Menu Name:ABDOMEN SPINE
+Modality:CR

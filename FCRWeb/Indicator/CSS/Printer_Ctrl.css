@@ -1,0 +1,185 @@
+﻿/****************************************************************************
+
+  @file Printer_Ctrl.css 
+
+  @brief Printer_Ctrlのスタイルシート
+
+
+  @author YSK菅野
+
+  Copyright(c) 2004-2006 FUJI PHOTO FILM CO., LTD. All rights reseved.
+
+         更新履歴  担当        Ver.       内容
+  -----  --------  ----------  --------   -------------------------------
+  @date  04/12/21  YSK菅野     XX-XX      新規作成
+
+****************************************************************************/
+
+BODY
+{
+  FONT-WEIGHT : bold;
+  FONT-SIZE   : 16px;
+  CURSOR      : default;
+}
+
+/* OKボタン背景 */
+IMG#imgOKBtnBack
+{
+  Z-INDEX  : 110;
+  LEFT     : 643px;
+  WIDTH    : 102;
+  POSITION : absolute;
+  TOP      : 392px;
+  HEIGHT   : 115px;
+}
+
+/* OKボタン */
+IMG#imgOK
+{
+  Z-INDEX  : 120;
+  LEFT     : 649px;
+  WIDTH    : 90px;
+  POSITION : absolute;
+  TOP      : 410px;
+  HEIGHT   : 90px;
+}
+
+/* OKボタンラベル */
+DIV#divOK
+{
+  DISPLAY    : inline;
+  Z-INDEX    : 130;
+  LEFT       : 659px;
+  WIDTH      : 70px;
+  POSITION   : absolute;
+  TOP        : 448px;
+  HEIGHT     : 15px;
+  TEXT-ALIGN : center;
+}
+
+/* リフレッシュボタン背景 */
+IMG#imgRefreshBtnBack
+{
+  Z-INDEX  : 110;
+  LEFT     : 48px;
+  WIDTH    : 102;
+  POSITION : absolute;
+  TOP      : 392px;
+  HEIGHT   : 115px;
+}
+
+/* リフレッシュボタン */
+IMG#imgRefresh
+{
+  Z-INDEX  : 120;
+  LEFT     : 54px;
+  WIDTH    : 90px;
+  POSITION : absolute;
+  TOP      : 410px;
+  HEIGHT   : 90px;
+}
+
+/* リフレッシュボタンラベル */
+DIV#divRefresh
+{
+  DISPLAY    : inline;
+  Z-INDEX    : 130;
+  LEFT       : 64px;
+  WIDTH      : 70px;
+  POSITION   : absolute;
+  TOP        : 448px;
+  HEIGHT     : 15px;
+  TEXT-ALIGN : center;
+}
+
+/* プリンタ画面表示フレーム */
+IFRAME#PRINTER_VIEW
+{
+  Z-INDEX    : 110;
+  LEFT       : 0px;
+  WIDTH      : 800px;
+  POSITION   : absolute;
+  VISIBILITY : hidden;
+  TOP        : 0px;
+  HEIGHT     : 513px;
+}
+
+/* プリンタ情報取得フレーム */
+IFRAME#PRINTER_GET_PROC
+{
+  VISIBILITY: hidden;
+}
+
+/* 下部背景 */
+DIV#divFooter
+{
+  Z-INDEX          : 100;
+  LEFT             : 0px;
+  WIDTH            : 800px;
+  POSITION         : absolute;
+  TOP              : 0px;
+  HEIGHT           : 406px;
+  BACKGROUND-COLOR : #f5e7dd;
+}
+
+/* 背景 */
+IMG#imgFooter
+{
+  Z-INDEX          : 100;
+  LEFT             : 0px;
+  WIDTH            : 800px;
+  POSITION         : absolute;
+  TOP              : 406px;
+  HEIGHT           : 7px;
+  BACKGROUND-COLOR : #f5e7dd;
+}
+
+/* 背景 */
+DIV#divBackGround
+{
+  Z-INDEX          : 100;
+  LEFT             : 0px;
+  WIDTH            : 800px;
+  POSITION         : absolute;
+  TOP              : 413px;
+  HEIGHT           : 100px;
+  BACKGROUND-COLOR : #f7f1e6;
+}
+
+/* ログ出力用フレーム */
+IFRAME#LOGGER_PROC
+{
+  VISIBILITY : hidden;
+}
+
+/* コンボボックスプルダウン部 */
+TABLE#ComboBox
+{
+  Z-INDEX          : 160;
+  FONT-WEIGHT      : bold;
+  FONT-SIZE        : 16px;
+  BACKGROUND-COLOR : white;
+  VISIBILITY       : hidden;
+  POSITION         : absolute;
+  BORDER-RIGHT     : black 1px solid;
+  BORDER-TOP       : black 1px solid;
+  BORDER-LEFT      : black 1px solid;
+  BORDER-BOTTOM    : black 1px solid;
+}
+
+TD#tdOption
+{
+  CURSOR : default;
+}
+
+/* コンボボックス非表示用テーブル */
+TABLE#ComboBoxFrame
+{
+  Z-INDEX    : 150;
+  VISIBILITY : hidden;
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 513px;
+  WIDTH      : 800px;
+}

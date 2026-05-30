@@ -1,0 +1,247 @@
+﻿/****************************************************************************
+
+  @file RU_Ctrl.css 
+
+  @brief RU_Ctrlのスタイルシート
+
+
+
+
+
+  @author YSK菅野
+
+  Copyright(c) 2004-2006 FUJI PHOTO FILM CO., LTD. All rights reseved.
+
+         更新履歴  担当        Ver.       内容
+  -----  --------  ----------  --------   -------------------------------
+  @date  04/12/21  YSK菅野     XX-XX      新規作成
+  @date  14/03/20  TYK 石井    V3.0       DR装置画面対応
+
+****************************************************************************/
+
+BODY
+{
+  FONT-WEIGHT : bold;
+  FONT-SIZE   : 16px;
+  CURSOR      : default;
+}
+
+/* OKボタン背景 */
+IMG#imgOKBtnBack
+{
+  Z-INDEX  : 110;
+  LEFT     : 643px;
+  WIDTH    : 102;
+  POSITION : absolute;
+  TOP      : 351px;/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 392px→351pxに変更*/
+  HEIGHT   : 115px;
+}
+
+/* OKボタン */
+IMG#imgOK
+{
+  Z-INDEX  : 120;
+  LEFT     : 649px;
+  WIDTH    : 90px;
+  POSITION : absolute;
+  TOP      : 369px;/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 410px→369pxに変更*/
+  HEIGHT   : 90px;
+}
+
+/* OKボタンラベル */
+DIV#divOK
+{
+  DISPLAY    : inline;
+  Z-INDEX    : 130;
+  LEFT       : 659px;
+  WIDTH      : 70px;
+  POSITION   : absolute;
+  TOP        : 407px;/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 448px→407pxに変更*/
+  HEIGHT     : 15px;
+  TEXT-ALIGN : center;
+}
+
+/* リフレッシュボタン背景 */
+IMG#imgRefreshBtnBack
+{
+  Z-INDEX  : 110;
+  LEFT     : 48px;
+  WIDTH    : 102;
+  POSITION : absolute;
+  TOP      : 351px;/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 392px→351pxに変更*/
+  HEIGHT   : 115px;
+}
+
+/* リフレッシュボタン */
+IMG#imgRefresh
+{
+  Z-INDEX  : 120;
+  LEFT     : 54px;
+  WIDTH    : 90px;
+  POSITION : absolute;
+  TOP      : 369px;/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 369px→410pxに変更*/
+  HEIGHT   : 90px;
+}
+
+/* リフレッシュボタンラベル */
+DIV#divRefresh
+{
+  DISPLAY    : inline;
+  Z-INDEX    : 130;
+  LEFT       : 64px;
+  WIDTH      : 70px;
+  POSITION   : absolute;
+  TOP        : 407px;/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 448px→407pxに変更*/
+  HEIGHT     : 15px;
+  TEXT-ALIGN : center;
+}
+
+/* RUステータス表示用フレーム */
+IFRAME#RUSTATUS_VIEW
+{
+  Z-INDEX    : 110;
+  LEFT       : 0px;
+  WIDTH      : 794px;
+  POSITION   : absolute;
+  TOP        : 60px;/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 100px→60pxに変更*/
+  HEIGHT     : 400px;
+  VISIBILITY : hidden;
+}
+
+/* RU操作画面表示用フレーム */
+IFRAME#RUCONTROL_VIEW
+{
+  Z-INDEX    : 110;
+  LEFT       : 0px;
+  WIDTH      : 794px;
+  POSITION   : absolute;
+  TOP        : 60px;/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 100px→60pxに変更*/
+  HEIGHT     : 400px;
+  VISIBILITY : hidden;
+}
+
+/* RUステータス取得用フレーム */
+IFRAME#RUSTATUS_GET_PROC
+{
+  VISIBILITY : hidden;
+}
+
+/* RU操作用フレーム */
+IFRAME#RU_CONTROL_PROC
+{
+  VISIBILITY : hidden;
+}
+
+/* Window表示要求用フレーム */
+IFRAME#RU_WINREQ_PROC
+{
+  VISIBILITY : hidden;
+}
+
+/* RU操作監視用フレーム */
+IFRAME#RU_WATCH_PROC
+{
+  VISIBILITY : hidden;
+}
+
+/* ログ出力用フレーム */
+IFRAME#LOGGER_PROC
+{
+  VISIBILITY : hidden;
+}
+
+/* ステータス表示ボタン */
+TABLE#tblRUStatus
+{
+  Z-INDEX     : 130;
+  LEFT        : 112px;
+  WIDTH       : 202px;
+  POSITION    : absolute;
+  TOP         : 12px;/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 32px→12pxに変更*/
+  HEIGHT      : 39px;
+  TEXT-ALIGN  : center;
+  FONT-WEIGHT : bold;
+  FONT-SIZE   : 16px;
+}
+
+/* ステータス表示ボタン */
+IMG#imgRUStatus
+{
+  Z-INDEX  : 120;
+  LEFT     : 112px;
+  WIDTH    : 202px;
+  POSITION : absolute;
+  TOP      : 12px;/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 32px→12pxに変更*/
+  HEIGHT   : 39px;
+}
+
+/* RU操作表示ボタン */
+TABLE#tblRUControl
+{
+  Z-INDEX     : 130;
+  LEFT        : 408px;
+  WIDTH       : 202px;
+  POSITION    : absolute;
+  TOP         : 12px;/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 32px→12pxに変更*/
+  HEIGHT      : 39px;
+  TEXT-ALIGN  : center;
+  FONT-WEIGHT : bold;
+  FONT-SIZE   : 16px;
+}
+
+/* RU操作表示ボタン */
+IMG#imgRUControl
+{
+  Z-INDEX  : 120;
+  LEFT     : 408px;
+  WIDTH    : 202px;
+  POSITION : absolute;
+  TOP      : 12px;/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 32px→12pxに変更*/
+  HEIGHT   : 39px;
+}
+
+/* 下部背景 */
+DIV#divFooter
+{
+  Z-INDEX          : 100;
+  LEFT             : 0px;
+  WIDTH            : 800px;
+  POSITION         : absolute;
+  TOP              : 0px;
+  HEIGHT           : 365px;/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 408px→365pxに変更*/
+  BACKGROUND-COLOR : #F5E7DD;
+}
+
+/* 背景 */
+IMG#imgFooter
+{
+  Z-INDEX          : 100;
+  LEFT             : 0px;
+  WIDTH            : 800px;
+  POSITION         : absolute;
+  TOP              : 365px;/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 406px→365pxに変更*/
+  HEIGHT           : 7px;
+  BACKGROUND-COLOR : #F5E7DD;
+}
+
+/* 背景 */
+DIV#divBackGround
+{
+  Z-INDEX          : 100;
+  LEFT             : 0px;
+  WIDTH            : 800px;
+  POSITION         : absolute;
+  TOP              : 372px;/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 413px→372pxに変更*/
+  HEIGHT           : 100px;
+  BACKGROUND-COLOR : #F7F1E6;
+}
+
+HR
+{
+  Z-INDEX          : 120;
+  LEFT             : 0px;
+  WIDTH            : 800px;
+  POSITION         : absolute;
+  TOP              : 59px;/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 99px→59pxに変更*/
+  BACKGROUND-COLOR : #847B78;
+}

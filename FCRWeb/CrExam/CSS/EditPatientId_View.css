@@ -1,0 +1,265 @@
+/******************************************************************************
+  EditPatientId_View.css 
+
+  	EditPatientId_Viewのスタイルシート
+
+
+     更新履歴    担当       Ver.        内容
+     2004/12/20   畑       -----       新規作成
+     2006/10     S1神立    V1.4        操作性向上(キーボード操作)
+
+******************************************************************************/
+/* ボディ */
+BODY
+{  
+  CURSOR	          : default;
+  BACKGROUND-COLOR  : #F4E6DC;
+}
+/* コマンドボタン領域の色 */
+DIV#DIV_CommandBackGround
+{
+  POSITION   : absolute;
+  TOP        : 454px;
+  LEFT       : 0px;
+  HEIGHT     : 105px;
+  WIDTH      : 800px; 
+  background-color:#F4EEE4;
+}
+/* リストとコマンドボタンの境界 */
+IMG#IMG_List-Command_Border
+{
+  POSITION   : absolute;
+  TOP        : 448px;
+  LEFT       : 0px;
+  HEIGHT     : 7px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+}
+/*2005/05/23-ST*/
+/* メッセージと主要画面の境界 */
+TD#DIV_List_Border
+{
+  POSITION   : absolute;
+  TOP        : 1px;
+  LEFT       : 0px;
+  HEIGHT     : 5px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR : #ECC2AC;
+}
+/*2005/05/23-EN*/
+/* 禁止範囲*/
+DIV#divAll
+{
+  Z-INDEX     : 40;
+  LEFT        : 0px;
+  TOP         : 0px;
+  POSITION    : absolute;
+  WIDTH       : 800px;
+  HEIGHT      : 600px;
+}
+/* 禁止範囲*/
+DIV#divBox
+{
+  Z-INDEX     : 80;
+}
+/* 禁止解除範囲*/
+DIV#divSelect
+{
+  Z-INDEX     : 50;
+}
+
+/* 患者IDテキスト*/
+DIV#DivPatientId_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 102;
+  LEFT        : 80px;
+  TOP         : 96px;
+  POSITION    : absolute;
+  /* 2005/06/23 004 H.SAITO Design Change.
+  WIDTH       : 65px;
+  */
+  WIDTH       : 120px;
+  HEIGHT      : 16px;
+  /* 2005/06/23 004 H.SAITO Design Change.
+  text-align  : center;
+  */
+  text-align  : RIGHT;
+}
+
+/* 患者IDテキストボックス*/
+INPUT#txtPatientId
+{
+  FONT-WEIGHT : bold;
+  FONT-SIZE   : 163%;
+  Z-INDEX     : 70;
+  LEFT        : 224px;
+  TOP         : 88px;
+  POSITION    : absolute;
+  WIDTH       : 417px;
+  HEIGHT      : 40px;
+  color       : #AAAAAA;
+  background-color : #F4EEE4;
+  /*ime-mode    : inactive; */ /* 2006/11/26 K.Kurashiki Delete */
+  ime-mode    : disabled
+}
+
+/* 電子カルテ背景*/
+IMG#IMG_Elect_Back
+{
+  Z-INDEX   : 50; 
+  LEFT      : 460px; 
+  TOP       : 136px;
+  POSITION  : absolute; 
+  visibility  : hidden;
+}
+/* 電子カルテクリック領域　061012 神立 */
+DIV#divElect
+{
+  POSITION   : absolute;
+  Z-INDEX    : 100;
+}
+/* 電子カルテボタンテキスト*/
+DIV#DivElect_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80;
+  LEFT        : 460px;
+  TOP         : 145px;
+  POSITION    : absolute;
+  WIDTH       : 180px;
+  HEIGHT      : 30px;
+  text-align  : center;
+  visibility  : hidden;
+}
+
+/* 電子カルテボタンImage*/
+IMG#imgElect
+{
+  Z-INDEX  : 50;
+  LEFT     : 460px; 
+  TOP      : 136px; 
+  POSITION : absolute; 
+  visibility  : hidden;
+}
+
+/* ソフトキーボードIframe*/
+IFRAME#frmSoftKeyBoard
+{
+  Z-INDEX  : 40; 
+  LEFT     : 0px; 
+  TOP      : 200px; 
+  POSITION : absolute; 
+  WIDTH    : 0px; 
+  HEIGHT   : 0px;
+}
+
+
+IMG#IMG_Button_Back
+{
+  Z-INDEX   : 10; 
+  LEFT      : 587px; 
+  TOP       : 402px;
+  POSITION  : absolute; 
+  BACKGROUND-COLOR : Transparent;
+}
+/* 戻るボタンクリック領域 061002 神立*/
+/* [戻る]ボタンがフォーカスを受け取れるようにした */
+DIV#divButtonNG
+{
+  POSITION   : absolute;
+  Z-INDEX    : 100;
+}
+/* 戻るボタンテキスト*/
+DIV#DivButtonNG_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 595px; 
+/* 2005/09/08 #1249 H.SAITO -ST- */
+/*  TOP         : 481px; */
+  TOP         : 480px; 
+/* 2005/09/08 #1249 H.SAITO -ED- */
+  POSITION    : absolute; 
+  WIDTH       : 102px; 
+  HEIGHT      : 16px;
+  text-align  : center;
+}
+
+/* 戻るボタンIMG*/
+IMG#imgBack
+{
+  Z-INDEX          : 60;
+  LEFT             : 595px;
+  POSITION         : absolute; 
+/* 2005/09/08 #1249 H.SAITO -ST- */
+/*  TOP              : 473px; */
+  TOP              : 471px;
+/* 2005/09/08 #1249 H.SAITO -ED- */
+  BACKGROUND-COLOR : transparent;
+}
+
+/* 次へボタン クリック領域 */
+TABLE#TABLE_Next
+{
+  POSITION   : absolute;
+  TOP        : 417px;
+/* 2005/09/08 #1249 H.SAITO -ST- */
+/*  LEFT       : 700px;*/
+  LEFT       : 702px;
+/* 2005/09/08 #1249 H.SAITO -ED- */
+  HEIGHT     : 90px;
+  WIDTH      : 90px;
+  Z-INDEX    : 100;
+  VISIBILITY : visible;
+}
+/* 次へボタンテキスト*/
+DIV#DivButtonOK_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+/* 2005/09/08 #1249 H.SAITO -ST- */
+/*  LEFT        : 700px; */ 
+  LEFT        : 703px; 
+/* 2005/09/08 #1249 H.SAITO -ED- */
+  TOP         : 455px; 
+  POSITION    : absolute; 
+/* 2005/09/08 #1249 H.SAITO -ST- */
+/*  WIDTH       : 90px; */
+  WIDTH       : 87px; 
+/* 2005/09/08 #1249 H.SAITO -ED- */
+  HEIGHT      : 16px;
+  text-align  : center;
+}
+
+/* 次へボタンIMG*/
+IMG#imgNext_Enable
+{
+  Z-INDEX          : 60; 
+/* 2005/09/08 #1249 H.SAITO -ST- */
+/*  LEFT             : 700px; */
+  LEFT             : 702px;
+/* 2005/09/08 #1249 H.SAITO -ED- */
+  TOP              : 417px; 
+  POSITION         : absolute; 
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : visible;
+}
+/* 次へボタンIMG*/
+IMG#imgNext_Disable
+{
+  Z-INDEX          : 60; 
+/* 2005/09/08 #1249 H.SAITO -ST- */
+/*  LEFT             : 700px; */
+  LEFT             : 702px;
+/* 2005/09/08 #1249 H.SAITO -ED- */
+  TOP              : 417px; 
+  POSITION         : absolute; 
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : hidden;
+}
+
+
+
+

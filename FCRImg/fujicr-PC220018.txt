@@ -1,0 +1,7 @@
+Patient ID:0076
+Patient Name:M RAMZAN
+Sex:M
+Date of Exposure:22.FEB.2026
+Anatomical Region:CHEST
+Exposure Menu Name:CLAVICLE
+Modality:CR

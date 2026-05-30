@@ -1,0 +1,1045 @@
+/******************************************************************************
+  EditPatientId_View_Single.css 
+
+  	EditPatientId_Viewのスタイルシート
+
+
+     更新履歴    担当       Ver.        内容
+     2004/12/30   畑       -----       新規作成
+
+******************************************************************************/
+/* ボディ */
+BODY
+{  
+  CURSOR	          : default;
+  BACKGROUND-COLOR  : #F7F1E6;
+}
+DIV
+{
+  OVERFLOW   : hidden;
+  WORD-BREAK : break-all;
+}
+/* 検査情報枠組み背景 */
+DIV#DIV_StudyInfo_Frame
+{
+	BORDER     : #706a64 2px solid;
+  width      : 772px;
+  height     : 380px;
+  position   : absolute;
+  top        : 33px;
+  left       : 8px;
+}
+/* 患者情報背景 */
+DIV#DIV_Back_Black{
+  background : #443E3C;
+  width      : 525px;
+  height     : 275px;
+  position   : absolute;
+  top        : 35px;
+  left       : 10px;
+}
+/* 患者情報枠組み */
+DIV#DIV_PatInfo_Frame{
+	BORDER     : #706a64 2px solid;
+  width      : 526px;
+  height     : 326px;
+  position   : absolute;
+  top        : 35px;
+  left       : 9px;
+}
+/* メニュー情報背景 */
+DIV#DIV_MenuBack_Black{
+  background : #443E3C;
+  width      : 238px;
+  height     : 270px;
+  position   : absolute;
+  top        : 35px;
+  left       : 540px;
+}
+/* メニュー情報枠組み */
+DIV#DIV_MenuInfo_Frame{
+	BORDER     : #706a64 1px solid;
+  width      : 238px;
+  height     : 326px;
+  position   : absolute;
+  top        : 35px;
+  left       : 539px;
+}
+/* 保留中テキスト*/
+DIV#divReserve
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 20px; 
+  WIDTH       : 100px; 
+  POSITION    : absolute; 
+  TOP         : 10px; 
+  HEIGHT      : 25px; 
+  TEXT-ALIGN  : center;
+  visibility  : hidden;
+}
+
+/* 保留中ボタン*/
+IMG#imgReserve
+{
+  Z-INDEX  : 60; 
+  LEFT     : 20px; 
+  POSITION : absolute; 
+  TOP      : 5px; 
+  HEIGHT   : 25px;
+  WIDTH    : 100px;
+  visibility  : hidden;
+}
+
+/* 患者情報背景*/
+IMG#Img_Patient
+{
+  Z-INDEX   : 60; 
+  LEFT      : 16px; 
+  TOP       : 44px;
+  POSITION  : absolute; 
+  visibility  : hidden;
+}
+/* 患者情報背景*/
+IMG#Img_Patient2
+{
+  Z-INDEX   : 60; 
+  LEFT      : 26px; 
+  TOP       : 44px;
+  POSITION  : absolute; 
+  HEIGHT    : 255px;
+  WIDTH     : 405px;
+  visibility  : hidden;
+}
+/* 患者情報背景*/
+IMG#Img_Patient3
+{
+  Z-INDEX   : 60; 
+  LEFT      : 16px; 
+  TOP       : 44px;
+  POSITION  : absolute; 
+}
+/* 患者情報背景*/
+IMG#Img_Patient4
+{
+  Z-INDEX   : 60; 
+  LEFT      : 26px; 
+  TOP       : 44px;
+  POSITION  : absolute; 
+  HEIGHT    : 205px;
+  WIDTH     : 405px;
+}
+/* 患者IDテキスト*/
+DIV#divPatId_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 32px; 
+  WIDTH       : 96px; 
+  POSITION    : absolute; 
+  TOP         : 54px; 
+  HEIGHT      : 24px;
+  text-align  : left;
+}
+
+/* 患者名テキスト*/
+DIV#divPatName_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 32px; 
+  WIDTH       : 96px; 
+  POSITION    : absolute; 
+  TOP         : 108px; 
+  HEIGHT      : 24px;
+  text-align  : left;
+}
+/* 漢字患者名テキスト*/
+DIV#divPatKanjiName_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 32px; 
+  WIDTH       : 96px; 
+  POSITION    : absolute; 
+  TOP         : 100px; 
+  HEIGHT      : 24px;
+  text-align  : left;
+  visibility  : hidden;
+}
+
+/* 患者性別テキスト*/
+DIV#divPatSex_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 32px; 
+  WIDTH       : 96px; 
+  POSITION    : absolute; 
+  TOP         : 160px; 
+  HEIGHT      : 24px;
+  text-align  : left;
+}
+/* 患者生年月日テキスト*/
+DIV#divPatBirth_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 32px; 
+  WIDTH       : 96px; 
+  POSITION    : absolute; 
+  TOP         : 208px; 
+  HEIGHT      : 24px;
+  text-align  : left;
+}
+/* 患者情報枠組み */
+DIV#divPatInfo0_Frame
+{
+  Z-INDEX     : 70; 
+  LEFT        : 142px; 
+  WIDTH       : 287px; 
+  POSITION    : absolute; 
+  TOP         : 50px; 
+  HEIGHT      : 25px;
+  BACKGROUND-COLOR : #FFFFFF;
+	BORDER-TOP     : #706a64 1px solid;
+	BORDER-LEFT    : #706a64 1px solid;
+}
+/* 患者情報枠組み */
+DIV#divPatInfo2_Frame
+{
+  Z-INDEX     : 70; 
+  LEFT        : 142px; 
+  WIDTH       : 287px; 
+  POSITION    : absolute; 
+  TOP         : 100px; 
+  HEIGHT      : 25px;
+  BACKGROUND-COLOR : #FFFFFF;
+	BORDER-TOP     : #706a64 1px solid;
+	BORDER-LEFT    : #706a64 1px solid;
+}
+/* 患者情報枠組み */
+DIV#divPatInfo1_Frame
+{
+  Z-INDEX     : 70; 
+  LEFT        : 142px; 
+  WIDTH       : 287px; 
+  POSITION    : absolute; 
+  TOP         : 100px; 
+  HEIGHT      : 25px;
+  visibility  : hidden;
+  BACKGROUND-COLOR : #FFFFFF;
+	BORDER-TOP     : #706a64 1px solid;
+	BORDER-LEFT    : #706a64 1px solid;
+}
+/* 患者情報枠組み */
+DIV#divPatInfo3_Frame
+{
+  Z-INDEX     : 70; 
+  LEFT        : 142px; 
+  WIDTH       : 287px; 
+  POSITION    : absolute; 
+  TOP         : 156px; 
+  HEIGHT      : 25px;
+  BACKGROUND-COLOR : #FFFFFF;
+	BORDER-TOP     : #706a64 1px solid;
+	BORDER-LEFT    : #706a64 1px solid;
+}
+/* 患者情報枠組み */
+DIV#divPatInfo4_Frame
+{
+  Z-INDEX     : 70; 
+  LEFT        : 142px; 
+  WIDTH       : 287px; 
+  POSITION    : absolute; 
+  TOP         : 204px; 
+  HEIGHT      : 25px;
+  BACKGROUND-COLOR : #FFFFFF;
+	BORDER-TOP     : #706a64 1px solid;
+	BORDER-LEFT    : #706a64 1px solid;
+}
+
+/* 患者IDテキストボックス*/
+DIV#divPatInfo0
+{
+  FONT-WEIGHT : bold; 
+  FONT-SIZE   : 125%; 
+  Z-INDEX     : 70; 
+  LEFT        : 144px; 
+  WIDTH       : 284px; 
+  POSITION    : absolute; 
+  TOP         : 52px; 
+  HEIGHT      : 22px;
+}
+
+/* 患者名テキストボックス*/
+DIV#divPatInfo2
+{
+  FONT-WEIGHT : bold; 
+  FONT-SIZE   : 125%; 
+  Z-INDEX     : 70; 
+  LEFT        : 144px; 
+  WIDTH       : 284px; 
+  POSITION    : absolute; 
+  TOP         : 105px; 
+  HEIGHT      : 22px;
+}
+/* 漢字患者名テキストボックス*/
+DIV#divPatInfo1
+{
+  FONT-WEIGHT : bold; 
+  FONT-SIZE   : 125%; 
+  Z-INDEX     : 70; 
+  LEFT        : 144px; 
+  WIDTH       : 284px; 
+  POSITION    : absolute; 
+  TOP         : 100px; 
+  HEIGHT      : 22px;
+  visibility  : hidden;
+}
+/* 患者性別テキストボックス*/
+DIV#divPatInfo3
+{
+  FONT-WEIGHT : bold; 
+  FONT-SIZE   : 125%; 
+  Z-INDEX     : 70; 
+  LEFT        : 144px; 
+  WIDTH       : 284px; 
+  POSITION    : absolute; 
+  TOP         : 158px; 
+  HEIGHT      : 22px;
+}
+/* 患者生年月日テキストボックス*/
+DIV#divPatInfo4
+{
+  FONT-WEIGHT : bold; 
+  FONT-SIZE   : 125%; 
+  Z-INDEX     : 70; 
+  LEFT        : 144px; 
+  WIDTH       : 284px; 
+  POSITION    : absolute; 
+  TOP         : 206px; 
+  HEIGHT      : 22px;
+}
+
+/* 患者ID編集ボタンImage*/
+IMG#imgEditId
+{
+  Z-INDEX  : 60; 
+  LEFT     : 440px; 
+  TOP      : 44px;
+  POSITION : absolute; 
+}
+
+/* 患者詳細編集ボタンImage*/
+IMG#imgEditDetail
+{
+  Z-INDEX   : 60; 
+  LEFT      : 440px; 
+  TOP       : 92px; 
+  POSITION  : absolute; 
+  WIDTH     : 86px; 
+  HEIGHT    : 153px;
+}
+
+/* 患者ID編集テキスト*/
+DIV#divEditId_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 448px; 
+  WIDTH       : 70px; 
+  POSITION    : absolute; 
+  TOP         : 54px; 
+  HEIGHT      : 24px;
+  text-align  : center;
+ }
+
+/* 患者詳細編集テキスト*/
+DIV#divEditDetail_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 448px; 
+  WIDTH       : 70px; 
+  POSITION    : absolute; 
+  TOP         : 154px; 
+  HEIGHT      : 24px;
+  text-align  : center;
+ }
+
+/* 患者変更ボタンImage*/
+IMG#imgChangePatient
+{
+  Z-INDEX  : 60; 
+  LEFT     : 219px; 
+  POSITION : absolute; 
+  TOP      : 315px; 
+}
+
+/* 患者変更ボタンテキスト*/
+DIV#divChange_Value
+{
+  FONT-WEIGHT: bold; 
+  Z-INDEX    : 80; 
+  LEFT       : 219px; 
+  WIDTH      : 109px; 
+  POSITION   : absolute; 
+  TOP        : 323px; 
+  HEIGHT     : 24px;
+  text-align : center; 
+}
+
+/* メニュー（1番目)Image*/
+IMG#imgMenuInfo0
+{
+  Z-INDEX    : 60; 
+  VISIBILITY : hidden; 
+  POSITION   : absolute; 
+  LEFT       : 548px; 
+  TOP        : 44px;
+}
+
+/* メニュー（2番目)Image*/
+IMG#imgMenuInfo1
+{
+  Z-INDEX    : 60; 
+  VISIBILITY : hidden; 
+  POSITION   : absolute; 
+  LEFT       : 548px; 
+  TOP        : 108px;
+}
+/* メニュー（3番目)Image*/
+IMG#imgMenuInfo2
+{
+  Z-INDEX    : 60; 
+  VISIBILITY : hidden; 
+  POSITION   : absolute; 
+  LEFT       : 548px; 
+  TOP        : 172px;
+}
+/* メニュー（4番目)Image*/
+IMG#imgMenuInfo3
+{
+  Z-INDEX    : 60; 
+  VISIBILITY : hidden; 
+  POSITION   : absolute; 
+  LEFT       : 548px; 
+  TOP        : 236px;
+}
+
+/* メニュー写損（1番目)Image*/
+IMG#imgDeleteMenu0
+{
+  Z-INDEX    : 60; 
+  VISIBILITY : hidden; 
+  POSITION   : absolute; 
+  LEFT       : 568px; 
+  TOP        : 72px;
+}
+
+/* メニュー写損（2番目)Image*/
+IMG#imgDeleteMenu1
+{
+  Z-INDEX    : 60; 
+  VISIBILITY : hidden; 
+  POSITION   : absolute; 
+  LEFT       : 568px; 
+  TOP        : 136px;
+}
+/* メニュー写損（3番目)Image*/
+IMG#imgDeleteMenu2
+{
+  Z-INDEX    : 60; 
+  VISIBILITY : hidden; 
+  POSITION   : absolute; 
+  LEFT       : 568px; 
+  TOP        : 200px;
+}
+/* メニュー写損（4番目)Image*/
+IMG#imgDeleteMenu3
+{
+  Z-INDEX    : 60; 
+  VISIBILITY : hidden; 
+  POSITION   : absolute; 
+  LEFT       : 568px; 
+  TOP        : 264px;
+}
+/* メニュー名称（1番目)*/
+INPUT#divMenuInfo0
+{
+  Z-INDEX    : 80; 
+  LEFT       : 550px; 
+  WIDTH      : 216px; 
+  POSITION   : absolute; 
+  TOP        : 47px; 
+  HEIGHT     : 22px;
+  text-align : center;
+  BORDER     : 0,0,0,0;
+  CURSOR     : default;
+  VISIBILITY : hidden;
+  /* 2005/06/23 002 H.SAITO Design Change. */
+  FONT-WEIGHT: bold;
+}
+/* メニュー名称（2番目)*/
+INPUT#divMenuInfo1
+{
+  Z-INDEX    : 80; 
+  LEFT       : 550px; 
+  WIDTH      : 216px; 
+  POSITION   : absolute; 
+  TOP        : 111px; 
+  HEIGHT     : 22px;
+  text-align : center;
+  BORDER     : 0,0,0,0;
+  CURSOR     : default;
+  VISIBILITY : hidden;
+  /* 2005/06/23 002 H.SAITO Design Change. */
+  FONT-WEIGHT: bold;
+}
+/* メニュー名称（3番目)*/
+INPUT#divMenuInfo2
+{
+  Z-INDEX    : 80; 
+  LEFT       : 550px; 
+  WIDTH      : 216px; 
+  POSITION   : absolute; 
+  TOP        : 175px; 
+  HEIGHT     : 22px;
+  text-align : center;
+  BORDER     : 0,0,0,0;
+  CURSOR     : default;
+  VISIBILITY : hidden;
+  /* 2005/06/23 002 H.SAITO Design Change. */
+  FONT-WEIGHT: bold;
+}
+/* メニュー名称（4番目)*/
+INPUT#divMenuInfo3
+{
+  Z-INDEX    : 80; 
+  LEFT       : 550px; 
+  WIDTH      : 216px; 
+  POSITION   : absolute; 
+  TOP        : 239px; 
+  HEIGHT     : 22px;
+  text-align : center;
+  BORDER     : 0,0,0,0;
+  CURSOR     : default;
+  VISIBILITY : hidden;
+  /* 2005/06/23 002 H.SAITO Design Change. */
+  FONT-WEIGHT: bold;
+}
+
+/* メニュー数表示背景*/
+DIV#div_Back_MenuCount
+{
+  LEFT       : 540px; 
+  WIDTH      : 238px; 
+  POSITION   : absolute; 
+  TOP        : 300px; 
+  HEIGHT     : 20px;
+  BACKGROUND-COLOR :#DACEC2;
+	BORDER-TOP      : #706a64 thin solid;
+	BORDER-BOTTOM   : #706a64 thin solid;
+}
+
+/* メニュー数表示*/
+DIV#divMenuCount
+{
+  Z-INDEX    : 80; 
+  LEFT       : 552px; 
+  WIDTH      : 220px; 
+  POSITION   : absolute; 
+  TOP        : 302px; 
+  HEIGHT     : 24px;
+  text-align : center;
+  font-weight: bold;
+}
+
+/* メニュー前へIMG*/
+IMG#imgUp_Enable
+{
+  Z-INDEX          : 60; 
+  LEFT             : 540px; 
+  WIDTH            : 119px; 
+  POSITION         : absolute; 
+  TOP              : 320px; 
+  HEIGHT           : 40px;
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : hidden;
+	BORDER-LEFT      : #706a64 1px solid;
+	BORDER-RIGHT     : #706a64 1px solid;
+}
+/* メニュー前へIMG*/
+IMG#imgUp_Disable
+{
+  Z-INDEX          : 60; 
+  LEFT             : 540px; 
+  WIDTH            : 119px; 
+  POSITION         : absolute; 
+  TOP              : 320px; 
+  HEIGHT           : 40px;
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : visible;
+	BORDER-LEFT      : #706a64 1px solid;
+	BORDER-RIGHT     : #706a64 1px solid;
+}
+
+/* メニュー次へIMG*/
+IMG#imgDown_Enable
+{
+  Z-INDEX          : 60; 
+  LEFT             : 659px; 
+  WIDTH            : 119px; 
+  POSITION         : absolute; 
+  TOP              : 320px; 
+  HEIGHT           : 40px;
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : hidden;
+	BORDER-LEFT      : #706a64 1px solid;
+	BORDER-RIGHT     : #706a64 1px solid;
+}
+/* メニュー次へIMG*/
+IMG#imgDown_Disable
+{
+  Z-INDEX          : 60; 
+  LEFT             : 659px; 
+  WIDTH            : 119px; 
+  POSITION         : absolute; 
+  TOP              : 320px; 
+  HEIGHT           : 40px;
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : visible;
+	BORDER-LEFT      : #706a64 1px solid;
+	BORDER-RIGHT     : #706a64 1px solid;
+}
+
+/* ボタン背景*/
+DIV#DIV_Button_Back
+{
+	BORDER     : #706a64 1px solid;
+  POSITION   : absolute;
+  TOP        : 371px;
+  LEFT       : 9px;    
+  HEIGHT     : 42px;
+  WIDTH      : 771px;
+}
+/* 修正 クリック場所*/
+TABLE#TABLE_Modify
+{
+  POSITION   : absolute;
+  TOP        : 372px;
+  LEFT       : 10px;    
+  HEIGHT     : 40px;
+  WIDTH      : 109px;
+  Z-INDEX    : 100;
+	BORDER-LEFT      : #706a64 1px solid;
+	BORDER-RIGHT     : #706a64 1px solid;
+}
+/* 修正ボタンテキスト*/
+DIV#divModify_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 10px; 
+  WIDTH       : 109px; 
+  POSITION    : absolute; 
+  TOP         : 394px; 
+  HEIGHT      : 16px;
+  text-align  : center;
+}
+
+/* 修正ボタンIMG*/
+IMG#imgModify_Enable
+{
+  Z-INDEX          : 60;
+  LEFT             : 10px; 
+  POSITION         : absolute; 
+  TOP              : 372px;
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : hidden;
+  HEIGHT     : 40px;
+  WIDTH      : 109px;
+}
+/* 修正ボタンIMG*/
+IMG#imgModify_Disable
+{
+  Z-INDEX          : 60;
+  LEFT             : 10px; 
+  POSITION         : absolute; 
+  TOP              : 372px;
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : visible;
+  HEIGHT     : 40px;
+  WIDTH      : 109px;
+}
+
+/* 削除 クリック場所*/
+TABLE#TABLE_Delete
+{
+  POSITION   : absolute;
+  TOP        : 372px;
+  LEFT       : 119px;    
+  HEIGHT     : 40px;
+  WIDTH      : 109px;
+  Z-INDEX    : 100;
+	BORDER-LEFT      : #706a64 1px solid;
+	BORDER-RIGHT     : #706a64 1px solid;
+}
+/* 予約検査削除ボタンテキスト*/
+DIV#divDelete_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 119px; 
+  TOP         : 394px; 
+  POSITION    : absolute; 
+  WIDTH       : 109px; 
+  HEIGHT      : 16px;
+  text-align  : center;
+}
+
+/* 予約検査削除ボタンIMG*/
+IMG#imgDelete_Enable
+{
+  Z-INDEX          : 60;
+  LEFT             : 119px;
+  POSITION         : absolute; 
+  TOP              : 372px; 
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : hidden;
+}
+/* 予約検査削除ボタンIMG*/
+IMG#imgDelete_Disable
+{
+  Z-INDEX          : 60;
+  LEFT             : 119px;
+  POSITION         : absolute; 
+  TOP              : 372px; 
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : visible;
+}
+
+/* 予約検査最初へIMG*/
+IMG#imgFirst_Enable
+{
+  Z-INDEX          : 60; 
+  LEFT             : 272px; 
+  WIDTH            : 87px; 
+  POSITION         : absolute; 
+  TOP              : 372px; 
+  HEIGHT           : 40px;
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : hidden;
+	BORDER-LEFT      : #706a64 1px solid;
+	BORDER-RIGHT     : #706a64 1px solid;
+}
+/* 予約検査最初へIMG*/
+IMG#imgFirst_Disable
+{
+  Z-INDEX          : 60; 
+  LEFT             : 272px; 
+  WIDTH            : 87px; 
+  POSITION         : absolute; 
+  TOP              : 372px; 
+  HEIGHT           : 40px;
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : visible;
+	BORDER-LEFT      : #706a64 1px solid;
+	BORDER-RIGHT     : #706a64 1px solid;
+}
+
+/* 予約検査前へIMG*/
+IMG#imgBack_Enable
+{
+  Z-INDEX          : 60; 
+  LEFT             : 359px; 
+  WIDTH            : 87px; 
+  POSITION         : absolute; 
+  TOP              : 372px; 
+  HEIGHT           : 40px;
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : hidden;
+	BORDER-LEFT      : #706a64 1px solid;
+	BORDER-RIGHT     : #706a64 1px solid;
+}
+/* 予約検査前へIMG*/
+IMG#imgBack_Disable
+{
+  Z-INDEX          : 60; 
+  LEFT             : 359px; 
+  WIDTH            : 87px; 
+  POSITION         : absolute; 
+  TOP              : 372px; 
+  HEIGHT           : 40px;
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : visible;
+	BORDER-LEFT      : #706a64 1px solid;
+	BORDER-RIGHT     : #706a64 1px solid;
+}
+
+/* 予約検査次へIMG*/
+IMG#imgNext_Enable
+{
+  Z-INDEX          : 60; 
+  LEFT             : 604px; 
+  WIDTH            : 87px; 
+  POSITION         : absolute; 
+  TOP              : 372px; 
+  HEIGHT           : 40px;
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : hidden;
+	BORDER-LEFT      : #706a64 1px solid;
+	BORDER-RIGHT     : #706a64 1px solid;
+}
+/* 予約検査次へIMG*/
+IMG#imgNext_Disable
+{
+  Z-INDEX          : 60; 
+  LEFT             : 604px; 
+  WIDTH            : 87px; 
+  POSITION         : absolute; 
+  TOP              : 372px; 
+  HEIGHT           : 40px;
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : visible;
+	BORDER-LEFT      : #706a64 1px solid;
+	BORDER-RIGHT     : #706a64 1px solid;
+}
+
+/* 予約検査最後へIMG*/
+IMG#imgEnd_Enable
+{
+  Z-INDEX          : 60; 
+  LEFT             : 691px; 
+  WIDTH            : 87px; 
+  POSITION         : absolute; 
+  TOP              : 372px; 
+  HEIGHT           : 40px;
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : hidden;
+	BORDER-LEFT      : #706a64 1px solid;
+	BORDER-RIGHT     : #706a64 1px solid;
+}
+/* 予約検査最後へIMG*/
+IMG#imgEnd_Disable
+{
+  Z-INDEX          : 60; 
+  LEFT             : 691px; 
+  WIDTH            : 87px; 
+  POSITION         : absolute; 
+  TOP              : 372px; 
+  HEIGHT           : 40px;
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : visible;
+	BORDER-LEFT      : #706a64 1px solid;
+	BORDER-RIGHT     : #706a64 1px solid;
+}
+
+/* 予約検査数表示背景*/
+DIV#DIV_ReservePage_Back
+{
+  Z-INDEX     : 50; 
+  LEFT        : 446px; 
+  TOP         : 372px; 
+  POSITION    : absolute; 
+  WIDTH       : 158px; 
+  HEIGHT      : 40px;
+  BACKGROUND-COLOR : #DACEC2;
+}
+/* 予約検査数表示*/
+DIV#divReservePage
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 446px; 
+  TOP         : 385px; 
+  POSITION    : absolute; 
+  WIDTH       : 158px; 
+  HEIGHT      : 28px;
+  text-align  : center;
+}
+
+/* ログオフボタン背景IMG*/
+IMG#IMG_Logoff_Back
+{
+  Z-INDEX          : 20;
+  LEFT             : 10px;
+  POSITION         : absolute; 
+  TOP              : 470px; 
+  BACKGROUND-COLOR : transparent;
+}
+/* ログオフボタンテキスト*/
+DIV#divLogoff_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 18px; 
+  TOP         : 484px; 
+  POSITION    : absolute; 
+  WIDTH       : 102px; 
+  HEIGHT      : 16px;
+  text-align  : center;
+}
+
+/* ログオフボタンIMG*/
+IMG#imgLogoff
+{
+  Z-INDEX          : 60;
+  LEFT             : 18px;
+  POSITION         : absolute; 
+  TOP              : 476px; 
+  BACKGROUND-COLOR : transparent;
+}
+
+/* 更新ボタン背景IMG*/
+IMG#IMG_Renew_Back
+{
+  Z-INDEX          : 20; 
+  LEFT             : 388px; 
+  TOP              : 415px; 
+  POSITION         : absolute; 
+  BACKGROUND-COLOR : transparent;
+}
+/* 更新ボタンテキスト*/
+DIV#divRenew_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 392px; 
+  TOP         : 460px; 
+  POSITION    : absolute; 
+  WIDTH       : 90px; 
+  HEIGHT      : 16px;
+  text-align  : center;
+}
+
+/* 更新ボタンIMG*/
+IMG#imgRenew
+{
+  Z-INDEX          : 60; 
+  LEFT             : 392px; 
+  TOP              : 420px; 
+  POSITION         : absolute; 
+  BACKGROUND-COLOR : transparent;
+}
+
+/* 新規登録ボタン背景IMG*/
+IMG#IMG_Regist_Back
+{
+  Z-INDEX          : 20; 
+  LEFT             : 580px; 
+  TOP              : 415px; 
+  POSITION         : absolute; 
+  BACKGROUND-COLOR : transparent;
+}
+/* 新規登録ボタンテキスト*/
+DIV#divRegist_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 584px; 
+  TOP         : 460px; 
+  POSITION    : absolute; 
+  WIDTH       : 90px; 
+  HEIGHT      : 16px;
+  text-align  : center;
+}
+
+/* 新規登録ボタンIMG*/
+IMG#imgRegist
+{
+  Z-INDEX          : 60; 
+  LEFT             : 584px; 
+  TOP              : 420px; 
+  POSITION         : absolute; 
+  BACKGROUND-COLOR : transparent;
+}
+
+/* 検査開始ボタン背景IMG*/
+IMG#IMG_Start_Back
+{
+  Z-INDEX          : 20; 
+  LEFT             : 684px; 
+  TOP              : 415px; 
+  POSITION         : absolute; 
+  BACKGROUND-COLOR : transparent;
+}
+/* 検査開始 クリック場所*/
+TABLE#TABLE_StudyStart
+{
+  POSITION   : absolute;
+  TOP        : 420px;
+  LEFT       : 692px;    
+  HEIGHT     : 90px;
+  WIDTH      : 90px;
+  Z-INDEX    : 100;
+}
+/* 検査開始ボタンテキスト*/
+DIV#divStart_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 688px; 
+  TOP         : 460px; 
+  POSITION    : absolute; 
+  WIDTH       : 90px; 
+  HEIGHT      : 16px;
+  text-align  : center;
+}
+
+/* 検査開始ボタンIMG*/
+IMG#imgStart_Enable
+{
+  Z-INDEX          : 60; 
+  LEFT             : 688px; 
+  TOP              : 420px; 
+  POSITION         : absolute; 
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : hidden;
+}
+/* 検査開始ボタンIMG*/
+IMG#imgStart_Disable
+{
+  Z-INDEX          : 60; 
+  LEFT             : 688px; 
+  TOP              : 420px; 
+  POSITION         : absolute; 
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : visible;
+}
+
+/* 予約検査0件画面テーブル */
+TABLE#TABLE_NoReserveFrame
+{
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;    
+  HEIGHT     : 360px;
+  WIDTH      : 798px;
+  PADDING    : 0,0,0,0;
+  MARGIN     : 0,0,0,0;
+  VISIBILITY : hidden;
+  Z-INDEX    : 100;
+}
+
+/* 予約検査0件画面ボックス */
+TABLE#TABLE_NoReserveBox
+{
+  POSITION          : absolute;
+  TOP               : 10px;
+  LEFT              : 8px; 
+  HEIGHT            : 360px;
+  WIDTH             : 772px;
+  BACKGROUND-COLOR  : #330000;
+  BORDER-COLOR      : gray;
+  BORDER-STYLE      : solid;
+  BORDER-WIDTH      : 1px;
+  TEXT-ALIGN        : center;
+  /* 2005/06/23 003 H.SAITO Design Change.
+  FONT-SIZE         : 200%;
+  */
+   FONT-WEIGHT       : bold;
+  COLOR             : #ffffff;
+  Z-INDEX           : 101;
+}

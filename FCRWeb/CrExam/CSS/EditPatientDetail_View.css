@@ -1,0 +1,519 @@
+﻿/******************************************************************************
+  EditPatientId_View.css 
+
+  	EditPatientId_Viewのスタイルシート
+
+
+
+     更新履歴    担当       Ver.        内容
+     2004/12/20   畑       -----       新規作成 
+     2006/10     S1神立   V1.4        操作性向上 
+     2007/05/22 HSK山本   V2.0        PVCS#2219対応 
+     2009/12/01  FF 星野  V1.1(B)     V1.1(B)対応 
+
+******************************************************************************/
+/* ボディ */
+BODY
+{  
+  CURSOR	          : default;
+  BACKGROUND-COLOR  : #F4E6DC;
+}
+/* コマンドボタン領域の色 */
+DIV#DIV_CommandBackGround
+{
+  POSITION   : absolute;
+  TOP        : 454px;
+  LEFT       : 0px;
+  HEIGHT     : 105px;
+  WIDTH      : 800px; 
+  background-color:#F4EEE4;
+}
+/* リストとコマンドボタンの境界 */
+IMG#IMG_List-Command_Border
+{
+  POSITION   : absolute;
+  TOP        : 448px;
+  LEFT       : 0px;
+  HEIGHT     : 7px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+}
+/*2005/05/24-ST*/
+/* メッセージと主要画面の境界 */
+TD#DIV_List_Border
+{
+  POSITION   : absolute;
+  TOP        : 1px;
+  LEFT       : 0px;
+  HEIGHT     : 5px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR : #ECC2AC;
+}
+/*2005/05/24-EN*/
+/* 禁止範囲*/
+DIV#divAll
+{
+  Z-INDEX     : 40;
+  LEFT        : 0px;
+  TOP         : 0px;
+  POSITION    : absolute;
+  WIDTH       : 800px;
+  HEIGHT      : 600px;
+}
+/* 禁止範囲*/
+DIV#divBox
+{
+  Z-INDEX     : 80;
+}
+
+/* 禁止解除範囲*/
+DIV#divSelect
+{
+  Z-INDEX     : 50;
+}
+
+/* 患者名テキスト*/
+DIV#DivPatientName_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80;
+  LEFT        : 48px;
+  TOP         : 20px;
+  POSITION    : absolute;
+  WIDTH       : 200px;
+  HEIGHT      : 16px;
+  TEXT-ALIGN  : left;
+}
+
+/* 患者名テキストボックス*/
+INPUT#txtPatientName
+{
+  FONT-WEIGHT : bold; 
+  FONT-SIZE   : 125%; 
+  Z-INDEX     : 70; 
+  LEFT        : 48px; 
+  TOP         : 38px; 
+  POSITION    : absolute; 
+  WIDTH       : 600px; 
+  HEIGHT      : 31px;
+  color       : #AAAAAA;
+  background-color : #ECC2AC;
+  ime-mode    : inactive;
+}
+OBJECT#txtPatientName
+{
+  FONT-WEIGHT : bold; 
+  FONT-SIZE   : 125%; 
+  Z-INDEX     : 70; 
+  LEFT        : 48px; 
+  TOP         : 38px; 
+  POSITION    : absolute; 
+  WIDTH       : 600px; 
+  HEIGHT      : 31px;
+  color       : #AAAAAA;
+  background-color : #ECC2AC;
+}
+/* 漢字患者名テキスト*/
+DIV#DivPatientKanjiName_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80;
+  LEFT        : 48px;
+  TOP         : 72px;
+  POSITION    : absolute;
+  WIDTH       : 200px;
+  HEIGHT      : 8px;
+  TEXT-ALIGN  : left;
+  display     : none;
+}
+
+/* 漢字患者名テキストボックス*/
+INPUT#txtPatientKanjiName
+{
+  FONT-WEIGHT : bold; 
+  FONT-SIZE   : 125%; 
+  Z-INDEX     : 70; 
+  LEFT        : 48px; 
+  TOP         : 92px; 
+  POSITION    : absolute; 
+/*070522 HSK山本 PVCS#2219 UPDATE*/
+/*  WIDTH       : 400px; */
+  WIDTH       : 380px; 
+  HEIGHT      : 31px;
+  color       : #AAAAAA;
+  background-color : #ECC2AC;
+  display     : none;
+  ime-mode    : active;
+}
+OBJECT#txtPatientKanjiName
+{
+  FONT-WEIGHT : bold; 
+  FONT-SIZE   : 125%; 
+  Z-INDEX     : 70; 
+  LEFT        : 48px; 
+  TOP         : 92px; 
+  POSITION    : absolute; 
+/*070522 HSK山本 PVCS#2219 UPDATE*/
+/*  WIDTH       : 400px; */
+  WIDTH       : 380px; 
+  HEIGHT      : 31px;
+  color       : #AAAAAA;
+  background-color : #ECC2AC;
+  display     : none;
+}
+/* 患者名敬称表示テキスト*/
+DIV#DivNameHonorific
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80; 
+  LEFT        : 655px; 
+  TOP         : 45px; 
+  POSITION    : absolute; 
+/*070522 HSK山本 PVCS#2219 UPDATE*/
+/*  WIDTH       : 40px; */
+  WIDTH       : 80px; 
+  HEIGHT      : 60px; 
+  TEXT-ALIGN  : left;
+  visibility  : hidden;
+}
+
+/* 漢字患者名敬称表示テキスト*/
+DIV#DivKanjiHonorific
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80; 
+/*070522 HSK山本 PVCS#2219 UPDATE*/
+/*  LEFT        : 450px; */
+  LEFT        : 430px; 
+  TOP         : 100px; 
+  POSITION    : absolute; 
+/*070522 HSK山本 PVCS#2219 UPDATE*/
+/*  WIDTH       : 60px; */
+  WIDTH       : 80px; 
+  HEIGHT      : 24px; 
+  TEXT-ALIGN  : left;
+  visibility  : hidden;
+}
+
+/* 性別テキスト*/
+DIV#DivPatientSex_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 70;
+  LEFT        : 514px;
+  WIDTH       : 200px;
+  POSITION    : absolute;
+  TOP         : 72px;
+  HEIGHT      : 16px;
+  TEXT-ALIGN  : left;
+}
+
+/* 性別(男性)ボタンテキスト*/
+DIV#DivSexMale_Value
+{
+  text-align  : center;
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 522px; 
+  TOP         : 104px; 
+  POSITION    : absolute; 
+  WIDTH       : 65px; 
+  HEIGHT      : 16px;
+  text-align  :center
+}
+
+/* 性別(男性)ボタンIMG*/
+IMG.SexMale
+{
+  Z-INDEX          : 60;
+  LEFT             : 514px;
+  TOP              : 92px; 
+  POSITION         : absolute; 
+  BACKGROUND-COLOR : transparent;
+}
+
+/* 性別(女性)ボタンテキスト*/
+DIV#DivSexFemale_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 610px; 
+  TOP         : 104px; 
+  POSITION    : absolute; 
+  WIDTH       : 65px; 
+  HEIGHT      : 16px;
+  text-align  : center;
+}
+
+/* 性別(女性)ボタンIMG*/
+IMG.SexFemale
+{
+  Z-INDEX          : 60; 
+  LEFT             : 602px; 
+  TOP              : 92px; 
+  POSITION         : absolute; 
+  BACKGROUND-COLOR : transparent;
+}
+
+/* 性別(その他)ボタンテキスト*/
+DIV#DivSexOther_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 698px; 
+  TOP         : 104px; 
+  POSITION    : absolute; 
+  WIDTH       : 65px; 
+  HEIGHT      : 16px;
+  text-align  :center;
+}
+
+/* 性別(その他)ボタンIMG*/
+IMG.SexOther
+{
+  Z-INDEX          : 60;
+  LEFT             : 690px;
+  POSITION         : absolute; 
+  TOP              : 92px; 
+  BACKGROUND-COLOR : transparent;
+}
+
+
+/* ソフトキーボードIframe*/
+IFRAME#frmSoftKeyBoard
+{
+  Z-INDEX  : 40; 
+  LEFT     : 0px; 
+  TOP      : 200px; 
+  POSITION : absolute; 
+  WIDTH    : 0px; 
+  HEIGHT   : 0px;
+}
+
+IMG#IMG_Button_Back
+{
+  Z-INDEX   : 10; 
+  LEFT      : 587px; 
+  TOP       : 402px;
+  POSITION  : absolute; 
+  BACKGROUND-COLOR : Transparent;
+}
+
+/* 戻るボタンクリック領域 061002 神立*/
+/* [戻る]ボタンがフォーカスを受け取れるようにしました */
+DIV#divButtonNG
+{
+  POSITION   : absolute;
+  Z-INDEX    : 100;
+}
+
+/* 戻るボタンテキスト*/
+DIV#DivButtonNG_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+  LEFT        : 595px; 
+/* 2005/09/08 #1249 H.SAITO -ST- */
+/*  TOP         : 481px; */
+  TOP         : 480px; 
+/* 2005/09/08 #1249 H.SAITO -ED- */
+  POSITION    : absolute; 
+  WIDTH       : 102px; 
+  HEIGHT      : 16px;
+  text-align  : center;
+}
+
+/* 戻るボタンIMG*/
+IMG#imgBack
+{
+  Z-INDEX          : 60;
+  LEFT             : 595px;
+  POSITION         : absolute; 
+/* 2005/09/08 #1249 H.SAITO -ST- */
+/*  TOP              : 473px; */
+  TOP              : 471px; 
+/* 2005/09/08 #1249 H.SAITO -ED- */
+  BACKGROUND-COLOR : transparent;
+}
+
+/* 次へボタン クリック領域 */
+TABLE#TABLE_Next
+{
+  POSITION   : absolute;
+  TOP        : 417px;
+  LEFT       : 700px;
+  HEIGHT     : 90px;
+  WIDTH      : 90px;
+  Z-INDEX    : 100;
+  VISIBILITY : visible;
+}
+/* 次へボタンテキスト*/
+DIV#DivButtonOK_Value
+{
+  FONT-WEIGHT : bold; 
+  Z-INDEX     : 80; 
+/* 2005/09/08 #1249 H.SAITO -ST- */
+/*  LEFT        : 700px; */
+  LEFT        : 703px; 
+/* 2005/09/08 #1249 H.SAITO -ED- */
+  TOP         : 455px; 
+  POSITION    : absolute; 
+/* 2005/09/08 #1249 H.SAITO -ST- */
+/*  WIDTH       : 90px; */
+  WIDTH       : 87px; 
+/* 2005/09/08 #1249 H.SAITO -ED- */
+  HEIGHT      : 16px;
+  text-align  : center;
+}
+
+/* 次へボタンIMG*/
+IMG#imgNext_Enable
+{
+  Z-INDEX          : 60; 
+/* 2005/09/08 #1249 H.SAITO -ST- */
+/*  LEFT             : 700px; */
+  LEFT             : 702px; 
+/* 2005/09/08 #1249 H.SAITO -ED- */
+  TOP              : 417px; 
+  POSITION         : absolute; 
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : visible;
+}
+/* 次へボタンIMG*/
+IMG#imgNext_Disable
+{
+  Z-INDEX          : 60; 
+/* 2005/09/08 #1249 H.SAITO -ST- */
+/*  LEFT             : 700px; */
+  LEFT             : 702px; 
+/* 2005/09/08 #1249 H.SAITO -ED- */
+  TOP              : 417px; 
+  POSITION         : absolute; 
+  BACKGROUND-COLOR : transparent;
+  VISIBILITY       : hidden;
+
+}
+
+/* /2009.12.01 V1.1(B)対応 FF星野 ADD-ST*/
+/* 患者コメントラベル*/
+DIV#DivPatientComment_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80;
+  LEFT        : 48px;
+  TOP         : 200px;
+  WIDTH       : 200px;
+  HEIGHT      : 8px;
+  POSITION    : absolute;
+  TEXT-ALIGN  : left;
+}
+/* 患者コメントテキストボックス*/
+TEXTAREA#txtPatientComment
+{
+  FONT-WEIGHT : bold; 
+  FONT-SIZE   : 125%; 
+  Z-INDEX     : 70; 
+  LEFT        : 48px; 
+  TOP         : 220px; 
+  POSITION    : absolute; 
+  WIDTH       : 338px; 
+  HEIGHT      : 100px;
+  color       : #AAAAAA;
+  background-color : #ECC2AC;
+}
+
+/*  身長ラベル*/
+DIV#DivPatientsSize_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80;
+  LEFT        : 400px;
+  TOP         : 200px;
+  WIDTH       : 200px;
+  HEIGHT      : 8px;
+  POSITION    : absolute;
+  TEXT-ALIGN  : left;
+}
+
+/*  身長テキストボックス*/
+INPUT#txtPatientsSize
+{
+  FONT-WEIGHT : bold; 
+  FONT-SIZE   : 125%; 
+  Z-INDEX     : 70; 
+  LEFT        : 400px; 
+  TOP         : 220px; 
+  WIDTH       : 130px; 
+  HEIGHT      : 31px;
+  POSITION    : absolute; 
+  color       : #AAAAAA;
+  background-color : #ECC2AC;
+  ime-mode    :disabled;
+}
+
+/* 身長単位ラベル*/
+DIV#DivPatientsSizeUnit_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80;
+  LEFT        : 532px;
+  WIDTH       : 100px;
+  POSITION    : absolute;
+  TOP         : 232px;
+  HEIGHT      : 8px;
+  TEXT-ALIGN  : left;
+}
+
+/* 体重ラベル*/
+DIV#DivPatientsWeight_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80;
+  LEFT        : 594px;
+  TOP         : 200px;
+  WIDTH       : 100px;
+  HEIGHT      : 8px;
+  POSITION    : absolute;
+  TEXT-ALIGN  : left;
+}
+
+/* 体重テキストボックス*/
+INPUT#txtPatientsWeight
+{
+  FONT-WEIGHT : bold; 
+  FONT-SIZE   : 125%; 
+  Z-INDEX     : 70; 
+  LEFT        : 594px; 
+  TOP         : 220px; 
+  POSITION    : absolute; 
+  WIDTH       : 130px; 
+  HEIGHT      : 31px;
+  color       : #AAAAAA;
+  background-color : #ECC2AC;
+  ime-mode    :disabled;
+}
+
+/* 体重単位ラベル*/
+DIV#DivPatientsWeightUnit_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80;
+  LEFT        : 726px;
+  TOP         : 232px;
+  WIDTH       : 50px;
+  HEIGHT      : 8px;
+  POSITION    : absolute;
+  TEXT-ALIGN  : left;
+}
+
+/* 患者情報ボタンIMG*/
+IMG.GetPatientInfo
+{
+  Z-INDEX          : 60; 
+  LEFT             : 690px; 
+  TOP              : 30px; 
+  POSITION         : absolute; 
+  BACKGROUND-COLOR : transparent;
+}
+/* 2009.12.01 V1.1(B)対応 FF星野 ADD-ED*/

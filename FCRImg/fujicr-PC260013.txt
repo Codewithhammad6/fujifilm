@@ -1,0 +1,7 @@
+Patient ID:076
+Patient Name:M FARHAN
+Sex:M
+Date of Exposure:26.JAN.2026
+Anatomical Region:LOW_EXM
+Exposure Menu Name:FOOT
+Modality:CR

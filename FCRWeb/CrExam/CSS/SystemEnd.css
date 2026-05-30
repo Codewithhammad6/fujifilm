@@ -1,0 +1,50 @@
+/******************************************************************************
+  SystemEnd.css 
+
+  	SystemEndのスタイルシート
+
+
+     更新履歴    担当       Ver.        内容
+     2004/01/12   畑       -----       新規作成
+
+******************************************************************************/
+BODY
+{
+  OVERFLOW   : hidden;
+  background-color : #F4E6DC;
+  CURSOR	          : default;
+}
+DIV#divMessage
+{
+  POSITION   : absolute;
+  TOP        : 100px; 
+  LEFT       : 200px; 
+  Z-INDEX    : 50;
+  WIDTH      : 400px; 
+  HEIGHT     : 100px;
+  TEXT-ALIGN : center;
+  font-size  : 18px;
+  font-weight: bold;
+}
+
+DIV#divStart
+{
+	Z-INDEX    : 80; 
+	LEFT       : 340px; 
+	WIDTH      : 120px; 
+	POSITION   : absolute; 
+	TOP        : 310px; 
+	HEIGHT     : 40px; 
+	TEXT-ALIGN : center;
+    font-size  : 16px;
+    font-weight: bold;
+}
+
+IMG#imgStart
+{
+	Z-INDEX    : 60; 
+	LEFT       : 340px; 
+	POSITION   : absolute; 
+	TOP        : 300px; 
+	BACKGROUND-COLOR: transparent;
+}

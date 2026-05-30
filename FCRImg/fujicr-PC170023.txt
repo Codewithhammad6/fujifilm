@@ -1,0 +1,7 @@
+Patient ID:006056
+Patient Name:KANEEZ
+Sex:F
+Date of Exposure:17.APR.2026
+Anatomical Region:UP_EXM
+Exposure Menu Name:FORARM AP
+Modality:CR

@@ -1,0 +1,7 @@
+Patient ID:C019
+Patient Name:SOHAIB  AMEEN
+Sex:M
+Date of Exposure:29.DEC.2025
+Anatomical Region:CHEST
+Exposure Menu Name:CHEST PA
+Modality:CR

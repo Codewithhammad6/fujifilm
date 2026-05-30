@@ -1,0 +1,62 @@
+﻿/****************************************************************************
+
+  @file Main.css 
+
+  @brief Mainのスタイルシート
+
+
+  @author YSK菅野
+
+  Copyright(c) 2004-2006 FUJI PHOTO FILM CO., LTD. All rights reseved.
+
+         更新履歴  担当        Ver.       内容
+  -----  --------  ----------  --------   -------------------------------
+  @date  04/12/21  YSK菅野     XX-XX      新規作成
+  @date  09/05/29  FF蔵敷　　　 V6.0          NAS対応 V60_NAS
+****************************************************************************/
+
+BODY
+{
+  BACKGROUND-COLOR : #F5E7DD;
+}
+IFRAME#frmIndicator
+{
+  POSITION   : absolute;
+  TOP        : 7px; 
+  LEFT       : 608px; 
+  Z-INDEX    : 20;
+  /* V60_NAS */
+  /*WIDTH            : 192px;*/
+  WIDTH             :229px;         
+  HEIGHT     : 38px;
+  VISIBILITY : hidden;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#FUNCTION_FRAME
+{
+  LEFT     : 0px;
+  WIDTH    : 796px;
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 600px;
+  Z-INDEX  : 10;
+}
+
+IFRAME#DispFrame
+{
+  VISIBILITY : hidden;
+}
+
+IFRAME#GetErrorFrame
+{
+  Z-INDEX    : 30;
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 0px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : hidden;
+  PADDING    : 0,0,0,0;
+}
+

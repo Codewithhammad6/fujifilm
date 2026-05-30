@@ -1,0 +1,95 @@
+/******************************************************************************
+  EditPatient_Ctrl.css 
+
+  	EditPatient_Ctrlのスタイルシート
+
+
+     更新履歴    担当       Ver.        内容
+     2004/12/21   畑       -----       新規作成
+
+******************************************************************************/
+BODY
+{
+  OVERFLOW   : hidden;
+}
+IFRAME#INFORMATION_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 0px;
+  HEIGHT     : 83px;
+  WIDTH      : 800px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+IFRAME#EDITPATIENTMAIN_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  PADDING    : 0,0,0,0;
+}
+IFRAME#EDITPATIENTID_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  PADDING    : 0,0,0,0;
+}
+IFRAME#EDITPATIENTDETAIL_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  PADDING    : 0,0,0,0;
+}
+IFRAME#CHANGEPATIENTID_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  PADDING    : 0,0,0,0;
+}
+IFRAME#CHANGEPATIENTDETAIL_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  PADDING    : 0,0,0,0;
+}
+IFRAME#STUDYDATA_GET_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#EDITPATIENTID_UPDATE_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#EDITPATIENTDETAIL_UPDATE_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+
+IFRAME#SEARCHPATIENTDATA
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#EKARTEDATA_GET_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}

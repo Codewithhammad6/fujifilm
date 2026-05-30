@@ -1,0 +1,7 @@
+Patient ID:A0101
+Patient Name:ZAMEER
+Sex:M
+Date of Exposure:11.MAY.2026
+Anatomical Region:UP_EXM
+Exposure Menu Name:FORARM AP
+Modality:CR

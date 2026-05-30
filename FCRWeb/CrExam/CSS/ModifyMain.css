@@ -1,0 +1,577 @@
+﻿/******************************************************************************
+  ModifyMain.css 
+
+  	ModifyMainのスタイルシート
+
+
+     更新履歴    担当       Ver.        内容
+     2004/12/20   畑       -----       新規作成
+     2009/04/14  山本      V5.0        多国語対応
+     2012/02/08  NDD       V2.2(B)     HF0002 CQ1066 修正メニュー画面文字切れ対応
+
+******************************************************************************/
+/* ボディ */
+BODY
+{  
+  CURSOR	          : default;
+/*2005/05/24-ST*/
+  BACKGROUND-COLOR:#F5E7DD;
+/*2005/05/24-EN*/
+}
+DIV
+{
+  OVERFLOW   : hidden;
+}
+/* コマンドボタン領域の色 */
+DIV#DIV_CommandBackGround
+{
+  POSITION   : absolute;
+  TOP        : 425px;
+  LEFT       : 0px;
+  HEIGHT     : 105px;
+  WIDTH      : 800px; 
+  background-color:#F4EEE4;
+}
+/* リストとコマンドボタンの境界 */
+IMG#IMG_List-Command_Border
+{
+  POSITION   : absolute;
+  TOP        : 419px;
+  LEFT       : 0px;
+  HEIGHT     : 7px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+}
+/*2005/05/24-ST*/
+/* メッセージと主要画面の境界 */
+TD#DIV_List_Border
+{
+  POSITION   : absolute;
+  TOP        : 1px;
+  LEFT       : 0px;
+  HEIGHT     : 5px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR : #ECC2AC;
+}
+/*2005/05/24-EN*/
+/* メニュー追加 クリック場所*/
+TABLE#TABLE_AddMenu
+{
+  POSITION   : absolute;
+  TOP        : 56px;
+  LEFT       : 96px;    
+  HEIGHT     : 70px;
+  WIDTH      : 280px;
+  Z-INDEX    : 100;
+  visibility : hidden;
+}
+/* メニュー追加表題*/
+DIV#divAddMenu_Title
+{
+  FONT-WEIGHT: bold; 
+  COLOR      : #000033; 
+  Z-INDEX    : 80; 
+  LEFT       : 168px; 
+  /* 2005/06/23 004 H.SAITO Design Change.
+  WIDTH      : 185px; 
+  */
+  WIDTH      : 195px; 
+  POSITION   : absolute; 
+  TOP        : 66px; 
+  HEIGHT     : 27px;
+  text-align : left;
+  OVERFLOW   : visible; /* 2012.02.08 CQ1066 */
+  LINE-HEIGHT: 100%; /* 2012.02.08 CQ1066 */
+}
+
+/* メニュー追加テキスト*/
+DIV#divAddMenu_Value
+{
+  /* 2005/06/23 003 H.SAITO Design Change.
+  FONT-SIZE  : 75%; 
+  */
+  COLOR      : #3366cc; 
+  Z-INDEX    : 80; 
+  LEFT       : 152px; 
+  WIDTH      : 200px; 
+  POSITION   : absolute; 
+  TOP        : 90px; 
+  HEIGHT     : 40px;
+  text-align : left;
+  OVERFLOW   : visible; /* 2012.02.08 CQ1066 */
+  LINE-HEIGHT: 100%; /* 2012.02.08 CQ1066 */
+}
+
+/* メニュー追加ボタン*/
+IMG#imgAddMenu_Enable
+{
+  Z-INDEX  : 60; 
+  LEFT     : 96px; 
+  POSITION : absolute; 
+  TOP      : 56px;
+  visibility:hidden;
+}
+IMG#imgAddMenu_Disable
+{
+  Z-INDEX  : 60; 
+  LEFT     : 96px; 
+  POSITION : absolute; 
+  TOP      : 56px;
+  visibility:visible;
+}
+
+/* メニュー変更 クリック場所*/
+TABLE#TABLE_ChangeMenu
+{
+  POSITION   : absolute;
+  TOP        : 136px;
+  LEFT       : 96px;    
+  HEIGHT     : 70px;
+  WIDTH      : 280px;
+  Z-INDEX    : 100;
+  visibility : hidden;
+}
+/* メニュー変更表題*/
+DIV#divChangeMenu_Title
+{
+  FONT-WEIGHT: bold; 
+  COLOR      : #000033; 
+  Z-INDEX    : 80; 
+  LEFT       : 168px; 
+  /* 2005/06/23 004 H.SAITO Design Change.
+  WIDTH      : 185px; 
+  */
+  WIDTH      : 195px; 
+  POSITION   : absolute; 
+  TOP        : 148px; 
+  HEIGHT     : 27px;
+  text-align : left;
+  OVERFLOW   : visible; /* 2012.02.08 CQ1066 */
+  LINE-HEIGHT: 100%; /* 2012.02.08 CQ1066 */
+}
+
+/* メニュー変更テキスト*/
+DIV#divChangeMenu_Value
+{
+  /* 2005/06/23 003 H.SAITO Design Change.
+  FONT-SIZE  : 75%; 
+  */
+  COLOR      : #3366cc; 
+  Z-INDEX    : 80; 
+  LEFT       : 152px; 
+  WIDTH      : 200px; 
+  POSITION   : absolute; 
+  TOP        : 172px; 
+  HEIGHT     : 40px;
+  text-align : left;
+  OVERFLOW   : visible; /* 2012.02.08 CQ1066 */
+  LINE-HEIGHT: 100%; /* 2012.02.08 CQ1066 */
+}
+
+/* メニュー変更ボタン*/
+IMG#imgChangeMenu_Enable
+{
+  Z-INDEX  : 60; 
+  LEFT     : 96px; 
+  POSITION : absolute; 
+  TOP      : 136px;
+  visibility:hidden;
+}
+/* メニュー変更ボタン*/
+IMG#imgChangeMenu_Disable
+{
+  Z-INDEX  : 60; 
+  LEFT     : 96px; 
+  POSITION : absolute; 
+  TOP      : 136px;
+  visibility:visible;
+}
+
+/* メニュー削除 クリック場所*/
+TABLE#TABLE_DeleteMenu
+{
+  POSITION   : absolute;
+  TOP        : 216px;
+  LEFT       : 96px;    
+  HEIGHT     : 70px;
+  WIDTH      : 280px;
+  Z-INDEX    : 100;
+  visibility : hidden;
+}
+/* メニュー削除表題*/
+DIV#divDeleteMenu_Title
+{
+  FONT-WEIGHT: bold; 
+  COLOR      : #000033; 
+  Z-INDEX    : 80; 
+  LEFT       : 168px; 
+  /* 2005/06/23 004 H.SAITO Design Change.
+  WIDTH      : 185px; 
+  */
+  WIDTH      : 195px; 
+  POSITION   : absolute; 
+  TOP        : 228px; 
+  HEIGHT     : 27px;
+  text-align : left;
+  OVERFLOW   : visible; /* 2012.02.08 CQ1066 */
+  LINE-HEIGHT: 100%; /* 2012.02.08 CQ1066 */
+}
+
+/* メニュー削除テキスト*/
+DIV#divDeleteMenu_Value
+{
+  /* 2005/06/23 003 H.SAITO Design Change.
+  FONT-SIZE  : 75%; 
+  */
+  COLOR      : #3366cc; 
+  Z-INDEX    : 80; 
+  LEFT       : 152px; 
+  WIDTH      : 200px; 
+  POSITION   : absolute; 
+  TOP        : 252px; 
+  HEIGHT     : 40px;
+  text-align : left;
+  OVERFLOW   : visible; /* 2012.02.08 CQ1066 */
+  LINE-HEIGHT: 100%; /* 2012.02.08 CQ1066 */
+}
+
+/* メニュー削除ボタン*/
+IMG#imgDeleteMenu_Enable
+{
+  Z-INDEX  : 60; 
+  LEFT     : 96px; 
+  POSITION : absolute; 
+  TOP      : 216px;
+  visibility:hidden;
+}
+/* メニュー削除ボタン*/
+IMG#imgDeleteMenu_Disable
+{
+  Z-INDEX  : 60; 
+  LEFT     : 96px; 
+  POSITION : absolute; 
+  TOP      : 216px;
+  visibility:visible;
+}
+
+/* 表示順並べ替え クリック場所*/
+TABLE#TABLE_SortMenu
+{
+  POSITION   : absolute;
+  TOP        : 304px;
+  LEFT       : 96px;    
+  HEIGHT     : 70px;
+  WIDTH      : 280px;
+  Z-INDEX    : 100;
+  visibility : hidden;
+}
+/* 表示順並べ替え表題*/
+DIV#divSortMenu_Title
+{
+  FONT-WEIGHT: bold; 
+  COLOR      : #000033; 
+  Z-INDEX    : 80; 
+  LEFT       : 168px; 
+  /* 2005/06/23 004 H.SAITO Design Change.
+  WIDTH      : 185px; 
+  */
+  WIDTH      : 195px; 
+  POSITION   : absolute; 
+  TOP        : 316px; 
+  HEIGHT     : 27px;
+  text-align : left;
+  OVERFLOW   : visible; /* 2012.02.08 CQ1066 */
+  LINE-HEIGHT: 100%; /* 2012.02.08 CQ1066 */
+}
+
+/* 表示順並べ替えテキスト*/
+DIV#divSortMenu_Value
+{
+  /* 2005/06/23 003 H.SAITO Design Change.
+  FONT-SIZE  : 75%; 
+  */
+  COLOR      : #3366cc; 
+  Z-INDEX    : 80; 
+  LEFT       : 152px; 
+  WIDTH      : 200px; 
+  POSITION   : absolute; 
+  TOP        : 340px; 
+  HEIGHT     : 40px;
+  text-align : left;
+  OVERFLOW   : visible; /* 2012.02.08 CQ1066 */
+  LINE-HEIGHT: 100%; /* 2012.02.08 CQ1066 */
+}
+
+/* 表示順並べ替えボタン*/
+IMG#imgSortMenu_Enable
+{
+  Z-INDEX  : 60; 
+  LEFT     : 96px; 
+  POSITION : absolute; 
+  TOP      : 304px;
+  visibility:hidden;
+}
+/* 表示順並べ替えボタン*/
+IMG#imgSortMenu_Disable
+{
+  Z-INDEX  : 60; 
+  LEFT     : 96px; 
+  POSITION : absolute; 
+  TOP      : 304px;
+  visibility:visible;
+}
+
+/* 画像入れ替え クリック場所*/
+TABLE#TABLE_ChangeImg
+{
+  POSITION   : absolute;
+  TOP        : 56px;
+  LEFT       : 416px;    
+  HEIGHT     : 70px;
+  WIDTH      : 280px;
+  Z-INDEX    : 100;
+  visibility : hidden;
+}
+/* 画像入れ替え表題*/
+DIV#divChangeImg_Title
+{
+  FONT-WEIGHT: bold; 
+  COLOR      : #000033; 
+  Z-INDEX    : 80; 
+  LEFT       : 488px; 
+  /* 2005/06/23 004 H.SAITO Design Change.
+  WIDTH      : 185px; 
+  */
+  WIDTH      : 195px; 
+  POSITION   : absolute; 
+  TOP        : 66px; 
+  HEIGHT     : 27px;
+  text-align : left;
+  OVERFLOW   : visible; /* 2012.02.08 CQ1066 */
+  LINE-HEIGHT: 100%; /* 2012.02.08 CQ1066 */
+}
+
+/* 画像入れ替えテキスト*/
+DIV#divChangeImg_Value
+{
+  /* 2005/06/23 003 H.SAITO Design Change.
+  FONT-SIZE  : 75%; 
+  */
+  COLOR      : #3366cc; 
+  Z-INDEX    : 80; 
+  LEFT       : 470px; 
+  WIDTH      : 200px; 
+  POSITION   : absolute; 
+  TOP        : 90px; 
+  HEIGHT     : 40px;
+  text-align : left;
+  OVERFLOW   : visible; /* 2012.02.08 CQ1066 */
+  LINE-HEIGHT: 100%; /* 2012.02.08 CQ1066 */
+}
+
+/* 画像入れ替えボタン*/
+IMG#imgChangeImg_Enable
+{
+  Z-INDEX  : 60; 
+  LEFT     : 416px; 
+  POSITION : absolute; 
+  TOP      : 56px;
+  visibility:hidden;
+}
+/* 画像入れ替えボタン*/
+IMG#imgChangeImg_Disable
+{
+  Z-INDEX  : 60; 
+  LEFT     : 416px; 
+  POSITION : absolute; 
+  TOP      : 56px;
+  visibility:visible;
+}
+
+/* 出力先設定 クリック場所*/
+TABLE#TABLE_Output
+{
+  POSITION   : absolute;
+  TOP        : 136px;
+  LEFT       : 416px;    
+  HEIGHT     : 70px;
+  WIDTH      : 280px;
+  Z-INDEX    : 100;
+  visibility : hidden;
+}
+/* 出力先設定表題*/
+DIV#divOutput_Title
+{
+  FONT-WEIGHT: bold; 
+  COLOR      : #000033; 
+  Z-INDEX    : 80; 
+  LEFT       : 488px; 
+  /* 2005/06/23 004 H.SAITO Design Change.
+  WIDTH      : 185px; 
+  */
+  WIDTH      : 195px; 
+  POSITION   : absolute; 
+  TOP        : 148px; 
+  HEIGHT     : 27px;
+  text-align : left;
+  OVERFLOW   : visible; /* 2012.02.08 CQ1066 */
+  LINE-HEIGHT: 100%; /* 2012.02.08 CQ1066 */
+}
+
+/* 出力先設定テキスト*/
+DIV#divOutput_Value
+{
+  /* 2005/06/23 003 H.SAITO Design Change.
+  FONT-SIZE  : 75%; 
+  */
+  COLOR      : #3366cc; 
+  Z-INDEX    : 80; 
+  LEFT       : 470px; 
+  WIDTH      : 200px; 
+  POSITION   : absolute; 
+  TOP        : 172px; 
+  HEIGHT     : 40px;
+  text-align : left;
+  OVERFLOW   : visible; /* 2012.02.08 CQ1066 */
+  LINE-HEIGHT: 100%; /* 2012.02.08 CQ1066 */
+}
+
+/* 出力先設定ボタン*/
+IMG#imgOutput_Enable
+{
+  Z-INDEX  : 60; 
+  LEFT     : 416px; 
+  POSITION : absolute; 
+  TOP      : 136px;
+  visibility:hidden;
+}
+/* 出力先設定ボタン*/
+IMG#imgOutput_Disable
+{
+  Z-INDEX  : 60; 
+  LEFT     : 416px; 
+  POSITION : absolute; 
+  TOP      : 136px;
+  visibility:visible;
+}
+
+/* 患者情報編集 クリック場所*/
+TABLE#TABLE_EditPatient
+{
+  POSITION   : absolute;
+  TOP        : 216px;
+  LEFT       : 416px;    
+  HEIGHT     : 70px;
+  WIDTH      : 280px;
+  Z-INDEX    : 100;
+  visibility : hidden;
+}
+/* 患者編集表題*/
+DIV#divEditPatient_Title
+{
+  FONT-WEIGHT: bold; 
+  COLOR      : #000033; 
+  Z-INDEX    : 80; 
+  LEFT       : 488px; 
+  /* 2005/06/23 004 H.SAITO Design Change.
+  WIDTH      : 185px; 
+  */
+  WIDTH      : 195px; 
+  POSITION   : absolute; 
+  TOP        : 228px; 
+  HEIGHT     : 27px;
+  text-align : left;
+  OVERFLOW   : visible; /* 2012.02.08 CQ1066 */
+  LINE-HEIGHT: 100%; /* 2012.02.08 CQ1066 */
+}
+
+/* 患者編集テキスト*/
+DIV#divEditPatient_Value
+{
+  /* 2005/06/23 003 H.SAITO Design Change.
+  FONT-SIZE  : 75%; 
+  */
+  COLOR      : #3366cc; 
+  Z-INDEX    : 80; 
+  LEFT       : 470px; 
+  WIDTH      : 200px; 
+  POSITION   : absolute; 
+  TOP        : 252px; 
+  HEIGHT     : 40px;
+  text-align : left;
+  OVERFLOW   : visible; /* 2012.02.08 CQ1066 */
+  LINE-HEIGHT: 100%; /* 2012.02.08 CQ1066 */
+}
+
+/* 患者編集ボタン*/
+IMG#imgEditPatient_Enable
+{
+  Z-INDEX  : 60; 
+  LEFT     : 416px; 
+  POSITION : absolute; 
+  TOP      : 216px;
+  visibility:hidden;
+}
+/* 患者編集ボタン*/
+IMG#imgEditPatient_Disable
+{
+  Z-INDEX  : 60; 
+  LEFT     : 416px; 
+  POSITION : absolute; 
+  TOP      : 216px;
+  visibility:visible;
+}
+
+/* 戻るボタン背景 */
+IMG#IMG_Back_BackGround 
+{
+  POSITION   : absolute;
+  TOP        : 470px;
+  LEFT       : 10px;    
+  Z-INDEX    : 10;
+}
+/* 戻る クリック場所*/
+TABLE#TABLE_Back
+{
+  POSITION   : absolute;
+  TOP        : 476px;
+  LEFT       : 18px;    
+  HEIGHT     : 32px;
+  WIDTH      : 102px;
+  Z-INDEX    : 100;
+  visibility : hidden;
+}
+/* 戻るボタンテキスト*/
+DIV#divBack_Value
+{
+  FONT-WEIGHT: bold; 
+  Z-INDEX    : 80; 
+  TOP        : 484px;
+  LEFT       : 18px;    
+  HEIGHT     : 18px;
+  WIDTH      : 102px; 
+  POSITION   : absolute; 
+  text-align : center;
+}
+
+/* 戻るボタンIMG*/
+IMG#imgBack_Enable
+{
+  Z-INDEX          : 60;
+  LEFT             : 18px;
+  POSITION         : absolute; 
+  TOP              : 476px; 
+  BACKGROUND-COLOR : transparent;
+  visibility       : hidden;
+}
+/* 戻るボタンIMG*/
+IMG#imgBack_Disable
+{
+  Z-INDEX          : 60;
+  LEFT             : 18px;
+  POSITION         : absolute; 
+  TOP              : 476px; 
+  BACKGROUND-COLOR : transparent;
+  visibility       : visible;
+}

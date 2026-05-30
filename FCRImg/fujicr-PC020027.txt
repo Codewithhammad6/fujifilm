@@ -1,0 +1,7 @@
+Patient ID:A02
+Patient Name:BABY GIRL OF M IRFAN
+Sex:F
+Date of Exposure:02.MAY.2026
+Anatomical Region:CHEST
+Exposure Menu Name:CHEST PA
+Modality:CR

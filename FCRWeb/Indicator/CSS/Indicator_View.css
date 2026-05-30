@@ -1,0 +1,179 @@
+﻿/****************************************************************************
+
+  @file Indicator_View.css 
+
+  @brief Indicator_Viewのスタイルシート
+
+
+
+
+  @author YSK菅野
+
+  Copyright(c) 2004-2008 FUJIFILM Corporation All rights reserved.
+
+         更新履歴  担当        Ver.       内容
+  -----  --------  ----------  --------   -------------------------------
+  @date  04/12/21  YSK菅野     XX-XX      新規作成
+  @date  08/02/29  HSK由比     V3.2       RU非接続時のRUアイコンとタブ非表示対応
+  @date  09/05/29  FF蔵敷		　V6.0　　　NAS対応　V60_NAS
+  @date  09/08/31  FF 星野     V6.0       インジケーター切り離し対応
+  @date  14/03/20  TYK 石井    V3.0       DR装置画面対応
+****************************************************************************/
+
+BODY
+{
+/*V60_NAS*/
+  WIDTH             :267px;  /*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 229px→267pxに変更*/
+  HEIGHT           : 38px;
+  BACKGROUND-COLOR : #F5F5FC; /*090831 FF 星野 インジケーター切り離し対応 #F7F1E6から変更ADD*/
+}
+/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 Start*/
+/* DRアイコン */
+IMG#imgDrIcon
+{
+  Z-INDEX  : 100;
+  LEFT     : 0px;
+  WIDTH    : 38px;
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 38px;
+  VISIBILITY : hidden;
+}
+
+/* DRアイコン非表示 */
+IMG#imgDrIconHidden
+{
+  Z-INDEX  : 110;
+  LEFT     : 0px;
+  WIDTH    : 38px;
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 38px;
+  VISIBILITY : hidden;
+}
+/*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 End*/
+
+/* RUアイコン */
+IMG#imgRuIcon
+{
+  Z-INDEX  : 100;
+  LEFT     : 38px; /*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 0px→38pxに変更*/
+  WIDTH    : 38px;
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 38px;
+  VISIBILITY : hidden;
+}
+
+/* RUイコン非表示 */
+IMG#imgRuIconHidden
+{
+  Z-INDEX  : 110;
+  LEFT     : 38px; /*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 0px→38pxに変更*/
+  WIDTH    : 38px;
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 38px;
+  VISIBILITY : hidden;
+}
+
+/* メディアアイコン */
+IMG#imgMediaIcon
+{
+  Z-INDEX  : 100;
+  LEFT     : 76px; /*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 38px→76pxに変更*/
+  WIDTH    : 38px;
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 38px;
+  VISIBILITY : hidden;
+}
+
+/* プリンタアイコン */
+IMG#imgPrinterIcon
+{
+  Z-INDEX  : 100;
+  LEFT     : 114px; /*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 76px→114pxに変更*/
+  WIDTH    : 38px;
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 38px;
+  VISIBILITY : hidden;
+
+}
+
+/* プリンタアイコン非表示 */
+IMG#imgPrinterIconHidden
+{
+  Z-INDEX  : 110;
+  LEFT     : 114px; /*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 76px→114pxに変更*/
+  WIDTH    : 38px;
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 38px;
+  VISIBILITY : hidden;
+}
+
+/* 出力キューアイコン */
+IMG#imgOutputIcon
+{
+  Z-INDEX  : 100;
+  LEFT     : 152px; /*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 114px→152pxに変更*/
+  WIDTH    : 38px;
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 38px;
+  VISIBILITY : hidden;
+}
+
+/* イベント情報アイコン */
+IMG#imgEventIcon
+{
+  Z-INDEX  : 100;
+  LEFT     : 190px; /*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 152px→190pxに変更*/
+  WIDTH    : 38px;
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 38px;
+  VISIBILITY : hidden;
+}
+
+/*V60_NAS*/
+IMG#imgStorageIconHidden
+{
+  Z-INDEX  : 110;
+  LEFT     : 228px; /*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 190px→228pxに変更*/
+  WIDTH    : 38px;
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 38px;
+  VISIBILITY : hidden;
+}
+/*V60_NAS*/
+IMG#imgStorageIcon
+{
+  Z-INDEX  : 100;
+  LEFT     : 228px; /*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 190px→228pxに変更*/
+  WIDTH    : 38px;
+ POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 38px;
+  VISIBILITY : hidden;
+}
+
+
+/* 2005/08/26 Kanno UPDATE ST デザイン修正 */
+/* アイコン背景 */
+/*090831 FF 星野 インジケーター切り離し対応 DEL
+IMG#imgBack
+{
+  Z-INDEX  : 50;
+  LEFT     : 0px;
+  WIDTH      :230px;
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 38px;
+  VISIBILITY : visible;
+}
+*/
+/* 2005/08/26 Kanno UPDATE ED デザイン修正 */

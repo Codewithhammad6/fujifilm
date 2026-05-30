@@ -1,0 +1,7 @@
+Patient ID:000178
+Patient Name:AZHAR ABBAS
+Sex:M
+Date of Exposure:15.FEB.2026
+Anatomical Region:CHEST
+Exposure Menu Name:CHEST PA
+Modality:CR

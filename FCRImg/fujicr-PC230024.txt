@@ -1,0 +1,7 @@
+Patient ID:00696
+Patient Name:ALI HUSSAIN
+Sex:M
+Date of Exposure:23.APR.2026
+Anatomical Region:LOW_EXM
+Exposure Menu Name:FOOT
+Modality:CR

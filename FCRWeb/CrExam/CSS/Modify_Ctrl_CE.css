@@ -1,0 +1,42 @@
+/******************************************************************************
+  Modify_Ctrl.css 
+
+  	Modify_Ctrlのスタイルシート
+
+
+     更新履歴    担当       Ver.        内容
+     2004/12/21   畑       -----       新規作成
+     2006/08/09  HSK酒井   V1.4       CR検査部構造見直し[8]対応
+******************************************************************************/
+@import "Modify_Ctrl_Common.css"; 
+
+IFRAME#FRAME_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+IFRAME#CHECKCOMMAND_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#LOGGER_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#EXCLUSIVE_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#FRAME_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}

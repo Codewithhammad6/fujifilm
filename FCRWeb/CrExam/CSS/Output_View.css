@@ -1,0 +1,838 @@
+/******************************************************************************
+  Ouptput_View.css 
+
+  	Ouptput_Viewのスタイルシート 
+
+     更新履歴    担当       Ver.        内容
+     2004/01/08  畑      -----       新規作成
+     2007/03/02  山本      V2.0      DicomStorage出力機能 
+     2007/03/09  山本      V2.0      海外向け対応 
+
+******************************************************************************/
+/* ボディ */
+BODY
+{  
+  CURSOR	          : default;
+  BACKGROUND-COLOR  : #F4E6DC;
+}
+/* コマンドボタン領域の色 */
+DIV#DIV_CommandBackGround
+{
+  POSITION   : absolute;
+  TOP        : 425px;
+  LEFT       : 0px;
+  HEIGHT     : 105px;
+  WIDTH      : 800px; 
+  background-color:#F4EEE4;
+}
+/* リストとコマンドボタンの境界 */
+IMG#IMG_List-Command_Border
+{
+  POSITION   : absolute;
+  TOP        : 419px;
+  LEFT       : 0px;
+  HEIGHT     : 7px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+}
+/*2005/05/24-ST*/
+/* メッセージと主要画面の境界 */
+TD#DIV_List_Border
+{
+  POSITION   : absolute;
+  TOP        : 1px;
+  LEFT       : 0px;
+  HEIGHT     : 5px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR : #ECC2AC;
+}
+/*画面背景*/
+DIV#divBackGround
+{
+  Z-INDEX  : 0; 
+  LEFT     : 0px; 
+  WIDTH    : 800px; 
+  POSITION : absolute; 
+  TOP      : 53px; 
+  HEIGHT   : 300px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR : #F7F1E6;
+}
+/*2005/05/24-EN*/
+/* ヘッダ */
+DIV#divHeadder0
+{
+	Z-INDEX  : 80; 
+	LEFT     : 56px; 
+	WIDTH    : 88px; 
+	POSITION : absolute; 
+	TOP      : 32px; 
+	HEIGHT   : 30px;
+	font-weight:bolder;
+}
+DIV#divHeadder1
+{
+	Z-INDEX  : 80; 
+	LEFT     : 144px; 
+	WIDTH    : 120px; 
+	POSITION : absolute; 
+	TOP      : 32px; 
+	HEIGHT   : 30px;
+	font-weight:bolder;
+}
+DIV#divHeadder2
+{
+	Z-INDEX  : 80; 
+	LEFT     : 280px; 
+	WIDTH    : 150px; 
+	POSITION : absolute; 
+	TOP      : 32px; 
+	HEIGHT   : 30px;
+	font-weight:bolder;
+}
+DIV#divHeadder3
+{
+	Z-INDEX  : 80; 
+	LEFT     : 488px; 
+	WIDTH    : 96px; 
+	POSITION : absolute; 
+	TOP      : 32px; 
+	HEIGHT   : 30px;
+	font-weight:bolder;
+}
+/* 出力先イメージ*/
+IMG#imgOutput0
+{
+	Z-INDEX  : 50; 
+	LEFT     : 32px; 
+	POSITION : absolute; 
+	TOP      : 78px;
+  background-color:Transparent;
+}
+IMG#imgOutput1
+{
+	Z-INDEX  : 50; 
+	LEFT     : 32px; 
+	POSITION : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP      : 148px;*/
+	TOP      : 131px;
+/* 070319 HSK山本 UPDATE-ED */
+  background-color:Transparent;
+}
+IMG#imgOutput2
+{
+	Z-INDEX  : 50; 
+	LEFT     : 32px; 
+	POSITION : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP      : 218px;*/
+	TOP      : 184px;
+/* 070319 HSK山本 UPDATE-ED */
+  background-color:Transparent;
+}
+IMG#imgOutput3
+{
+	Z-INDEX  : 50; 
+	LEFT     : 32px; 
+	POSITION : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP      : 288px;*/
+	TOP      : 237px;
+/* 070319 HSK山本 UPDATE-ED */
+  background-color:Transparent;
+}
+/* 070319 HSK山本 ADD-ST */
+IMG#imgOutput4
+{
+	Z-INDEX  : 50; 
+	LEFT     : 32px; 
+	POSITION : absolute; 
+	TOP      : 290px;
+  background-color:Transparent;
+}
+/* 070319 HSK山本 ADD-ED */
+/* 出力先有無チェックボックス */
+INPUT#chkOutput0
+{
+	Z-INDEX   : 80; 
+	LEFT      : 80px; 
+	POSITION  : absolute; 
+	TOP       : 80px;
+  VISIBILITY: hidden;
+}
+INPUT#chkOutput1
+{
+	Z-INDEX   : 80; 
+	LEFT      : 80px; 
+	POSITION  : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP       : 150px;*/
+	TOP       : 133px;
+/* 070319 HSK山本 UPDATE-ED */
+  VISIBILITY: hidden;
+}
+INPUT#chkOutput2
+{
+	Z-INDEX   : 80; 
+	LEFT      : 80px; 
+	POSITION  : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP       : 220px;*/
+	TOP       : 186px;
+/* 070319 HSK山本 UPDATE-ED */
+  VISIBILITY: hidden;
+}
+INPUT#chkOutput3
+{
+	Z-INDEX   : 80; 
+	LEFT      : 80px; 
+	POSITION  : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP       : 290px;*/
+	TOP       : 239px;
+/* 070319 HSK山本 UPDATE-ED */
+  VISIBILITY: hidden;
+}
+/* 070319 HSK山本 ADD-ST */
+INPUT#chkOutput4
+{
+	Z-INDEX   : 80; 
+	LEFT      : 80px; 
+	POSITION  : absolute; 
+	TOP       : 292px;
+  VISIBILITY: hidden;
+}
+/* 070319 HSK山本 ADD-ED */
+/* 出力先状況チェックボックス */
+INPUT#chkOutputStatus0
+{
+	Z-INDEX   : 80; 
+	LEFT      : 144px; 
+	POSITION  : absolute; 
+	TOP       : 80px;
+  VISIBILITY: hidden;
+}
+INPUT#chkOutputStatus1
+{
+	Z-INDEX   : 80; 
+	LEFT      : 144px; 
+	POSITION  : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP       : 150px;*/
+	TOP       : 133px;
+/* 070319 HSK山本 UPDATE-ED */
+  VISIBILITY: hidden;
+}
+INPUT#chkOutputStatus2
+{
+	Z-INDEX   : 80; 
+	LEFT      : 144px; 
+	POSITION  : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP       : 220px;*/
+	TOP       : 186px;
+/* 070319 HSK山本 UPDATE-ED */
+  VISIBILITY: hidden;
+}
+INPUT#chkOutputStatus3
+{
+	Z-INDEX   : 80; 
+	LEFT      : 144px; 
+	POSITION  : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP       : 290px;*/
+	TOP       : 239px;
+/* 070319 HSK山本 UPDATE-ED */
+  VISIBILITY: hidden;
+}
+/* 070319 HSK山本 ADD-ST */
+INPUT#chkOutputStatus4
+{
+	Z-INDEX   : 80; 
+	LEFT      : 144px; 
+	POSITION  : absolute; 
+	TOP       : 292px;
+  VISIBILITY: hidden;
+}
+/* 070319 HSK山本 ADD-ED */
+/* 出力先状況 */
+DIV#divOutputStatus0
+{
+	Z-INDEX  : 80; 
+	LEFT     : 165px; 
+	WIDTH    : 96px; 
+	POSITION : absolute; 
+	TOP      : 82px; 
+	HEIGHT   : 24px;
+}
+DIV#divOutputStatus1
+{
+	Z-INDEX  : 80; 
+	LEFT     : 165px; 
+	WIDTH    : 96px; 
+	POSITION : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP      : 152px; */
+	TOP      : 135px; 
+/* 070319 HSK山本 UPDATE-ED */
+	HEIGHT   : 24px;
+}
+DIV#divOutputStatus2
+{
+	Z-INDEX  : 80; 
+	LEFT     : 165px; 
+	WIDTH    : 96px; 
+	POSITION : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP      : 222px; */
+	TOP      : 188px; 
+/* 070319 HSK山本 UPDATE-ED */
+	HEIGHT   : 24px;
+}
+DIV#divOutputStatus3
+{
+	Z-INDEX  : 80; 
+	LEFT     : 165px; 
+	WIDTH    : 96px; 
+	POSITION : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP      : 292px; */
+	TOP      : 241px; 
+/* 070319 HSK山本 UPDATE-ED */
+	HEIGHT   : 24px;
+}
+/* 070319 HSK山本 ADD-ST */
+DIV#divOutputStatus4
+{
+	Z-INDEX  : 80; 
+	LEFT     : 165px; 
+	WIDTH    : 96px; 
+	POSITION : absolute; 
+	TOP      : 294px; 
+	HEIGHT   : 24px;
+}
+/* 070319 HSK山本 ADD-ED */
+/* 出力先名称 */
+INPUT#divOutputDevice0
+{
+	Z-INDEX         : 80; 
+	LEFT            : 280px; 
+	WIDTH           : 192px; 
+	POSITION        : absolute; 
+	TOP             : 80px; 
+	HEIGHT          : 24px;
+  /* 2005/06/24 003 H.SAITO Design Change.
+	FONT-WEIGHT     : bold;
+  */
+  BORDER          : 0,0,0,0;
+	BACKGROUND-COLOR: transparent;
+  CURSOR          : default;
+}
+INPUT#divOutputDevice1
+{
+	Z-INDEX         : 80; 
+	LEFT            : 280px; 
+	WIDTH           : 192px; 
+	POSITION        : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP             : 150px; */
+	TOP             : 133px; 
+/* 070319 HSK山本 UPDATE-ED */
+	HEIGHT          : 24px;
+  /* 2005/06/24 003 H.SAITO Design Change.
+	font-weight     : bold;
+  */
+  BORDER          : 0,0,0,0;
+	BACKGROUND-COLOR: transparent;
+  CURSOR          : default;
+}
+INPUT#divOutputDevice2
+{
+	Z-INDEX         : 80; 
+	LEFT            : 280px; 
+	WIDTH           : 192px; 
+	POSITION        : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP             : 220px; */
+	TOP             : 186px; 
+/* 070319 HSK山本 UPDATE-ED */
+	HEIGHT          : 24px;
+  /* 2005/06/24 003 H.SAITO Design Change.
+	font-weight     : bold;
+  */
+  BORDER          : 0,0,0,0;
+	BACKGROUND-COLOR: transparent;
+  CURSOR          : default;
+}
+INPUT#divOutputDevice3
+{
+	Z-INDEX         : 80; 
+	LEFT            : 280px; 
+	WIDTH           : 192px; 
+	POSITION        : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP             : 290px; */
+	TOP             : 239px; 
+/* 070319 HSK山本 UPDATE-ED */
+	HEIGHT          : 24px;
+  /* 2005/06/24 003 H.SAITO Design Change.
+	font-weight     : bold;
+  */
+  BORDER          : 0,0,0,0;
+	BACKGROUND-COLOR: transparent;
+  CURSOR          : default;
+}
+/* 070319 HSK山本 ADD-ST */
+INPUT#divOutputDevice4
+{
+	Z-INDEX         : 80; 
+	LEFT            : 280px; 
+	WIDTH           : 192px; 
+	POSITION        : absolute; 
+	TOP             : 292px; 
+	HEIGHT          : 24px;
+  BORDER          : 0,0,0,0;
+	BACKGROUND-COLOR: transparent;
+  CURSOR          : default;
+}
+/* 070319 HSK山本 ADD-ED */
+
+/* 出力タイミング */
+DIV#divOutputTiming0
+{
+	Z-INDEX  : 80; 
+	LEFT     : 496px; 
+	WIDTH    : 96px; 
+	POSITION : absolute; 
+	TOP      : 80px; 
+	HEIGHT   : 24px;
+  /* 2005/06/24 003 H.SAITO Design Change.
+	font-weight:bold;
+  */
+}
+DIV#divOutputTiming1
+{
+	Z-INDEX  : 80; 
+	LEFT     : 496px; 
+	WIDTH    : 96px; 
+	POSITION : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP      : 150px; */
+	TOP      : 133px; 
+/* 070319 HSK山本 UPDATE-ED */
+	HEIGHT   : 24px;
+  /* 2005/06/24 003 H.SAITO Design Change.
+	font-weight:bold;
+  */
+}
+DIV#divOutputTiming2
+{
+	Z-INDEX  : 80; 
+	LEFT     : 496px; 
+	WIDTH    : 96px; 
+	POSITION : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP      : 220px; */
+	TOP      : 186px; 
+/* 070319 HSK山本 UPDATE-ED */
+	HEIGHT   : 24px;
+  /* 2005/06/24 003 H.SAITO Design Change.
+	font-weight:bold;
+  */
+}
+DIV#divOutputTiming3
+{
+	Z-INDEX  : 80; 
+	LEFT     : 496px; 
+	WIDTH    : 96px; 
+	POSITION : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP      : 290px; */
+	TOP      : 239px; 
+/* 070319 HSK山本 UPDATE-ED */
+	HEIGHT   : 24px;
+  /* 2005/06/24 003 H.SAITO Design Change.
+	font-weight:bold;
+  */
+}
+/* 070319 HSK山本 ADD-ST */
+DIV#divOutputTiming4
+{
+	Z-INDEX  : 80; 
+	LEFT     : 496px; 
+	WIDTH    : 96px; 
+	POSITION : absolute; 
+	TOP      : 292px; 
+	HEIGHT   : 24px;
+}
+/* 070319 HSK山本 ADD-ED */
+/* 詳細ボタン(クリック位置) */
+TABLE#TABLE_DetailBtn0
+{
+	POSITION   : absolute;
+	TOP        : 72px;
+	LEFT       : 700px;
+	HEIGHT     : 40px;
+	WIDTH      : 85px;
+	Z-INDEX    : 85;
+}
+TABLE#TABLE_DetailBtn1
+{
+	POSITION   : absolute;
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP        : 142px;*/
+	TOP        : 125px;
+/* 070319 HSK山本 UPDATE-ED */
+	LEFT       : 700px;
+	HEIGHT     : 40px;
+	WIDTH      : 85px;
+	Z-INDEX    : 85;
+}
+TABLE#TABLE_DetailBtn2
+{
+	POSITION   : absolute;
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP        : 212px;*/
+	TOP        : 178px;
+/* 070319 HSK山本 UPDATE-ED */
+	LEFT       : 700px;
+	HEIGHT     : 40px;
+	WIDTH      : 85px;
+	Z-INDEX    : 85;
+}
+TABLE#TABLE_DetailBtn3
+{
+	POSITION   : absolute;
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP        : 282px;*/
+	TOP        : 231px;
+/* 070319 HSK山本 UPDATE-ED */
+	LEFT       : 700px;
+	HEIGHT     : 40px;
+	WIDTH      : 85px;
+	Z-INDEX    : 85;
+}
+/* 070319 HSK山本 ADD-ST */
+TABLE#TABLE_DetailBtn4
+{
+	POSITION   : absolute;
+	TOP        : 284px;
+	LEFT       : 700px;
+	HEIGHT     : 40px;
+	WIDTH      : 85px;
+	Z-INDEX    : 85;
+}
+/* 070319 HSK山本 ADD-ED */
+/* 詳細ボタン文字列 */
+DIV#divDetail0
+{
+	Z-INDEX    : 80; 
+	LEFT       : 700px; 
+	WIDTH      : 85px; 
+	POSITION   : absolute; 
+	TOP        : 83px; 
+	HEIGHT     : 24px; 
+	TEXT-ALIGN : center;
+  /* 2005/06/24 002 H.SAITO Design Change. */
+  FONT-WEIGHT: bold;
+}
+DIV#divDetail1
+{
+	Z-INDEX    : 80; 
+	LEFT       : 700px; 
+	WIDTH      : 85px; 
+	POSITION   : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP        : 153px; */
+	TOP        : 136px; 
+/* 070319 HSK山本 UPDATE-ED */
+	HEIGHT     : 24px; 
+	TEXT-ALIGN : center;
+  /* 2005/06/24 002 H.SAITO Design Change. */
+  FONT-WEIGHT: bold;
+}
+DIV#divDetail2
+{
+	Z-INDEX    : 80; 
+	LEFT       : 700px; 
+	WIDTH      : 85px; 
+	POSITION   : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP        : 223px; */
+	TOP        : 189px; 
+/* 070319 HSK山本 UPDATE-ED */
+	HEIGHT     : 24px; 
+	TEXT-ALIGN : center;
+  /* 2005/06/24 002 H.SAITO Design Change. */
+  FONT-WEIGHT: bold;
+}
+DIV#divDetail3
+{
+	Z-INDEX    : 80; 
+	LEFT       : 700px; 
+	WIDTH      : 85px; 
+	POSITION   : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP        : 293px; */
+	TOP        : 242px; 
+/* 070319 HSK山本 UPDATE-ED */
+	HEIGHT     : 24px; 
+	TEXT-ALIGN : center;
+  /* 2005/06/24 002 H.SAITO Design Change. */
+  FONT-WEIGHT: bold;
+}
+/* 070319 HSK山本 ADD-ST */
+DIV#divDetail4
+{
+	Z-INDEX    : 80; 
+	LEFT       : 700px; 
+	WIDTH      : 85px; 
+	POSITION   : absolute; 
+	TOP        : 295px; 
+	HEIGHT     : 24px; 
+	TEXT-ALIGN : center;
+  FONT-WEIGHT: bold;
+}
+
+/* 070319 HSK山本 ADD-ED */
+/* 詳細ボタン(IMG) */
+IMG#imgDetail0_Enable
+{
+	Z-INDEX    : 60; 
+	LEFT       : 700px; 
+	POSITION   : absolute; 
+	TOP        : 72px; 
+	BACKGROUND-COLOR: transparent;
+	WIDTH      : 85px; 
+	HEIGHT     : 40px; 
+}
+IMG#imgDetail0_Disable
+{
+	Z-INDEX    : 60; 
+	LEFT       : 700px; 
+	POSITION   : absolute; 
+	TOP        : 72px; 
+	BACKGROUND-COLOR: transparent;
+	WIDTH      : 85px; 
+	HEIGHT     : 40px; 
+}
+IMG#imgDetail1_Enable
+{
+	Z-INDEX    : 60; 
+	LEFT       : 700px; 
+	POSITION   : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP        : 142px; */
+	TOP        : 125px; 
+/* 070319 HSK山本 UPDATE-ED */
+	BACKGROUND-COLOR: transparent;
+	WIDTH      : 85px; 
+	HEIGHT     : 40px; 
+}
+IMG#imgDetail1_Disable
+{
+	Z-INDEX    : 60; 
+	LEFT       : 700px; 
+	POSITION   : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP        : 142px; */
+	TOP        : 125px; 
+/* 070319 HSK山本 UPDATE-ED */
+	BACKGROUND-COLOR: transparent;
+	WIDTH      : 85px; 
+	HEIGHT     : 40px; 
+}
+IMG#imgDetail2_Enable
+{
+	Z-INDEX    : 60; 
+	LEFT       : 700px; 
+	POSITION   : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP        : 212px; */
+	TOP        : 178px; 
+/* 070319 HSK山本 UPDATE-ED */
+	BACKGROUND-COLOR: transparent;
+	WIDTH      : 85px; 
+	HEIGHT     : 40px; 
+}
+IMG#imgDetail2_Disable
+{
+	Z-INDEX    : 60; 
+	LEFT       : 700px; 
+	POSITION   : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP        : 212px; */
+	TOP        : 178px; 
+	BACKGROUND-COLOR: transparent;
+/* 070319 HSK山本 UPDATE-ED */
+	WIDTH      : 85px; 
+	HEIGHT     : 40px; 
+}
+IMG#imgDetail3_Enable
+{
+	Z-INDEX    : 60; 
+	LEFT       : 700px; 
+	POSITION   : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP        : 282px; */
+	TOP        : 231px; 
+/* 070319 HSK山本 UPDATE-ED */
+	BACKGROUND-COLOR: transparent;
+	WIDTH      : 85px; 
+	HEIGHT     : 40px; 
+}
+IMG#imgDetail3_Disable
+{
+	Z-INDEX    : 60; 
+	LEFT       : 700px; 
+	POSITION   : absolute; 
+/* 070319 HSK山本 UPDATE-ST */
+/*	TOP        : 282px; */
+	TOP        : 231px; 
+/* 070319 HSK山本 UPDATE-ED */
+	BACKGROUND-COLOR: transparent;
+	WIDTH      : 85px; 
+	HEIGHT     : 40px; 
+}
+/* 070319 HSK山本 ADD-ST */
+IMG#imgDetail4_Enable
+{
+	Z-INDEX    : 60; 
+	LEFT       : 700px; 
+	POSITION   : absolute; 
+	TOP        : 284px; 
+	BACKGROUND-COLOR: transparent;
+	WIDTH      : 85px; 
+	HEIGHT     : 40px; 
+}
+IMG#imgDetail4_Disable
+{
+	Z-INDEX    : 60; 
+	LEFT       : 700px; 
+	POSITION   : absolute; 
+	TOP        : 284px; 
+	BACKGROUND-COLOR: transparent;
+	WIDTH      : 85px; 
+	HEIGHT     : 40px; 
+}
+/* 070319 HSK山本 ADD-ED */
+/* 優先順位 */
+FONT#OutputHeight
+{
+  text-decoration : underline;
+  color           : "#000000";
+
+}
+DIV#divOutputHeight
+{
+	Z-INDEX    : 80; 
+	LEFT       : 112px; 
+/*  070309 HSK山本 UPDATE-ST */
+/*	WIDTH      : 192px; */
+	WIDTH      : 300px; 
+/*  070309 HSK山本 UPDATE-ED */
+	POSITION   : absolute; 
+	TOP        : 365px; 
+	HEIGHT     : 24px; 
+	TEXT-ALIGN : left;
+	font-weight:bold;
+}
+INPUT#chkOutputHeight
+{
+	Z-INDEX  : 80; 
+	LEFT     : 80px; 
+	POSITION : absolute; 
+	TOP      : 365px
+}
+
+/* 戻るボタン背景 */
+IMG#IMG_Cancel_BackGround 
+{
+  POSITION   : absolute;
+  TOP        : 470px;
+  LEFT       : 10px;    
+  Z-INDEX    : 10;
+}
+/* 戻るボタン クリック領域 */
+TABLE#TABLE_CancelBtn
+{
+  POSITION   : absolute;
+  TOP        : 476px;
+  LEFT       : 18px;    
+  HEIGHT     : 32px;
+  WIDTH      : 102px;
+  Z-INDEX    : 30;
+  VISIBILITY : visible;
+}
+/* 戻るボタン */
+IMG#IMG_CancelBtn 
+{
+  POSITION   : absolute;
+  TOP        : 476px;
+  LEFT       : 18px;    
+  Z-INDEX    : 20;
+}
+/* 戻るテキスト */
+DIV#DIV_CancelText 
+{
+  POSITION   : absolute;
+  TOP        : 484px;
+  LEFT       : 18px;    
+  HEIGHT     : 18px;
+  WIDTH      : 102px; 
+  FONT-WEIGHT: bold;
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : hidden;
+}
+/* 修正完了ボタン背景 */
+IMG#IMG_Update_BackGround 
+{
+  POSITION   : absolute;
+  TOP        : 405px;
+  LEFT       : 685px;    
+  Z-INDEX    : 10;
+}
+/* 修正完了ボタン クリック領域 */
+TABLE#TABLE_UpdateBtn
+{
+  POSITION   : absolute;
+  TOP        : 422px;
+  LEFT       : 690px;    
+  HEIGHT     : 90px;
+  WIDTH      : 90px;
+  Z-INDEX    : 30;
+  VISIBILITY : hidden;
+}
+/* 修正完了ボタン */
+IMG#IMG_UpdateBtn_Enable 
+{
+  POSITION   : absolute;
+  TOP        : 422px;
+  LEFT       : 690px;    
+  Z-INDEX    : 20;
+  VISIBILITY : hidden;
+}
+/* 修正完了ボタン */
+IMG#IMG_UpdateBtn_Disable 
+{
+  POSITION   : absolute;
+  TOP        : 422px;
+  LEFT       : 690px;    
+  Z-INDEX    : 20;
+  VISIBILITY : visible;
+}
+/* 修正完了テキスト */
+DIV#DIV_UpdateText 
+{
+  POSITION   : absolute;
+  TOP        : 460px;
+  LEFT       : 690px;    
+  HEIGHT     : 18px;
+  WIDTH      : 90px; 
+  FONT-WEIGHT: bold;
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : hidden;

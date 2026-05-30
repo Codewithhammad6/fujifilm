@@ -1,0 +1,1921 @@
+/******************************************************************************
+  RegAddMenu_View.css 
+
+  	RegAddMenu_Viewのスタイルシート
+
+     更新履歴    担当       Ver.        内容
+     2004/11/05  齋藤      -----       新規作成
+     2007/04/06  神立      英語版      グループボタン文字の縦幅調整
+     2012/02/08  NDD       V2.2(B)     HF0002 CQ1265 文字切れ対応
+
+******************************************************************************/
+/* ボディ */
+BODY
+{  
+  CURSOR	          : default;
+  BACKGROUND-COLOR  : #F7F1E6; 
+}
+/*2005/05/24-ST*/
+/* ヘッダ */
+DIV#DIV_AddMenu_Header 
+{
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;    
+/* 2005/08/13 Kanno UPDATE ST デザイン修正 */
+/*  HEIGHT     : 512px;  */
+  HEIGHT     : 518px;
+/* 2005/08/13 Kanno UPDATE ED デザイン修正 */
+  WIDTH      : 800px;
+  Z-INDEX    : 0;
+  BACKGROUND-COLOR  : #333333; 
+}
+/* 背景 */
+DIV#DIV_BackGround_1 
+{
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 4px;    
+  HEIGHT     : 83px;
+  WIDTH      : 494px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR  : #F7F1E6; 
+}
+/* 背景 */
+DIV#DIV_BackGround_2 
+{
+  POSITION   : absolute;
+  TOP        : 84px;
+/* 2005/08/13 Kanno UPDATE ST デザイン修正 */
+/*  LEFT       : 6px;   */
+/*  WIDTH      : 317px; */
+  LEFT       : 4px;
+  WIDTH      : 319px;
+/* 2005/08/13 Kanno UPDATE ED デザイン修正 */
+  HEIGHT     : 40px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR  : #F7F1E6; 
+}
+/* 背景 */
+DIV#DIV_BackGround_3 
+{
+  POSITION   : absolute;
+  TOP        : 125px;
+  LEFT       : 4px;    
+  HEIGHT     : 345px;
+  WIDTH      : 494px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR  : #F7F1E6; 
+}
+/* 背景 */
+DIV#DIV_BackGround_4 
+{
+  POSITION   : absolute;
+  TOP        : 471px;
+/* 2005/08/13 Kanno UPDATE ST デザイン修正 */
+/*  LEFT       : 6px;   */
+/*  WIDTH      : 225px; */
+  LEFT       : 4px;
+  WIDTH      : 227px;
+/* 2005/08/13 Kanno UPDATE ED デザイン修正 */
+  HEIGHT     : 40px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR  : #F7F1E6; 
+}
+/* 背景 */
+DIV#DIV_BackGround_5 
+{
+  POSITION   : absolute;
+  TOP        : 351px;
+  LEFT       : 510px;
+/* 2005/08/13 Kanno UPDATE ST デザイン修正 */
+/*  HEIGHT     : 161px;  */
+  HEIGHT     : 167px;
+/* 2005/08/13 Kanno UPDATE ST デザイン修正 */
+  WIDTH      : 290px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR  : #F7F1E6; 
+}
+/* 背景 */
+DIV#DIV_BackGround_6 
+{
+  POSITION   : absolute;
+  TOP        : 310px;
+  LEFT       : 620px;    
+  HEIGHT     : 40px;
+  WIDTH      : 4px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR  : #F7F1E6; 
+}
+/* 背景 */
+DIV#DIV_BackGround_7 
+{
+  POSITION   : absolute;
+  TOP        : 310px;
+  LEFT       : 510px;    
+  HEIGHT     : 42px;
+  WIDTH      : 114px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR  : #F7F1E6; 
+}
+
+/*2005/05/24-ED*/
+/* グループボタン１　テキスト */
+DIV#divPart0 
+{
+  POSITION   : absolute;
+  TOP        : 6px;  /* 2012.02.15 CQ1265 */
+  LEFT       : 12px;
+  WIDTH		   : 105px;   /* 2012.02.08 CQ1265 */
+  HEIGHT     : 20px;/*16px;*//*kandachi@070406*/
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : visible;    /* 2012.02.08 CQ1265 */
+  /* WORD-BREAK : break-all; */    /* 2012.02.08 CQ1265 */
+  WORD-WRAP  : break-word;  /* 2012.02.08 CQ1265 */
+}
+/* グループボタン１　イメージ */
+IMG#imgPart0
+{
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 8px;
+  Z-INDEX    : 10;
+}
+/* グループボタン２　テキスト */
+DIV#divPart1 
+{
+  POSITION   : absolute;
+  TOP        : 6px;  /* 2012.02.15 CQ1265 */
+  LEFT       : 134px;    
+  WIDTH		   : 105px;  /* 2012.02.08 CQ1265 */
+  HEIGHT     : 20px;/*16px;*//*kandachi@070406*/
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : visible;    /* 2012.02.08 CQ1265 */
+  /* WORD-BREAK : break-all; */    /* 2012.02.08 CQ1265 */
+  WORD-WRAP  : break-word;  /* 2012.02.08 CQ1265 */
+}
+/* グループボタン２　イメージ */
+IMG#imgPart1
+{
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 130px;    
+  Z-INDEX    : 10;
+}
+/* グループボタン３　テキスト */
+DIV#divPart2 
+{
+  POSITION   : absolute;
+  TOP        : 6px;  /* 2012.02.15 CQ1265 */
+  LEFT       : 257px;    
+  WIDTH		   : 105px;  /* 2012.02.08 CQ1265 */
+  HEIGHT     : 20px;/*16px;*//*kandachi@070406*/
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : visible;    /* 2012.02.08 CQ1265 */
+  /* WORD-BREAK : break-all; */    /* 2012.02.08 CQ1265 */
+  WORD-WRAP  : break-word;  /* 2012.02.08 CQ1265 */
+}
+/* グループボタン３　イメージ */
+IMG#imgPart2
+{
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 253px;    
+  Z-INDEX    : 10;
+}
+/* グループボタン４　テキスト */
+DIV#divPart3 
+{
+  POSITION   : absolute;
+  TOP        : 6px;  /* 2012.02.15 CQ1265 */
+  LEFT       : 380px;    
+  WIDTH		   : 105px;  /* 2012.02.08 CQ1265 */
+  HEIGHT     : 20px;/*16px;*//*kandachi@070406*/
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : visible;    /* 2012.02.08 CQ1265 */
+  /* WORD-BREAK : break-all; */    /* 2012.02.08 CQ1265 */
+  WORD-WRAP  : break-word;  /* 2012.02.08 CQ1265 */
+}
+/* グループボタン４　イメージ */
+IMG#imgPart3
+{
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 376px;    
+  Z-INDEX    : 10;
+}
+/* グループボタン５　テキスト */
+DIV#divPart4 
+{
+  POSITION   : absolute;
+  TOP        : 48px;  /* 2012.02.15 CQ1265 */
+  LEFT       : 12px;    
+  WIDTH		   : 105px;  /* 2012.02.08 CQ1265 */
+  HEIGHT     : 20px;/*16px;*//*kandachi@070406*/
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : visible;    /* 2012.02.08 CQ1265 */
+  /* WORD-BREAK : break-all; */    /* 2012.02.08 CQ1265 */
+  WORD-WRAP  : break-word;  /* 2012.02.08 CQ1265 */
+}
+/* グループボタン５　イメージ */
+IMG#imgPart4
+{
+  POSITION   : absolute;
+  TOP        : 42px;
+  LEFT       : 8px;
+  Z-INDEX    : 10;
+}
+/* グループボタン６　テキスト */
+DIV#divPart5 
+{
+  POSITION   : absolute;
+  TOP        : 48px;  /* 2012.02.15 CQ1265 */
+  LEFT       : 134px;    
+  WIDTH		   : 105px;  /* 2012.02.08 CQ1265 */
+  HEIGHT     : 20px;/*16px;*//*kandachi@070406*/
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : visible;    /* 2012.02.08 CQ1265 */
+  /* WORD-BREAK : break-all; */    /* 2012.02.08 CQ1265 */
+  WORD-WRAP  : break-word;  /* 2012.02.08 CQ1265 */
+}
+/* グループボタン６　イメージ */
+IMG#imgPart5
+{
+  POSITION   : absolute;
+  TOP        : 42px;
+  LEFT       : 130px;    
+  Z-INDEX    : 10;
+}
+/* グループボタン７　テキスト */
+DIV#divPart6 
+{
+  POSITION   : absolute;
+  TOP        : 48px;  /* 2012.02.15 CQ1265 */
+  LEFT       : 257px;    
+  WIDTH		   : 105px;  /* 2012.02.08 CQ1265 */
+  HEIGHT     : 20px;/*16px;*//*kandachi@070406*/
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : visible;    /* 2012.02.08 CQ1265 */
+  /* WORD-BREAK : break-all; */    /* 2012.02.08 CQ1265 */
+  WORD-WRAP  : break-word;  /* 2012.02.08 CQ1265 */
+}
+/* グループボタン７　イメージ */
+IMG#imgPart6
+{
+  POSITION   : absolute;
+  TOP        : 42px;
+  LEFT       : 253px;    
+  Z-INDEX    : 10;
+}
+/* グループボタン８　テキスト */
+DIV#divPart7 
+{
+  POSITION   : absolute;
+  TOP        : 48px;  /* 2012.02.15 CQ1265 */
+  LEFT       : 380px;    
+  WIDTH		   : 105px;  /* 2012.02.08 CQ1265 */
+  HEIGHT     : 20px;/*16px;*//*kandachi@070406*/
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : visible;    /* 2012.02.08 CQ1265 */
+  /* WORD-BREAK : break-all; */    /* 2012.02.08 CQ1265 */
+  WORD-WRAP  : break-word;  /* 2012.02.08 CQ1265 */
+}
+/* グループボタン８　イメージ */
+IMG#imgPart7
+{
+  POSITION   : absolute;
+  TOP        : 42px;
+  LEFT       : 376px;    
+  Z-INDEX    : 10;
+}
+/* グループボタン９（選択ボタン）　イメージ */
+IMG#imgPartBtn
+{
+  POSITION   : absolute;
+  TOP        : 42px;
+  LEFT       : 376px;    
+  Z-INDEX    : 15;
+  VISIBILITY : hidden;
+}
+/* グループボタン↑ Enable */
+IMG#imgPartUp_Enable
+{
+  POSITION   : absolute;
+  TOP        : 84px;
+  LEFT       : 324px;    
+  Z-INDEX    : 10;
+}
+/* グループボタン↑ Disable */
+IMG#imgPartUp_Disable
+{
+  POSITION   : absolute;
+  TOP        : 84px;
+  LEFT       : 324px;    
+  Z-INDEX    : 10;
+}
+/* グループボタン↓ Enable */
+IMG#imgPartDown_Enable
+{
+  POSITION   : absolute;
+  TOP        : 84px;
+  LEFT       : 411px;    
+  Z-INDEX    : 10;
+}
+/* グループボタン↓ Disable */
+IMG#imgPartDown_Disable
+{
+  POSITION   : absolute;
+  TOP        : 84px;
+  LEFT       : 411px;    
+  Z-INDEX    : 10;
+}
+/* 撮影メニュー領域１ */
+TABLE#TABLE_MenuImageBtn0	
+{	
+  POSITION   : absolute;
+  TOP        : 130px;
+  LEFT       : 10px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域１ */
+TABLE#TABLE_MenuImage0	
+{	
+  POSITION   : absolute;
+  TOP        : 130px;
+  LEFT       : 10px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト１ */
+TD#divMenu0 	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}
+/* 撮影メニューボタン１ */
+IMG#imgMenu0	
+{	
+  POSITION   : absolute;
+  TOP        : 128px;
+  LEFT       : 8px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域２ */
+TABLE#TABLE_MenuImageBtn1	
+{	
+  POSITION   : absolute;
+  TOP        : 130px;
+  LEFT       : 174px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域２ */
+TABLE#TABLE_MenuImage1	
+{	
+  POSITION   : absolute;
+  TOP        : 130px;
+  LEFT       : 174px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト２ */
+TD#divMenu1	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン２ */
+IMG#imgMenu1	
+{	
+  POSITION   : absolute;
+  TOP        : 128px;
+  LEFT       : 172px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域３ */
+TABLE#TABLE_MenuImageBtn2	
+{	
+  POSITION   : absolute;
+  TOP        : 130px;
+  LEFT       : 338px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域３ */
+TABLE#TABLE_MenuImage2	
+{	
+  POSITION   : absolute;
+  TOP        : 130px;
+  LEFT       : 338px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト３ */
+TD#divMenu2	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン３ */
+IMG#imgMenu2	
+{	
+  POSITION   : absolute;
+  TOP        : 128px;
+  LEFT       : 336px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域４ */
+TABLE#TABLE_MenuImageBtn3	
+{	
+  POSITION   : absolute;
+  TOP        : 172px;
+  LEFT       : 10px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域４ */
+TABLE#TABLE_MenuImage3	
+{	
+  POSITION   : absolute;
+  TOP        : 172px;
+  LEFT       : 10px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト４ */
+TD#divMenu3	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン４ */
+IMG#imgMenu3	
+{	
+  POSITION   : absolute;
+  TOP        : 170px;
+  LEFT       : 8px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域５ */
+TABLE#TABLE_MenuImageBtn4	
+{	
+  POSITION   : absolute;
+  TOP        : 172px;
+  LEFT       : 174px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域５ */
+TABLE#TABLE_MenuImage4	
+{	
+  POSITION   : absolute;
+  TOP        : 172px;
+  LEFT       : 174px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト５ */
+TD#divMenu4	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン５ */
+IMG#imgMenu4	
+{	
+  POSITION   : absolute;
+  TOP        : 170px;
+  LEFT       : 172px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域６ */
+TABLE#TABLE_MenuImageBtn5	
+{	
+  POSITION   : absolute;
+  TOP        : 172px;
+  LEFT       : 338px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域６ */
+TABLE#TABLE_MenuImage5	
+{	
+  POSITION   : absolute;
+  TOP        : 172px;
+  LEFT       : 338px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト６ */
+TD#divMenu5	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン６ */
+IMG#imgMenu5	
+{	
+  POSITION   : absolute;
+  TOP        : 170px;
+  LEFT       : 336px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域７ */
+TABLE#TABLE_MenuImageBtn6	
+{	
+  POSITION   : absolute;
+  TOP        : 214px;
+  LEFT       : 10px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域７ */
+TABLE#TABLE_MenuImage6	
+{	
+  POSITION   : absolute;
+  TOP        : 214px;
+  LEFT       : 10px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト７ */
+TD#divMenu6	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン７ */
+IMG#imgMenu6	
+{	
+  POSITION   : absolute;
+  TOP        : 212px;
+  LEFT       : 8px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域８ */
+TABLE#TABLE_MenuImageBtn7	
+{	
+  POSITION   : absolute;
+  TOP        : 214px;
+  LEFT       : 174px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域８ */
+TABLE#TABLE_MenuImage7	
+{	
+  POSITION   : absolute;
+  TOP        : 214px;
+  LEFT       : 174px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト８ */
+TD#divMenu7	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン８ */
+IMG#imgMenu7	
+{	
+  POSITION   : absolute;
+  TOP        : 212px;
+  LEFT       : 172px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域９ */
+TABLE#TABLE_MenuImageBtn8	
+{	
+  POSITION   : absolute;
+  TOP        : 214px;
+  LEFT       : 338px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域９ */
+TABLE#TABLE_MenuImage8	
+{	
+  POSITION   : absolute;
+  TOP        : 214px;
+  LEFT       : 338px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト９ */
+TD#divMenu8	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン９ */
+IMG#imgMenu8	
+{	
+  POSITION   : absolute;
+  TOP        : 212px;
+  LEFT       : 336px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域１０ */
+TABLE#TABLE_MenuImageBtn9	
+{	
+  POSITION   : absolute;
+  TOP        : 256px;
+  LEFT       : 10px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域１０ */
+TABLE#TABLE_MenuImage9	
+{	
+  POSITION   : absolute;
+  TOP        : 256px;
+  LEFT       : 10px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト１０ */
+TD#divMenu9	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン１０ */
+IMG#imgMenu9	
+{	
+  POSITION   : absolute;
+  TOP        : 254px;
+  LEFT       : 8px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域１１ */
+TABLE#TABLE_MenuImageBtn10	
+{	
+  POSITION   : absolute;
+  TOP        : 256px;
+  LEFT       : 174px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域１１ */
+TABLE#TABLE_MenuImage10	
+{	
+  POSITION   : absolute;
+  TOP        : 256px;
+  LEFT       : 174px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト１１ */
+TD#divMenu10	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン１１ */
+IMG#imgMenu10	
+{	
+  POSITION   : absolute;
+  TOP        : 254px;
+  LEFT       : 172px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域１２ */
+TABLE#TABLE_MenuImageBtn11	
+{	
+  POSITION   : absolute;
+  TOP        : 256px;
+  LEFT       : 338px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域１２ */
+TABLE#TABLE_MenuImage11	
+{	
+  POSITION   : absolute;
+  TOP        : 256px;
+  LEFT       : 338px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト１２ */
+TD#divMenu11	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン１２ */
+IMG#imgMenu11	
+{	
+  POSITION   : absolute;
+  TOP        : 254px;
+  LEFT       : 336px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}
+/* 撮影メニュー領域１３ */
+TABLE#TABLE_MenuImageBtn12	
+{	
+  POSITION   : absolute;
+  TOP        : 298px;
+  LEFT       : 10px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域１３ */
+TABLE#TABLE_MenuImage12	
+{	
+  POSITION   : absolute;
+  TOP        : 298px;
+  LEFT       : 10px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト１３ */
+TD#divMenu12	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン１３ */
+IMG#imgMenu12	
+{	
+  POSITION   : absolute;
+  TOP        : 296px;
+  LEFT       : 8px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域１４ */
+TABLE#TABLE_MenuImageBtn13	
+{	
+  POSITION   : absolute;
+  TOP        : 298px;
+  LEFT       : 174px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域１４ */
+TABLE#TABLE_MenuImage13	
+{	
+  POSITION   : absolute;
+  TOP        : 298px;
+  LEFT       : 174px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト１４ */
+TD#divMenu13	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン１４ */
+IMG#imgMenu13	
+{	
+  POSITION   : absolute;
+  TOP        : 296px;
+  LEFT       : 172px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域１５ */
+TABLE#TABLE_MenuImageBtn14	
+{	
+  POSITION   : absolute;
+  TOP        : 298px;
+  LEFT       : 338px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域１５ */
+TABLE#TABLE_MenuImage14	
+{	
+  POSITION   : absolute;
+  TOP        : 298px;
+  LEFT       : 338px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト１５ */
+TD#divMenu14	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン１５ */
+IMG#imgMenu14	
+{	
+  POSITION   : absolute;
+  TOP        : 296px;
+  LEFT       : 336px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域１６ */
+TABLE#TABLE_MenuImageBtn15	
+{	
+  POSITION   : absolute;
+  TOP        : 340px;
+  LEFT       : 10px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域１６ */
+TABLE#TABLE_MenuImage15	
+{	
+  POSITION   : absolute;
+  TOP        : 340px;
+  LEFT       : 10px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト１６ */
+TD#divMenu15	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン１６ */
+IMG#imgMenu15	
+{	
+  POSITION   : absolute;
+  TOP        : 338px;
+  LEFT       : 8px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域１７ */
+TABLE#TABLE_MenuImageBtn16	
+{	
+  POSITION   : absolute;
+  TOP        : 340px;
+  LEFT       : 174px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域１７ */
+TABLE#TABLE_MenuImage16	
+{	
+  POSITION   : absolute;
+  TOP        : 340px;
+  LEFT       : 174px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト１７ */
+TD#divMenu16	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン１７ */
+IMG#imgMenu16	
+{	
+  POSITION   : absolute;
+  TOP        : 338px;
+  LEFT       : 172px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域１８ */
+TABLE#TABLE_MenuImageBtn17	
+{	
+  POSITION   : absolute;
+  TOP        : 340px;
+  LEFT       : 338px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域１８ */
+TABLE#TABLE_MenuImage17	
+{	
+  POSITION   : absolute;
+  TOP        : 340px;
+  LEFT       : 338px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト１８ */
+TD#divMenu17	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン１８ */
+IMG#imgMenu17
+{	
+  POSITION   : absolute;
+  TOP        : 338px;
+  LEFT       : 336px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域１９ */
+TABLE#TABLE_MenuImageBtn18	
+{	
+  POSITION   : absolute;
+  TOP        : 382px;
+  LEFT       : 10px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域１９ */
+TABLE#TABLE_MenuImage18	
+{	
+  POSITION   : absolute;
+  TOP        : 382px;
+  LEFT       : 10px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト１９ */
+TD#divMenu18	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン１９ */
+IMG#imgMenu18	
+{	
+  POSITION   : absolute;
+  TOP        : 380px;
+  LEFT       : 8px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域２０ */
+TABLE#TABLE_MenuImageBtn19	
+{	
+  POSITION   : absolute;
+  TOP        : 382px;
+  LEFT       : 174px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域２０ */
+TABLE#TABLE_MenuImage19	
+{	
+  POSITION   : absolute;
+  TOP        : 382px;
+  LEFT       : 174px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト２０ */
+TD#divMenu19	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン２０ */
+IMG#imgMenu19	
+{	
+  POSITION   : absolute;
+  TOP        : 380px;
+  LEFT       : 172px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域２１ */
+TABLE#TABLE_MenuImageBtn20	
+{	
+  POSITION   : absolute;
+  TOP        : 382px;
+  LEFT       : 338px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域２１ */
+TABLE#TABLE_MenuImage20	
+{	
+  POSITION   : absolute;
+  TOP        : 382px;
+  LEFT       : 338px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト２１ */
+TD#divMenu20	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン２１ */
+IMG#imgMenu20	
+{	
+  POSITION   : absolute;
+  TOP        : 380px;
+  LEFT       : 336px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域２２ */
+TABLE#TABLE_MenuImageBtn21	
+{	
+  POSITION   : absolute;
+  TOP        : 424px;
+  LEFT       : 10px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域２２ */
+TABLE#TABLE_MenuImage21	
+{	
+  POSITION   : absolute;
+  TOP        : 424px;
+  LEFT       : 10px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト２２ */
+TD#divMenu21	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン２２ */
+IMG#imgMenu21	
+{	
+  POSITION   : absolute;
+  TOP        : 422px;
+  LEFT       : 8px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域２３ */
+TABLE#TABLE_MenuImageBtn22	
+{	
+  POSITION   : absolute;
+  TOP        : 424px;
+  LEFT       : 174px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域２３ */
+TABLE#TABLE_MenuImage22	
+{	
+  POSITION   : absolute;
+  TOP        : 424px;
+  LEFT       : 174px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト２３ */
+TD#divMenu22	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all; /* 2012.02.08 CQ1265 */
+}	
+/* 撮影メニューボタン２３ */
+IMG#imgMenu22	
+{	
+  POSITION   : absolute;
+  TOP        : 422px;
+  LEFT       : 172px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー領域２４ */
+TABLE#TABLE_MenuImageBtn23	
+{	
+  POSITION   : absolute;
+  TOP        : 424px;
+  LEFT       : 338px;
+  HEIGHT     : 38px;
+  WIDTH      : 156px;
+  Z-INDEX    : 40;
+}	
+/* 撮影メニュー領域２４ */
+TABLE#TABLE_MenuImage23	
+{	
+  POSITION   : absolute;
+  TOP        : 424px;
+  LEFT       : 338px;
+  HEIGHT     : 28px;
+  WIDTH      : 156px;
+  Z-INDEX    : 30;
+}	
+/* 撮影メニューテキスト２４ */
+TD#divMenu23	
+{	
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 35px;
+  WIDTH      : 156px;
+  Z-INDEX    : 20;
+  TEXT-ALIGN : center;
+  WORD-BREAK : break-all;
+}	
+/* 撮影メニューボタン２４ */
+IMG#imgMenu23	
+{	
+  POSITION   : absolute;
+  TOP        : 422px;
+  LEFT       : 336px;
+  HEIGHT     : 40px;
+  WIDTH      : 160px;
+  Z-INDEX    : 10;
+}	
+/* 撮影メニュー↑ Enable */
+IMG#imgMenuUp_Enable
+{
+  POSITION   : absolute;
+  TOP        : 471px;
+  LEFT       : 232px;
+  Z-INDEX    : 20;
+}
+/* 撮影メニュー↑ Disable */
+IMG#imgMenuUp_Disable
+{
+  POSITION   : absolute;
+  TOP        : 471px;
+  LEFT       : 232px;
+  Z-INDEX    : 20;
+}
+/* 撮影メニュー↓ Enable */
+IMG#imgMenuDown_Enable
+{
+  POSITION   : absolute;
+  TOP        : 471px;
+  LEFT       : 411px;
+  Z-INDEX    : 20;
+}
+/* 撮影メニュー↓ Disable */
+IMG#imgMenuDown_Disable
+{
+  POSITION   : absolute;
+  TOP        : 471px;
+  LEFT       : 411px;
+  Z-INDEX    : 20;
+}
+/* 撮影メニューの総数 */
+DIV#divMaxMenu
+{
+	POSITION          : absolute;
+	FONT-WEIGHT       : bold;
+	TOP               : 471px;
+	LEFT              : 320px;
+	HEIGHT            : 40px;
+	WIDTH             : 90px;
+	BACKGROUND-COLOR  : #dacec2;
+	Z-INDEX           : 20;
+  OVERFLOW          : hidden;
+}
+/* 撮影メニューの総数 */
+DIV#divMaxMenuCount
+{
+	POSITION          : absolute;
+	FONT-WEIGHT       : bold;
+  /* 2005/06/23 004 H.SAITO Design Change.
+	TOP               : 480px;
+  */
+	TOP               : 484px;
+	LEFT              : 320px;
+	HEIGHT            : 40px;
+	WIDTH             : 90px;
+	Z-INDEX           : 30;
+  OVERFLOW          : hidden;
+  text-align        : center;
+}
+/* 撮影メニューリスト背景 */
+DIV#DIV_AddMenu_BackGround 
+{
+  POSITION          : absolute;
+  TOP               : 0px;
+  LEFT              : 500px;    
+  WIDTH             : 300px;
+  HEIGHT            : 288px;
+  BACKGROUND-COLOR  : #333333;
+  Z-INDEX           : 10;
+}
+/* 撮影メニュー１ */
+DIV#DIV_AddMenu0
+{
+  POSITION          : absolute;
+	TOP               : 0px;
+  LEFT              : 500px; 
+	Z-INDEX           : 40;
+}
+/* 撮影メニューボタン１ */
+IMG#IMG_AddMenu0
+{
+	POSITION          : absolute;
+	TOP               : 5px;
+	LEFT              : 10px;
+	Z-INDEX           : 20;
+  VISIBILITY        : hidden;
+}
+/* 撮影メニューテキスト１ */
+INPUT#DIV_AddText0 
+{
+  POSITION          : absolute;
+  TOP               : 10px;
+  LEFT              : 69px;
+  HEIGHT            : 21px;
+  WIDTH             : 208px;
+  FONT-WEIGHT       : bold;
+  BORDER            : 0,0,0,0;
+  CURSOR            : default;
+  Z-INDEX           : 30;
+  VISIBILITY        : hidden;
+  OVERFLOW          : hidden;
+}
+/* 撮影メニューサムネイル１ */
+DIV#DIV_AddFilm0 
+{
+  POSITION          : absolute;
+  TOP               : 8px;
+  LEFT              : 12px;
+  Z-INDEX           : 30;
+  VISIBILITY        : hidden;
+} 
+/* 撮影メニュー写損マーク１ */
+IMG#IMG_DeleteImage0
+{
+  POSITION          : absolute;
+	TOP               : 34px;
+	LEFT              : 68px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 30;
+}
+/* 撮影メニュー２ */
+DIV#DIV_AddMenu1
+{
+  POSITION          : absolute;
+	TOP               : 72px;
+  LEFT              : 500px; 
+	Z-INDEX           : 40;
+}
+/* 撮影メニューボタン２ */
+IMG#IMG_AddMenu1
+{
+	POSITION          : absolute;
+	TOP               : 5px;
+	LEFT              : 10px;
+	Z-INDEX           : 20;
+  VISIBILITY        : hidden;
+}
+/* 撮影メニューテキスト２ */
+INPUT#DIV_AddText1 
+{
+  POSITION          : absolute;
+  TOP               : 10px;
+  LEFT              : 69px;
+  HEIGHT            : 21px;
+  WIDTH             : 208px;
+  FONT-WEIGHT       : bold;
+  BORDER            : 0,0,0,0;
+  CURSOR            : default;
+  Z-INDEX           : 30;
+  VISIBILITY        : hidden;
+  OVERFLOW          : hidden;
+}
+/* 撮影メニューサムネイル２ */
+DIV#DIV_AddFilm1 
+{
+  POSITION          : absolute;
+  TOP               : 8px;
+  LEFT              : 12px;
+  Z-INDEX           : 30;
+  VISIBILITY        : hidden;
+}
+/* 撮影メニュー写損マーク２ */
+IMG#IMG_DeleteImage1
+{
+  POSITION          : absolute;
+	TOP               : 34px;
+	LEFT              : 68px;
+  Z-INDEX           : 30;
+  VISIBILITY        : hidden;
+}
+/* 撮影メニュー３ */
+DIV#DIV_AddMenu2
+{
+  POSITION          : absolute;
+  TOP               : 144px;
+  LEFT              : 500px;
+	Z-INDEX           : 40;
+}
+/* 撮影メニューボタン３ */
+IMG#IMG_AddMenu2
+{
+	POSITION          : absolute;
+	TOP               : 5px;
+	LEFT              : 10px;
+	Z-INDEX           : 20;
+  VISIBILITY        : hidden;
+}
+/* 撮影メニューテキスト３ */
+INPUT#DIV_AddText2 
+{
+  POSITION          : absolute;
+  TOP               : 10px;
+  LEFT              : 69px;
+  HEIGHT            : 21px;
+  WIDTH             : 208px;
+  FONT-WEIGHT       : bold;
+  BORDER            : 0,0,0,0;
+  CURSOR            : default;
+  Z-INDEX           : 30;
+  VISIBILITY        : hidden;
+  OVERFLOW          : hidden;
+}
+/* 撮影メニューサムネイル３ */
+DIV#DIV_AddFilm2 
+{
+  POSITION          : absolute;
+  TOP               : 8px;
+  LEFT              : 12px;
+  Z-INDEX           : 30;
+  VISIBILITY        : hidden;
+}
+/* 撮影メニュー写損マーク３ */
+IMG#IMG_DeleteImage2
+{
+  POSITION          : absolute;
+	TOP               : 34px;
+	LEFT              : 68px;
+  Z-INDEX           : 30;
+  VISIBILITY        : hidden;
+}
+/* 撮影メニュー４ */
+DIV#DIV_AddMenu3
+{
+  POSITION          : absolute;
+  TOP               : 216px;
+  LEFT              : 500px;
+	Z-INDEX           : 40;
+}
+/* 撮影メニューボタン４ */
+IMG#IMG_AddMenu3
+{
+	POSITION          : absolute;
+	TOP               : 5px;
+	LEFT              : 10px;
+	Z-INDEX           : 20;
+	VISIBILITY        : hidden;
+}
+/* 撮影メニューテキスト４ */
+INPUT#DIV_AddText3
+{
+  POSITION          : absolute;
+  TOP               : 10px;
+  LEFT              : 69px;
+  HEIGHT            : 21px;
+  WIDTH             : 208px;
+  FONT-WEIGHT       : bold;
+  BORDER            : 0,0,0,0;
+  CURSOR            : default;
+  Z-INDEX           : 30;
+ 	VISIBILITY        : hidden;
+  OVERFLOW          : hidden;
+}
+/* 撮影メニューサムネイル４ */
+DIV#DIV_AddFilm3
+{
+  POSITION          : absolute;
+  TOP               : 8px;
+  LEFT              : 12px;
+  Z-INDEX           : 30;
+  VISIBILITY        : hidden;
+}
+/* 撮影メニュー写損マーク４ */
+IMG#IMG_DeleteImage3
+{
+  POSITION          : absolute;
+	TOP               : 34px;
+	LEFT              : 68px;
+  Z-INDEX           : 30;
+  VISIBILITY        : hidden;
+}
+/* 2005/06/23 012 H.SAITO Design Change.
+/* 撮影メニューリスト総数の背景 */
+DIV#divMaxListBg
+{
+	POSITION          : absolute;
+	TOP               : 289px;
+	LEFT              : 510px;
+	HEIGHT            : 20px;
+	WIDTH             : 290px;
+	BACKGROUND-COLOR  : #dacec2;
+	Z-INDEX           : 20;
+  OVERFLOW          : hidden;
+}
+/* 撮影メニューリストの総数 */
+DIV#divMaxList
+{
+	POSITION        : absolute;
+  /* 2005/06/23 004 H.SAITO Design Change.
+	TOP             : 289px;
+  */
+	TOP             : 293px;
+	LEFT            : 510px;
+	HEIGHT          : 20px;
+  /* 2005/06/23 004 H.SAITO Design Change.
+	WIDTH           : 290px;
+  */
+	WIDTH           : 284px;
+  /* 2005/06/23 003 H.SAITO Design Change.
+  BACKGROUND-COLOR: #DACEC2;
+  */
+	FONT-WEIGHT     : bold;
+  TEXT-ALIGN      : center;	
+	Z-INDEX         : 20;
+  OVERFLOW        : hidden;
+}
+/* 撮影メニューリスト↑ Enable */
+IMG#MenuListUp_Enable
+{
+	POSITION        : absolute;
+	TOP             : 310px;
+	LEFT            : 625px;
+	Z-INDEX         : 20;
+}
+/* 撮影メニューリスト↑ Disable */
+IMG#MenuListUp_Disable
+{
+	POSITION        : absolute;
+	TOP             : 310px;
+	LEFT            : 625px;
+	Z-INDEX         : 20;
+}
+/* 撮影メニューリスト↓ Enable */
+IMG#MenuListDown_Enable
+{
+	POSITION        : absolute;
+	TOP             : 310px;
+	LEFT            : 713px;
+	Z-INDEX         : 20;
+}
+/* 撮影メニューリスト↓ Disable */
+IMG#MenuListDown_Disable
+{
+	POSITION        : absolute;
+	TOP             : 310px;
+	LEFT            : 713px;
+	Z-INDEX         : 20;
+}
+/* 取消ボタン AREA */
+TABLE#TABLE_Delete
+{
+	POSITION        : absolute;
+	TOP             : 310px;
+	LEFT            : 510px;
+  HEIGHT          : 40px;
+  WIDTH           : 110px;
+	Z-INDEX         : 30;
+	VISIBILITY      : hidden;
+}
+/* 取消ボタンテキスト */
+DIV#divDelete
+{
+	POSITION        : absolute;
+	TOP             : 332px;
+  /* 2005/06/23 004 H.SAITO Design Change.
+	LEFT            : 525px;
+  */
+	LEFT            : 512px;
+	HEIGHT          : 8px;
+  /* 2005/06/23 004 H.SAITO Design Change.
+	WIDTH           : 80px;
+  */
+  WIDTH           : 110px;
+  TEXT-ALIGN      : center;
+	VISIBILITY      : hidden;
+	Z-INDEX         : 20;
+}
+/* 取消ボタン Enable */
+IMG#MenuDelete_Enable
+{
+	POSITION        : absolute;
+	TOP             : 310px;
+	LEFT            : 510px;
+	VISIBILITY      : hidden;
+	HEIGHT          : 40px;
+	WIDTH           : 114px;
+	Z-INDEX         : 10;
+}
+/* 取消ボタン Disable */
+IMG#MenuDelete_Disable
+{
+	POSITION        : absolute;
+	TOP             : 310px;
+	LEFT            : 510px;
+	VISIBILITY      : hidden;
+	HEIGHT          : 40px;
+	WIDTH           : 114px;
+	Z-INDEX         : 10;
+}
+/* 遷移ボタン(登録モード)*/
+IMG#imgRegist
+{
+  POSITION     : absolute; 
+  TOP          : 410px;
+  LEFT         : 510px;
+  Z-INDEX      : 10;
+}
+/* 戻るボタンテキスト(登録モード)*/
+DIV#divRegistBack_Value
+{
+  POSITION     : absolute; 
+  TOP          : 482px; 
+  LEFT         : 520px; 
+  WIDTH        : 77px; 
+  HEIGHT       : 18px; 
+  FONT-WEIGHT  : bold; 
+  TEXT-ALIGN   : center;
+  Z-INDEX      : 80;
+}
+/* 戻るボタン(登録モード)*/
+IMG#imgRegistBack
+{
+  POSITION  : absolute; 
+  TOP       : 475px; 
+  LEFT      : 520px; 
+  Z-INDEX   : 25; 
+}
+/* 検査開始 クリック場所*/
+TABLE#TABLE_RegistStart
+{
+  POSITION   : absolute;
+  TOP        : 415px;
+  LEFT       : 607px;    
+  HEIGHT     : 90px;
+  WIDTH      : 90px;
+  Z-INDEX    : 100;
+	VISIBILITY : hidden;
+}
+/* 検査開始ボタンテキスト(登録モード)*/
+DIV#divRegistStart_Value
+{
+  POSITION     : absolute; 
+  /* 2005/06/23 004 H.SAITO Design Change.
+  TOP          : 456px; 
+  */
+  TOP          : 454px; 
+  LEFT         : 607px; 
+  HEIGHT       : 24px; 
+  WIDTH        : 90px; 
+  FONT-WEIGHT  : bold; 
+  TEXT-ALIGN   : center;
+  Z-INDEX      : 80; 
+}
+/* 検査開始ボタン(登録モード)*/
+IMG#imgRegistStart_Enable
+{
+  POSITION  : absolute; 
+  TOP       : 415px; 
+  LEFT      : 607px; 
+  Z-INDEX   : 20; 
+  visibility:hidden;
+}
+/* 検査開始ボタン(登録モード)*/
+IMG#imgRegistStart_Disable
+{
+  POSITION  : absolute; 
+  TOP       : 415px; 
+  LEFT      : 607px; 
+  Z-INDEX   : 20; 
+  visibility:hidden;
+}
+/* 登録 クリック場所*/
+TABLE#TABLE_RegistNext
+{
+  POSITION   : absolute;
+  TOP        : 415px;
+  LEFT       : 702px;    
+  HEIGHT     : 90px;
+  WIDTH      : 90px;
+  Z-INDEX    : 100;
+	VISIBILITY  : hidden;
+}
+/* 登録ボタンテキスト(登録モード)*/
+DIV#divRegistNext_Value
+{
+  POSITION     : absolute; 
+  /* 2005/06/23 004 H.SAITO Design Change.
+  TOP          : 456px; 
+  */
+  TOP          : 454px; 
+  LEFT         : 702px; 
+  HEIGHT       : 24px; 
+  WIDTH        : 90px; 
+  FONT-WEIGHT  : bold; 
+  TEXT-ALIGN   : center;
+  Z-INDEX      : 80; 
+}
+/* 登録ボタン(登録モード)*/
+IMG#imgRegistNext_Enable
+{
+  Z-INDEX   : 20; 
+  TOP       : 415px; 
+  LEFT      : 702px; 
+  POSITION  : absolute; 
+  visibility:hidden;
+}
+/* 登録ボタン(登録モード)*/
+IMG#imgRegistNext_Disable
+{
+  Z-INDEX   : 20; 
+  TOP       : 415px; 
+  LEFT      : 702px; 
+  POSITION  : absolute; 
+  visibility:hidden;
+}
+/* 遷移ボタン(登録モード以外)*/
+IMG#imgModify
+{
+  POSITION  : absolute; 
+  TOP       : 410px; 
+  LEFT      : 587px; 
+  Z-INDEX   : 10; 
+}
+/* 戻るボタンテキスト(登録モード以外)*/
+DIV#divModifyBack_Value
+{
+  FONT-WEIGHT  : bold; 
+  Z-INDEX      : 80; 
+  TOP          : 480px; 
+  LEFT         : 595px; 
+  HEIGHT       : 18px; 
+  WIDTH        : 102px; 
+  POSITION     : absolute; 
+  TEXT-ALIGN   : center;
+}
+/* 遷移ボタン(登録モード以外)*/
+IMG#imgModifyBack
+{
+  Z-INDEX   : 20; 
+  TOP       : 473px; 
+  LEFT      : 595px; 
+  POSITION  : absolute; 
+}
+/* 修正完了 クリック場所*/
+TABLE#TABLE_ModifyNext
+{
+  POSITION   : absolute;
+  TOP        : 415px;
+  LEFT       : 702px;    
+  HEIGHT     : 90px;
+  WIDTH      : 90px;
+  Z-INDEX    : 100;
+	VISIBILITY : hidden;
+}
+/* 修正完了ボタンテキスト(登録モード以外)*/
+DIV#divModifyNext_Value
+{
+  FONT-WEIGHT  : bold; 
+  Z-INDEX      : 80; 
+  LEFT         : 702px; 
+  WIDTH        : 90px; 
+  POSITION     : absolute; 
+  TOP          : 455px; 
+  HEIGHT       : 24px; 
+  TEXT-ALIGN   : center;
+}
+/* 修正完了ボタン(登録モード以外)*/
+IMG#imgModifyNext_Enable
+{
+  Z-INDEX   : 20; 
+  TOP       : 415px; 
+  LEFT      : 702px; 
+  POSITION  : absolute; 
+  visibility:hidden;
+}
+/* 修正完了ボタン(登録モード以外)*/
+IMG#imgModifyNext_Disable
+{
+  Z-INDEX   : 20; 
+  TOP       : 415px; 
+  LEFT      : 702px; 
+  POSITION  : absolute; 
+  visibility:visible;

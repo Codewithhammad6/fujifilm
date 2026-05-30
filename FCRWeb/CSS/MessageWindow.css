@@ -1,0 +1,117 @@
+/* エラー画面テーブル */
+TABLE#TABLE_MainErrorFrame
+{
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;    
+  /* 2005/11/11 H.SAITO -ST-
+  //HEIGHT     : 100%;
+  //WIDTH      : 100%;
+  */
+  HEIGHT     : 600px;
+  WIDTH      : 800px;
+  /* 2005/11/11 H.SAITO -ED- */
+  VISIBILITY : hidden;
+  Z-INDEX    : 200;
+}
+/* エラー画面ボックス */
+TABLE#TABLE_MainErrorBox
+{
+  POSITION          : absolute;
+/* 2006/10/19 K.Kurashiki */
+/* TOP               : 125px;*/
+  TOP               : 208px;
+  LEFT              : 125px; 
+  HEIGHT            : 250px;
+  WIDTH             : 550px;
+  BACKGROUND-COLOR  : #FFE79F;
+  BORDER-COLOR      : gray;
+  BORDER-STYLE      : solid;
+  BORDER-WIDTH      : 1px;
+  TEXT-ALIGN        : center;
+  FONT-SIZE         : 25px;
+  FONT-WEIGHT       : bold;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_MainErrorTitle1
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 15px;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_MainErrorTitle2
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 18px;
+  FONT-WEIGHT       : bold;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_MainErrorText
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 18px;
+  FONT-WEIGHT       : bold;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_MainErrorCode
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 15px;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+/* エラー画面ボタン */
+/* エラー画面OKボタンクリック領域 061012 神立 */
+DIV#DIV_MainErrorButton
+{
+  POSITION          : absolute;
+  TOP               : 408px;/* 325px; 2006/10/19 K.Kurashiki */
+  LEFT              : 340px; 
+  Z-INDEX           : 240;
+}
+IMG#IMG_MainErrorButton
+{
+  POSITION          : inherit; /* 061127 神立 */
+  TOP               : 0px; /* 325px; 061012 神立 */
+  LEFT              : 0px; /* 340px; 061012 神立 */
+  Z-INDEX           : 220;
+}
+TABLE#TABLE_MainErrorButton
+{
+  POSITION          : absolute;
+/* 2006/10/19 K.Kurashiki */
+/* TOP               : 240px;*/
+  TOP               : 323px;
+  LEFT              : 370px; 
+  HEIGHT            : 40px;
+  WIDTH             : 90px;
+  BACKGROUND-COLOR  : aliceblue;
+  BORDER-COLOR      : gray;
+  BORDER-STYLE      : solid;
+  BORDER-WIDTH      : 1px;
+  TEXT-ALIGN        : center;
+  FONT-SIZE         : 20px;
+  FONT-WEIGHT       : bold;
+  COLOR             : dodgerblue;
+  Z-INDEX           : 220;
+}
+/* エラーＯＫボタンテキスト */
+DIV#DIV_MainErrorOkText
+{
+  POSITION          : absolute;
+  TOP               : 7px; /* 332px; 061012 神立 */
+  LEFT              : 0px; /* 340px; 061012 神立 */
+  HEIGHT            : 18px;
+  WIDTH             : 102px;
+  TEXT-ALIGN        : center;
+  COLOR             : #000000;
+  FONT-SIZE         : 16px;
+  FONT-WEIGHT       : bold;
+  OVERFLOW          : hidden; 
+  Z-INDEX           : 230;
+}
+

@@ -1,0 +1,664 @@
+/******************************************************************************
+  DeleteMenu_View.css 
+
+  	DeleteMenu_Viewのスタイルシート
+
+
+     更新履歴    担当       Ver.        内容
+     2004/12/02  齋藤      -----       新規作成
+
+******************************************************************************/
+/* ボディ */
+BODY
+{  
+  CURSOR	          : default;
+  BACKGROUND-COLOR  : #F4E6DC;
+}
+/* コマンドボタン領域の色 */
+DIV#DIV_CommandBackGround
+{
+  POSITION   : absolute;
+  TOP        : 425px;
+  LEFT       : 0px;
+  HEIGHT     : 105px;
+  WIDTH      : 800px; 
+  background-color:#F4EEE4;
+}
+/* リストとコマンドボタンの境界 */
+IMG#IMG_List-Command_Border
+{
+  POSITION   : absolute;
+  TOP        : 419px;
+  LEFT       : 0px;
+  HEIGHT     : 7px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+}
+/*2005/05/24-ST*/
+/* メッセージと主要画面の境界 */
+TD#DIV_List_Border
+{
+  POSITION   : absolute;
+  TOP        : 1px;
+  LEFT       : 0px;
+  HEIGHT     : 5px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR : #ECC2AC;
+}
+/*2005/05/24-EN*/
+/* ヘッダ */
+/*2005/05/24-ST*/
+DIV#DIV_DeleteMenu_Header
+{
+  POSITION   : absolute;
+  TOP        : 29px;
+  LEFT       : 154px;    
+  HEIGHT     : 362px;
+  WIDTH      : 491px;
+  Z-INDEX    : 0;
+  BACKGROUND-COLOR  : #000000;
+}
+/*2005/05/24-EN*/
+/* リスト背景（灰） */
+DIV#DIV_BackGround_Gray
+{
+  POSITION   : absolute;
+  TOP        : 30px;
+  LEFT       : 155px;    
+  HEIGHT     : 300px;
+  WIDTH      : 338px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR  : #333333;
+}
+/* リスト背景（ピンク） */
+/*2005/05/24-ST*/
+DIV#DIV_BackGround_Pink
+{
+  POSITION   : absolute;
+  TOP        : 30px;
+  LEFT       : 155px;
+  HEIGHT     : 360px;
+  WIDTH      : 489px;
+  Z-INDEX    : 5;
+  BACKGROUND-COLOR  : #F7F1E6;
+}
+/*2005/05/24-EN*/
+/* リスト背景（紫） */
+DIV#DIV_BackGround_Purple
+{
+  POSITION   : absolute;
+  TOP        : 330px;
+  LEFT       : 155px;    
+  HEIGHT     : 20px;
+  WIDTH      : 338px;
+  Z-INDEX    : 10;
+/*2005/05/24-ST*/
+  BACKGROUND-COLOR  : #DACEC2;
+/*2005/05/24-ED*/
+}
+/* ボタン１ */
+IMG#IMG_DeleteMenu1
+{
+  POSITION   : absolute;
+  TOP        : 35px;
+  LEFT       : 195px;
+  Z-INDEX    : 20;
+  VISIBILITY : hidden;
+}
+/* テキスト１ */
+INPUT#DIV_DeleteText1 
+{
+  POSITION   : absolute;
+  TOP        : 39px;
+  LEFT       : 254px;    
+  HEIGHT     : 22px;
+  WIDTH      : 210px;
+  FONT-WEIGHT: bold;
+  BORDER     : 0,0,0,0;
+  CURSOR     : default;
+  Z-INDEX    : 40;
+  VISIBILITY : hidden;
+  OVERFLOW   : hidden;
+}
+/* 写真１ */
+DIV#DIV_DeleteFilm1 
+{
+  POSITION   : absolute;
+  TOP        : 37px;
+  LEFT       : 197px;    
+  Z-INDEX    : 50;
+  VISIBILITY : hidden;
+} 
+/* 削除・写損マーク１ */
+IMG#IMG_DeleteImage1
+{
+  POSITION   : absolute;
+  TOP        : 63px;
+  LEFT       : 254px;    
+  Z-INDEX    : 40;
+  VISIBILITY : hidden;
+}
+/* 再撮マーク１ */
+IMG#IMG_ReshotImage1 
+{
+  POSITION   : absolute;
+  TOP        : 63px;
+  LEFT       : 254px;
+  Z-INDEX    : 40;
+  VISIBILITY : hidden;
+}
+/* ボタン２ */
+IMG#IMG_DeleteMenu2
+{
+  POSITION   : absolute;
+  TOP        : 110px;
+  LEFT       : 195px;
+  Z-INDEX    : 20;
+  VISIBILITY : hidden;
+}
+/* テキスト２ */
+INPUT#DIV_DeleteText2 
+{
+  POSITION    : absolute;
+  TOP         : 114px;
+  LEFT        : 254px;    
+  HEIGHT      : 22px;
+  WIDTH       : 210px;
+  FONT-WEIGHT : bold;
+  BORDER      : 0,0,0,0;
+  CURSOR      : default;
+  Z-INDEX     : 40;
+  VISIBILITY  : hidden;
+  OVERFLOW    : hidden;
+}
+/* 写真２ */
+DIV#DIV_DeleteFilm2 
+{
+  POSITION   : absolute;
+  TOP        : 112px;
+  LEFT       : 197px;    
+  Z-INDEX    : 40;
+  VISIBILITY : hidden;
+}
+/* 削除・写損マーク２ */
+IMG#IMG_DeleteImage2 
+{
+  POSITION   : absolute;
+  TOP        : 138px;
+  LEFT       : 254px;    
+  Z-INDEX    : 40;
+  VISIBILITY : hidden;
+}
+/* 再撮マーク２ */
+IMG#IMG_ReshotImage2 
+{
+  POSITION   : absolute;
+  TOP        : 138px;
+  LEFT       : 254px;
+  Z-INDEX    : 40;
+  VISIBILITY : hidden;
+}
+/* ボタン３ */
+IMG#IMG_DeleteMenu3
+{
+  POSITION   : absolute;
+  TOP        : 185px;
+  LEFT       : 195px;
+  Z-INDEX    : 20;
+  VISIBILITY : hidden;
+}
+/* テキスト３ */
+INPUT#DIV_DeleteText3
+{
+  POSITION   : absolute;
+  TOP        : 189px;
+  LEFT       : 254px;    
+  HEIGHT     : 22px;
+  WIDTH      : 210px;
+  FONT-WEIGHT: bold;
+  BORDER     : 0,0,0,0;
+  CURSOR     : default;
+  Z-INDEX    : 40;
+  VISIBILITY : hidden;
+  OVERFLOW   : hidden;
+}
+/* 写真３ */
+DIV#DIV_DeleteFilm3
+{
+  POSITION   : absolute;
+  TOP        : 187px;
+  LEFT       : 197px;    
+  Z-INDEX    : 40;
+  VISIBILITY : hidden;
+}
+/* 削除・写損マーク３ */
+IMG#IMG_DeleteImage3 
+{
+  POSITION   : absolute;
+  TOP        : 213px;
+  LEFT       : 254px;    
+  Z-INDEX    : 40;
+  VISIBILITY : hidden;
+}
+/* 再撮マーク３ */
+IMG#IMG_ReshotImage3 
+{
+  POSITION   : absolute;
+  TOP        : 213px;
+  LEFT       : 254px;
+  Z-INDEX    : 40;
+  VISIBILITY : hidden;
+}
+/* ボタン４ */
+IMG#IMG_DeleteMenu4
+{
+  POSITION   : absolute;
+  TOP        : 260px;
+  LEFT       : 195px;
+  Z-INDEX    : 20;
+  VISIBILITY : hidden;
+}
+/* テキスト４ */
+INPUT#DIV_DeleteText4 
+{
+  POSITION   : absolute;
+  TOP        : 264px;
+  LEFT       : 254px;    
+  HEIGHT     : 22px;
+  WIDTH      : 210px;
+  BORDER     : 0,0,0,0;
+  FONT-WEIGHT: bold;
+  CURSOR     : default;
+  Z-INDEX    : 40;
+  VISIBILITY : hidden;
+  OVERFLOW   : hidden;
+}
+/* 写真４ */
+DIV#DIV_DeleteFilm4
+{
+  POSITION   : absolute;
+  TOP        : 262px;
+  LEFT       : 197px;    
+  Z-INDEX    : 40;
+  VISIBILITY : hidden;
+}
+/* 削除・写損マーク４ */
+IMG#IMG_DeleteImage4 
+{
+  POSITION   : absolute;
+  TOP        : 288px;
+  LEFT       : 254px;    
+  Z-INDEX    : 40;
+  VISIBILITY : hidden;
+}
+/* 再撮マーク４ */
+IMG#IMG_ReshotImage4 
+{
+  POSITION   : absolute;
+  TOP        : 288px;
+  LEFT       : 254px;
+  Z-INDEX    : 40;
+  VISIBILITY : hidden;
+}
+/* 隠しボタン 選択ボタン */
+DIV#DIV_DeleteMenu5
+{
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;    
+	Z-INDEX	   : 30;
+	VISIBILITY : hidden;
+}
+/* ページ数 */
+DIV#DIV_TextCnt 
+{
+  POSITION   : absolute;
+  TOP        : 331px;
+  LEFT       : 160px;    
+  HEIGHT     : 18px;
+  WIDTH      : 338px;
+  FONT-WEIGHT: bold;
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : hidden;
+}
+/* ↑ボタン Enable */
+IMG#IMG_UpBtn_Enable
+{
+  POSITION   : absolute;
+  TOP        : 350px;
+/*2005/05/24-ST*/
+  LEFT       : 155px;    
+  Z-INDEX    : 20;
+/*2005/05/24-ED*/
+  VISIBILITY : hidden;
+}
+/* ↑ボタン Disable */
+IMG#IMG_UpBtn_Disable
+{
+  POSITION   : absolute;
+  TOP        : 350px;
+/*2005/05/24-ST*/
+  LEFT       : 155px;    
+  Z-INDEX    : 20;
+/*2005/05/24-ED*/
+  VISIBILITY : visible;
+}
+/* ↓ボタン Enable*/
+IMG#IMG_DownBtn_Enable 
+{
+  POSITION   : absolute;
+  TOP        : 350px;
+  LEFT       : 338px;    
+/*2005/05/24-ST*/
+  Z-INDEX    : 20;
+/*2005/05/24-ED*/
+  VISIBILITY : hidden;
+}
+/* ↓ボタン Disable*/
+IMG#IMG_DownBtn_Disable 
+{
+  POSITION   : absolute;
+  TOP        : 350px;
+  LEFT       : 338px;    
+/*2005/05/24-ST*/
+  Z-INDEX    : 20;
+/*2005/05/24-ED*/
+  VISIBILITY : visible;
+}
+/* 削除ボタン クリック領域 */
+TABLE#TABLE_DelBtn
+{
+  POSITION   : absolute;
+  TOP        : 40px;
+  LEFT       : 515px;    
+  HEIGHT     : 43px;
+  WIDTH      : 109px;
+  Z-INDEX    : 30;
+  VISIBILITY : hidden;
+}
+/* 削除ボタン Enable*/
+IMG#IMG_DelBtn_Enable 
+{
+  POSITION   : absolute;
+  TOP        : 40px;
+  LEFT       : 515px;    
+  Z-INDEX    : 10;
+  VISIBILITY : hidden;
+}
+/* 削除ボタン Disable*/
+IMG#IMG_DelBtn_Disable 
+{
+  POSITION   : absolute;
+  TOP        : 40px;
+  LEFT       : 515px;    
+  Z-INDEX    : 10;
+  VISIBILITY : visible;
+}  
+/* 削除テキスト */
+DIV#DIV_DelText 
+{
+  POSITION   : absolute;
+  TOP        : 62px;
+  LEFT       : 515px;    
+  HEIGHT     : 18px;
+  WIDTH      : 108px;
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : hidden;
+}
+/* 削除キャンセルボタン クリック領域 */
+TABLE#TABLE_DelCancelBtn
+{
+  POSITION   : absolute;
+  TOP        : 105px;
+  LEFT       : 515px;    
+  HEIGHT     : 43px;
+  WIDTH      : 109px;
+  Z-INDEX    : 30;
+  VISIBILITY : hidden;
+}
+/* 削除キャンセルボタン Enable*/
+IMG#IMG_DelCancelBtn_Enable 
+{
+  POSITION   : absolute;
+  TOP        : 105px;
+  LEFT       : 515px;    
+  Z-INDEX    : 10;
+  VISIBILITY : hidden;
+}
+/* 削除キャンセルボタン Disable*/
+IMG#IMG_DelCancelBtn_Disable 
+{
+  POSITION   : absolute;
+  TOP        : 105px;
+  LEFT       : 515px;    
+  Z-INDEX    : 10;
+  VISIBILITY : visible;
+}
+/* 削除キャンセルテキスト */
+DIV#DIV_DelCancelText 
+{
+  POSITION   : absolute;
+  TOP        : 127px;
+  LEFT       : 515px;    
+  HEIGHT     : 18px;
+  WIDTH      : 108px;
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : hidden;
+}
+/* 画像無効化ボタン クリック領域 */
+TABLE#TABLE_ImgDisableBtn
+{
+  POSITION   : absolute;
+  TOP        : 195px;
+  LEFT       : 515px;    
+  HEIGHT     : 43px;
+  WIDTH      : 109px;
+  Z-INDEX    : 30;
+  VISIBILITY : hidden;
+}
+/* 画像無効化ボタン Enable*/
+IMG#IMG_ImgDisableBtn_Enable 
+{
+  POSITION   : absolute;
+  TOP        : 195px;
+  LEFT       : 515px;    
+  Z-INDEX    : 10;
+  VISIBILITY : hidden;
+}
+/* 画像無効化ボタン Disable*/
+IMG#IMG_ImgDisableBtn_Disable 
+{
+  POSITION   : absolute;
+  TOP        : 195px;
+  LEFT       : 515px;    
+  Z-INDEX    : 10;
+  VISIBILITY : visible;
+}
+/* 画像無効化テキスト */
+DIV#DIV_ImgDisableText 
+{
+  POSITION   : absolute;
+  TOP        : 217px;
+  LEFT       : 515px;    
+  HEIGHT     : 18px;
+  WIDTH      : 108px;
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : hidden;
+}
+/* 画像有効化ボタン クリック領域 */
+TABLE#TABLE_ImgEnableBtn
+{
+  POSITION   : absolute;
+  TOP        : 260px;
+  LEFT       : 515px;    
+  HEIGHT     : 43px;
+  WIDTH      : 109px;
+  Z-INDEX    : 30;
+  VISIBILITY : hidden;
+}
+/* 画像有効化ボタン Enable*/
+IMG#IMG_ImgEnableBtn_Enable 
+{
+  POSITION   : absolute;
+  TOP        : 260px;
+  LEFT       : 515px;    
+  Z-INDEX    : 10;
+  VISIBILITY : hidden;
+}
+/* 画像有効化ボタン Disable*/
+IMG#IMG_ImgEnableBtn_Disable 
+{
+  POSITION   : absolute;
+  TOP        : 260px;
+  LEFT       : 515px;    
+  Z-INDEX    : 10;
+  VISIBILITY : visible;
+}
+/* 画像有効化テキスト */
+DIV#DIV_ImgEnableText 
+{
+  POSITION   : absolute;
+  TOP        : 282px;
+  LEFT       : 515px;    
+  HEIGHT     : 18px;
+  WIDTH      : 108px;
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : hidden;
+}
+/* 再撮影ボタン クリック領域 */
+TABLE#TABLE_ReshotBtn
+{
+  POSITION   : absolute;
+  TOP        : 325px;
+  LEFT       : 515px;    
+  HEIGHT     : 43px;
+  WIDTH      : 109px;
+  Z-INDEX    : 30;
+  VISIBILITY : hidden;
+}
+/* 再撮影ボタン Enable*/
+IMG#IMG_ReshotBtn_Enable 
+{
+  POSITION   : absolute;
+  TOP        : 325px;
+  LEFT       : 515px;    
+  Z-INDEX    : 10;
+  VISIBILITY : hidden;
+}
+/* 再撮影ボタン Disable*/
+IMG#IMG_ReshotBtn_Disable 
+{
+  POSITION   : absolute;
+  TOP        : 325px;
+  LEFT       : 515px;    
+  Z-INDEX    : 10;
+  VISIBILITY : visible;
+}
+/* 再撮影テキスト */
+DIV#DIV_ReshotText 
+{
+  POSITION   : absolute;
+  TOP        : 347px;
+  LEFT       : 515px;    
+  HEIGHT     : 18px;
+  WIDTH      : 108px;
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : hidden;
+}
+/* 戻るボタン背景 */
+IMG#IMG_Cancel_BackGround 
+{
+  POSITION   : absolute;
+  TOP        : 470px;
+  LEFT       : 10px;    
+  Z-INDEX    : 10;
+}
+/* 戻るボタン クリック領域 */
+TABLE#TABLE_CancelBtn
+{
+  POSITION   : absolute;
+  TOP        : 476px;
+  LEFT       : 18px;    
+  HEIGHT     : 32px;
+  WIDTH      : 102px;
+  Z-INDEX    : 30;
+  VISIBILITY : visible;
+}
+/* 戻るボタン */
+IMG#IMG_CancelBtn 
+{
+  POSITION   : absolute;
+  TOP        : 476px;
+  LEFT       : 18px;    
+  Z-INDEX    : 20;
+}
+/* 戻るテキスト */
+DIV#DIV_CancelText 
+{
+  POSITION   : absolute;
+  TOP        : 484px;
+  LEFT       : 18px;    
+  HEIGHT     : 18px;
+  WIDTH      : 102px; 
+  FONT-WEIGHT: bold;
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : hidden;
+}
+/* 修正完了ボタン背景 */
+IMG#IMG_Update_BackGround 
+{
+  POSITION   : absolute;
+  TOP        : 405px;
+  LEFT       : 685px;    
+  Z-INDEX    : 10;
+}
+/* 修正完了ボタン クリック領域 */
+TABLE#TABLE_UpdateBtn
+{
+  POSITION   : absolute;
+  TOP        : 422px;
+  LEFT       : 690px;    
+  HEIGHT     : 90px;
+  WIDTH      : 90px;
+  Z-INDEX    : 30;
+  VISIBILITY : hidden;
+}
+/* 修正完了ボタン */
+IMG#IMG_UpdateBtn_Enable 
+{
+  POSITION   : absolute;
+  TOP        : 422px;
+  LEFT       : 690px;    
+  Z-INDEX    : 20;
+  VISIBILITY : hidden;
+}
+/* 修正完了ボタン */
+IMG#IMG_UpdateBtn_Disable 
+{
+  POSITION   : absolute;
+  TOP        : 422px;
+  LEFT       : 690px;    
+  Z-INDEX    : 20;
+  VISIBILITY : visible;
+}
+/* 修正完了テキスト */
+DIV#DIV_UpdateText 
+{
+  POSITION   : absolute;
+  TOP        : 460px;
+  LEFT       : 690px;    
+  HEIGHT     : 18px;
+  WIDTH      : 90px; 
+  FONT-WEIGHT: bold;
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : hidden;
+}

@@ -1,0 +1,352 @@
+/****************************************************************************
+
+  @file DRStatus_View.css 
+
+  @brief DRStatus_Viewのスタイルシート
+
+  @author TYK石井
+
+  Copyright(C) 2014 FUJIFILM Corporation All rights reserved.
+
+         更新履歴  担当        Ver.       内容
+  -----  --------  ----------  --------   -------------------------------
+  @date  14/03/11  TYK石井     3.0(B)     新規作成
+  
+****************************************************************************/
+
+BODY
+{
+  FONT-WEIGHT      : bold;
+  FONT-SIZE        : 16px;
+  BACKGROUND-COLOR : Transparent;
+  CURSOR           : default;
+}
+
+/* ヘッダ */
+IMG#imgHeader
+{
+  Z-INDEX  : 100;
+  LEFT     : 0px;
+  WIDTH    : 794px;
+  POSITION : absolute;
+  TOP      : 10px;
+  HEIGHT   : 28px;
+}
+IMG#imgHeader1
+{
+  Z-INDEX  : 110;
+  LEFT     : 120px;
+  WIDTH    : 1px;
+  POSITION : absolute;
+  TOP      : 10px;
+  HEIGHT   : 28px;
+}
+IMG#imgHeader2
+{
+  Z-INDEX  : 110;
+  LEFT     : 470px;
+  WIDTH    : 1px;
+  POSITION : absolute;
+  TOP      : 10px;
+  HEIGHT   : 28px;
+}
+IMG#imgHeader3
+{
+  Z-INDEX  : 110;
+  LEFT     : 560px;
+  WIDTH    : 1px;
+  POSITION : absolute;
+  TOP      : 10px;
+  HEIGHT   : 28px;
+}
+IMG#imgHeader4
+{
+  Z-INDEX  : 110;
+  LEFT     : 700px;
+  WIDTH    : 1px;
+  POSITION : absolute;
+  TOP      : 10px;
+  HEIGHT   : 28px;
+}
+
+/* ======================== */
+
+/* ヘッダ(接続装置名) */
+TABLE#tblDeviceName
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 110;
+  LEFT        : 10px;
+  WIDTH       : 110px;
+  POSITION    : absolute;
+  TOP         : 10px;
+  HEIGHT      : 28px;
+}
+
+/* ヘッダ(メッセージ) */
+TABLE#tblMessage
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 110;
+  LEFT        : 130px;
+  WIDTH       : 260px;
+  POSITION    : absolute;
+  TOP         : 10px;
+  HEIGHT      : 28px;
+}
+
+/* ヘッダ(メッセージ件数) */
+TABLE#tblMessageNum
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 110;
+  LEFT        : 400px;
+  WIDTH       : 70px;
+  POSITION    : absolute;
+  TOP         : 10px;
+  HEIGHT      : 28px;
+  text-align  : center;
+}
+
+/* ヘッダ(装置状態) */
+TABLE#tblDeviceStatus
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 110;
+  LEFT        : 480px;
+  WIDTH       : 80px;
+  POSITION    : absolute;
+  TOP         : 10px;
+  HEIGHT      : 28px;
+}
+
+/* ヘッダ(バッテリー状態) */
+TABLE#tblBatteryStatus
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 110;
+  LEFT        : 570px;
+  WIDTH       : 130px;
+  POSITION    : absolute;
+  TOP         : 10px;
+  HEIGHT      : 28px;
+}
+
+/* ヘッダ(接続状態) */
+TABLE#tblConnectStatus
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 110;
+  LEFT        : 710px;
+  WIDTH       : 84px;
+  POSITION    : absolute;
+  TOP         : 10px;
+  HEIGHT      : 28px;
+}
+
+/* エラー情報ラベル */
+TABLE#tblAllErrorMessage
+{
+  DISPLAY		: inline;
+  FONT-WEIGHT   : bold;
+  Z-INDEX		: 140;
+  LEFT			: 30px;
+  WIDTH			: 120px;
+  POSITION		: absolute;
+  TOP			: 178px;
+  HEIGHT		: 25px;
+  VISIBILITY 	: visible;
+  VERTICAL-ALIGN: middle;
+}
+
+/* 接続装置一覧 */
+DIV#divQueueList
+{
+  Z-INDEX      : 110;
+  LEFT         : 0px;
+  OVERFLOW	   : auto;
+  WIDTH        : 794px;
+  POSITION     : absolute;
+  TOP          : 38px;
+  HEIGHT       : 120px;
+}
+
+TABLE#table
+{
+  FONT-WEIGHT : bold;
+  FONT-SIZE   : 15px;
+  Z-INDEX     : 120;
+  LEFT        : 0px;
+  WIDTH       : 100%;
+  POSITION    : absolute;
+  TOP         : 0px;
+  HEIGHT      : 100%;
+}
+
+TR#TR
+{
+  HEIGHT: 40px;
+}
+
+/* スペース列 */
+TD#tdSpace
+{
+  WIDTH : 10px;
+}
+
+/* 装置名 */
+TD#tdDeviceName
+{
+  WIDTH      :100px;
+  WORD-BREAK : break-all;
+}
+
+DIV#divDeviceNameTxt
+{
+  WIDTH    : 90px;
+}
+
+/* カラー */
+TD#tdDeviceColor
+{
+  WIDTH      :20px;
+  WORD-BREAK : break-all;
+}
+
+DIV#divDeviceColor
+{
+  WIDTH    : 20px;
+}
+
+/* メッセージ */
+TD#tdMessage
+{
+  WIDTH      : 270px;
+  WORD-BREAK : break-all;
+}
+
+DIV#divMessageTxt
+{
+  WIDTH    : 260px;
+}
+
+/* メッセージ件数 */
+TD#tdMessageNum
+{
+  WIDTH      : 80px;
+  WORD-BREAK : break-all;
+  text-align : center;
+}
+
+DIV#divMessageNumTxt
+{
+  WIDTH    : 70px;
+}
+
+/* 装置状態 */
+TD#tdDeviceStatus
+{
+  WIDTH      : 90px;
+  WORD-BREAK : break-all;
+}
+
+IMG#imgDeviceStatus
+{
+  WIDTH      : 30px;
+}
+
+/* バッテリー状態 */
+TD#tdBatteryStatus
+{
+  WIDTH      : 30px;
+  WORD-BREAK : break-all;
+}
+
+IMG#imgBatteryStatus
+{
+  WIDTH      : 30px;
+}
+
+TD#tdBatteryStatusTxt
+{
+  WIDTH      : 110px;
+  WORD-BREAK : break-all;
+}
+
+DIV#divBatteryStatusTxt
+{
+  WIDTH      : 100px;
+}
+
+/* 接続状態 */
+TD#tdConnectStatus
+{
+  WIDTH      : 84px;
+  WORD-BREAK : break-all;
+}
+
+IMG#imgConnectStatus
+{
+  WIDTH      : 30px;
+}
+
+/* エラーメッセージ一覧 */
+DIV#divErrorList
+{
+  Z-INDEX       : 110;
+  LEFT          : 180px;
+  OVERFLOW	    : auto;
+  WIDTH         : 500px;
+  POSITION      : absolute;
+  TOP           : 178px;
+  HEIGHT        : 120px;
+  BORDER-TOP    : #6B6B6B 2px solid;
+  BORDER-BOTTOM : #A1A1A1 1px solid;
+  BORDER-LEFT   : #6B6B6B 2px solid;
+  BORDER-RIGHT  : #A1A1A1 1px solid;
+}
+
+TABLE#Errortable
+{
+  FONT-WEIGHT : bold;
+  FONT-SIZE   : 15px;
+  Z-INDEX     : 120;
+  LEFT        : 0px;
+  WIDTH       : 100%;
+  POSITION    : absolute;
+  TOP         : 0px;
+  HEIGHT      : 100%;
+}
+
+TR#TR
+{
+  HEIGHT: 20px;
+}
+
+/* エラー情報 */
+TD#tdError
+{
+  WIDTH      : 470px;
+  WORD-BREAK : break-all;
+}
+
+DIV#divErrorTxt
+{
+  WIDTH    : 460px;
+}
+
+/* リスト境界線(下) */
+HR#hrBottom
+{
+  Z-INDEX  : 110;
+  LEFT     : 0px;
+  WIDTH    : 794px;
+  POSITION : absolute;
+  TOP      : 128px;
+}

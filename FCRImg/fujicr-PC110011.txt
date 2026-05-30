@@ -1,0 +1,7 @@
+Patient ID:C09269
+Patient Name:ZIA M
+Sex:M
+Date of Exposure:11.JAN.2026
+Anatomical Region:LOW_EXM
+Exposure Menu Name:FEMUR LAT
+Modality:CR

@@ -1,0 +1,7 @@
+Patient ID:A0149
+Patient Name:BABY BOY OF ASMAT ULLAH
+Sex:M
+Date of Exposure:16.MAY.2026
+Anatomical Region:CHEST
+Exposure Menu Name:CHEST PA
+Modality:CR

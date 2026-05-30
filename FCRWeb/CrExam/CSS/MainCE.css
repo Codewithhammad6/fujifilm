@@ -1,0 +1,86 @@
+/******************************************************************************
+  Main.css 
+
+  	Mainのスタイルシート
+
+
+     更新履歴    担当       Ver.        内容
+     2004/01/03   畑       -----       新規作成
+     2009/09/08  星野      V6.0        インジケーター切り離し対応
+
+******************************************************************************/
+BODY
+{
+  OVERFLOW   : hidden;
+  background-color:#F4EEE4;
+  CURSOR	          : default;
+}
+IFRAME#frmIndicator
+{
+  POSITION   : absolute;
+  TOP        : 7px; 
+  LEFT       : 570px;/*2009.09.08 FF 星野 インジケーター切り離し対応 608pxから変更*/
+  Z-INDEX    : 50;
+  WIDTH      : 0px; 
+  HEIGHT     : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#DispFrame
+{
+  Z-INDEX    : 30;
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 0px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#MainFrame
+{
+  Z-INDEX    : 30;
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 0px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+IFRAME#GetErrorFrame
+{
+  Z-INDEX    : 30;
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 0px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+IFRAME#EndFrame
+{
+  Z-INDEX    : 80;
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 0px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+IFRAME#MenuFrame
+{
+  Z-INDEX    : 80;
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 0px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+

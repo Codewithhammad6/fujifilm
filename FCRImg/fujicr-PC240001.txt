@@ -1,0 +1,7 @@
+Patient ID:247
+Patient Name:KHALIL AHMAD
+Sex:M
+Date of Exposure:24.AUG.2025
+Anatomical Region:PELVIS
+Exposure Menu Name:HIP AP
+Modality:CR

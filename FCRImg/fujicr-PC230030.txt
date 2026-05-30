@@ -1,0 +1,7 @@
+Patient ID:A0214
+Patient Name:FARZANA
+Sex:F
+Date of Exposure:23.MAY.2026
+Anatomical Region:CHEST
+Exposure Menu Name:CHEST PA
+Modality:CR

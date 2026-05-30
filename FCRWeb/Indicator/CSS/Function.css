@@ -1,0 +1,252 @@
+﻿/****************************************************************************
+
+  @file Function.css 
+
+  @brief Functionのスタイルシート
+
+
+  @author YSK菅野
+
+  Copyright(c) 2004-2006 FUJI PHOTO FILM CO., LTD. All rights reseved.
+
+         更新履歴  担当        Ver.       内容
+  -----  --------  ----------  --------   -------------------------------
+  @date  04/12/21  YSK菅野     XX-XX      新規作成
+  @date  08/07/16  S1 神立     V4.0       クライアント5台対応。連打禁止用の透明フレームを追加
+****************************************************************************/
+BODY
+{
+  FONT-WEIGHT : bold;
+  FONT-SIZE   : 16px;
+  CURSOR      : default;
+  BACKGROUND-COLOR : #F7F1E6;
+}
+
+/* タブ表示用フレーム */
+IFRAME#TUB_FRAME
+{
+  LEFT       : 0px;
+  WIDTH      : 800px;
+  POSITION   : absolute;
+  TOP        : 0px;
+  HEIGHT     : 62px;
+  VISIBILITY : hidden;
+}
+
+/* インジケータ画面表示用フレーム */
+IFRAME#VIEW_FRAME
+{
+  LEFT       : 0px;
+  WIDTH      : 800px;
+  POSITION   : absolute;
+  TOP        : 62px;
+  HEIGHT     : 505px;
+}
+
+/* 確認フレーム */
+TABLE#tblConfirm
+{
+  Z-INDEX    : 1400;
+  LEFT       : 0px;
+  VISIBILITY : hidden;
+  WIDTH      : 800px;
+  POSITION   : absolute;
+  TOP        : 0px;
+  HEIGHT     : 600px;
+}
+
+/* 確認ボックス */
+TABLE#tblConfirmBox
+{
+  FONT-WEIGHT      : bold;
+  FONT-SIZE        : 16px;
+  Z-INDEX          : 150;
+  LEFT             : 150px;
+  WIDTH            : 494px;
+  POSITION         : absolute;
+  BACKGROUND-COLOR : #FFE79F;
+  BORDER-COLOR     : gray;
+  BORDER-STYLE     : solid;
+  BORDER-WIDTH     : 1px;
+  TOP              : 100px;
+  HEIGHT           : 300px;
+}
+
+TR#trConfirmTextLine
+{
+  BACKGROUND-COLOR : #FFE79F;
+  HEIGHT           : 220px;
+}
+
+TR#trButtonLine
+{
+  BACKGROUND-COLOR : #FFE79F;
+  HEIGHT           : 80px;
+}
+
+/* Yesボタン */
+IMG#imgYesButton
+{
+  POSITION          : absolute;
+  TOP               : 345px;
+  LEFT              : 486px; 
+  HEIGHT            : 32px;
+  WIDTH             : 102px;
+  Z-INDEX           : 220;
+}
+TABLE#tblYesButton
+{
+  POSITION          : absolute;
+  TOP               : 345px;
+  LEFT              : 486px; 
+  HEIGHT            : 32px;
+  WIDTH             : 102px;
+  TEXT-ALIGN        : center;
+  FONT-WEIGHT       : bold;
+  Z-INDEX           : 230;
+}
+
+/* Noボタン */
+IMG#imgNoButton
+{
+  POSITION          : absolute;
+  TOP               : 345px;
+  LEFT              : 196px; 
+  HEIGHT            : 32px;
+  WIDTH             : 102px;
+  Z-INDEX           : 220;
+}
+TABLE#tblNoButton
+{
+  POSITION          : absolute;
+  TOP               : 345px;
+  LEFT              : 196px; 
+  HEIGHT            : 32px;
+  WIDTH             : 102px;
+  TEXT-ALIGN        : center;
+  FONT-WEIGHT       : bold;
+  Z-INDEX           : 230;
+}
+
+/* 警告ダイアログ */
+TABLE#tblWarning
+{
+  Z-INDEX    : 140;
+  LEFT       : 0px;
+  VISIBILITY : hidden;
+  WIDTH      : 800px;
+  POSITION   : absolute;
+  TOP        : 0px;
+  HEIGHT     : 600px;
+}
+
+/* 警告ダイアログボックス */
+TABLE#tblWarningBox
+{
+  FONT-WEIGHT      : bold;
+  FONT-SIZE        : 16px;
+  Z-INDEX          : 150;
+  BACKGROUND-COLOR : #FFE79F;
+  BORDER-COLOR     : gray;
+  BORDER-STYLE     : solid;
+  BORDER-WIDTH     : 1px;
+  LEFT             : 150px;
+  WIDTH            : 494px;
+  POSITION         : absolute;
+  TOP              : 100px;
+  HEIGHT           : 300px;
+}
+
+/* 警告テキスト行 */
+TR#trWarningText
+{
+  BACKGROUND-COLOR : #FFCC33;
+  HEIGHT           : 250px;
+}
+
+/* ボタン表示行 */
+TR#trCloseButton
+{
+  BACKGROUND-COLOR : #FFE79F;
+  HEIGHT           : 50px;
+}
+
+/* 閉じるボタン */
+TABLE#tblCloseButton
+{
+  FONT-WEIGHT      : bold;
+  FONT-SIZE        : 16px;
+  BORDER-RIGHT     : #66ffcc 3px solid;
+  BORDER-TOP       : #66ffcc 3px solid;
+  Z-INDEX          : 160;
+  LEFT             : 200px;
+  BORDER-LEFT      : #66ffcc 3px solid;
+  WIDTH            : 100px;
+  BORDER-BOTTOM    : #66ffcc 3px solid;
+  POSITION         : absolute;
+  TOP              : 255px;
+  HEIGHT           : 30px;
+  BACKGROUND-COLOR : #FFCC66;
+}
+
+/* 処理中ダイアログ */
+TABLE#tblProcessing
+{
+  Z-INDEX    : 140;
+  LEFT       : 0px;
+  VISIBILITY : hidden;
+  WIDTH      : 800px;
+  POSITION   : absolute;
+  TOP        : 0px;
+  HEIGHT     : 600px;
+}
+
+/* 処理中ダイアログボックス */
+TABLE#tblProcessingBox
+{
+  FONT-WEIGHT      : bold;
+  FONT-SIZE        : 16px;
+  Z-INDEX          : 150;
+  LEFT             : 150px;
+  WIDTH            : 494px;
+  POSITION         : absolute;
+  TOP              : 100px;
+  HEIGHT           : 300px;
+  BACKGROUND-COLOR : #FFE79F;
+/* 2005/08/12 Kanno ADD ST デザイン修正 */
+  BORDER-COLOR     : gray;
+  BORDER-STYLE     : solid;
+  BORDER-WIDTH     : 1px;
+/* 2005/08/12 Kanno ADD ED デザイン修正 */
+}
+
+/* 確認ダイアログメッセージ */
+TD#tdConformText
+{
+  TEXT-ALIGN : center;
+}
+
+/* 警告ダイアログメッセージ */
+TD#tdWarningText
+{
+  TEXT-ALIGN : center;
+}
+
+/* 処理中ダイアログメッセージ */
+TD#tdProcessingText
+{
+  TEXT-ALIGN : center;
+}
+
+/* 連打禁止用の透明フレーム 2008/07/16 神立 */
+TABLE#tblTransparentBox
+{
+  Z-INDEX           : 140;
+  LEFT              : 0px;
+  TOP               : 0px;
+  WIDTH             : 800px;
+  HEIGHT            : 600px;
+  VISIBILITY        : hidden;
+  POSITION          : absolute;
+  background-color  : Transparent;
+}

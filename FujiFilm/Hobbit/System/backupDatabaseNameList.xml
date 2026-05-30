@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<BackupDatabaseNameList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <databaseNameList>
+    <anyType xsi:type="xsd:string">Explanation</anyType>
+    <anyType xsi:type="xsd:string">History</anyType>
+    <anyType xsi:type="xsd:string">ListConfig</anyType>
+    <anyType xsi:type="xsd:string">Patient</anyType>
+    <anyType xsi:type="xsd:string">Preset</anyType>
+    <anyType xsi:type="xsd:string">Study</anyType>
+    <anyType xsi:type="xsd:string">UserData</anyType>
+  </databaseNameList>
+</BackupDatabaseNameList>

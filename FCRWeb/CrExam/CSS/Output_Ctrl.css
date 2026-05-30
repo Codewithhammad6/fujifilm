@@ -1,0 +1,55 @@
+/******************************************************************************
+  Ouptput_Ctrl.css 
+
+  	Ouptput_Ctrlのスタイルシート
+
+
+     更新履歴    担当       Ver.        内容
+     2004/01/08  畑      -----       新規作成
+
+******************************************************************************/
+BODY
+{
+  OVERFLOW   : hidden;
+}
+IFRAME#OUTPUT_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 517px;
+  WIDTH      : 800px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+IFRAME#OUTPUTDETAIL_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#INFORMATION_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 0px;
+  HEIGHT     : 83px;
+  WIDTH      : 800px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+IFRAME#STUDYDATA_GET_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;  
+}
+IFRAME#OUTPUT_UPDATE_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}

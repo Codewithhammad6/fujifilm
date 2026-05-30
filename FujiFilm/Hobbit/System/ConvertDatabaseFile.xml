@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ConvertFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProcList>
+    <anyType xsi:type="xsd:string">HOBBIT_USER1\Temp\master\SQL\CreateDatabase\CreateMasterData.bat</anyType>
+    <anyType xsi:type="xsd:string">HOBBIT_USER1\Temp\HistoryDB\SQL\CreateDatabase\CreateHistoryDB.bat</anyType>
+    <anyType xsi:type="xsd:string">HOBBIT_USER1\Temp\master\SQL\CreateDatabase\CreateMasterData.bat</anyType>
+    <anyType xsi:type="xsd:string">HOBBIT_USER1\Temp\ExplanationDB\SQL\CreateDatabase\CreateExplanationDB.bat</anyType>
+    <anyType xsi:type="xsd:string">HOBBIT_USER1\Temp\HistoryDB\SQL\CreateDatabase\CreateHistoryDB.bat</anyType>
+    <anyType xsi:type="xsd:string">HOBBIT_USER1\Temp\ListConfigDB\SQL\CreateDatabase\CreateListConfigDB.bat</anyType>
+    <anyType xsi:type="xsd:string">HOBBIT_USER1\Temp\UserDataDB\SQL\CreateDatabase\CreateUserDataDB.bat</anyType>
+    <anyType xsi:type="xsd:string">HOBBIT_USER1\Temp\PatientDB\SQL\CreateDatabase\CreatePatientDB.bat</anyType>
+    <anyType xsi:type="xsd:string">HOBBIT_USER1\Temp\StudyDB\SQL\CreateDatabase\CreateStudyDB.bat</anyType>
+    <anyType xsi:type="xsd:string">HOBBIT_USER1\Temp\MediaProcDB\create_sp_master_mediaproc.bat</anyType>
+    <anyType xsi:type="xsd:string">HOBBIT_USER1\Temp\RtrvProcDB\create_sp_master_rtrvproc.bat</anyType>
+    <anyType xsi:type="xsd:string">HOBBIT_USER1\Temp\PresetDB\SQL\CreateDatabase\CreatePresetDB.bat</anyType>
+    <anyType xsi:type="xsd:string">HOBBIT_PROG\System\InsertStudySettingRecord.exe HOBBIT_USER\UserTemp\Files\CustomizeConfig</anyType>
+  </ProcList>
+</ConvertFile>

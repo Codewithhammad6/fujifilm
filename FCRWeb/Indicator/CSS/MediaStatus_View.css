@@ -1,0 +1,283 @@
+﻿/****************************************************************************
+
+  @file MediaStatus_View.css 
+
+  @brief MediaStatus_Viewのスタイルシート
+
+
+
+  @author YSK菅野
+
+  Copyright(c) 2004-2006 FUJI PHOTO FILM CO., LTD. All rights reseved.
+
+         更新履歴  担当        Ver.       内容
+  -----  --------  ----------  --------   -------------------------------
+  @date  04/12/21  YSK菅野     XX-XX      新規作成
+
+****************************************************************************/
+
+BODY
+{
+  FONT-WEIGHT      : bold;
+  FONT-SIZE        : 16px;
+  BACKGROUND-COLOR : Transparent;
+  CURSOR           : default;
+}
+
+/* 入れ替えボタン */
+IMG#imgMediaChange
+{
+  Z-INDEX    : 110;
+  LEFT       : 192px;
+  WIDTH      : 158px;
+  POSITION   : absolute;
+  TOP        : 216px;
+  HEIGHT     : 40px;
+  VISIBILITY : hidden;
+}
+
+/* 入れ替えボタン非活性 */
+IMG#imgMediaChangeDisable
+{
+  Z-INDEX    : 120;
+  LEFT       : 192px;
+  WIDTH      : 158px;
+  POSITION   : absolute;
+  TOP        : 216px;
+  HEIGHT     : 40px;
+  VISIBILITY : hidden;
+}
+
+/* 入れ替えボタンラベル */
+TABLE#tblMediaChange
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 130;
+  LEFT        : 227px;
+  WIDTH       : 117px;
+  POSITION    : absolute;
+  TOP         : 216px;
+  HEIGHT      : 40px;
+  VISIBILITY  : hidden;
+}
+
+/* 取り出しボタン */
+IMG#imgMediaEject
+{
+  Z-INDEX    : 110;
+  LEFT       : 350px;
+  WIDTH      : 158px;
+  POSITION   : absolute;
+  TOP        : 216px;
+  HEIGHT     : 40px;
+  VISIBILITY : hidden;
+}
+
+/* 取り出しボタン非活性 */
+IMG#imgMediaEjectDisable
+{
+  Z-INDEX    : 120;
+  LEFT       : 350px;
+  WIDTH      : 158px;
+  POSITION   : absolute;
+  TOP        : 216px;
+  HEIGHT     : 40px;
+  VISIBILITY : hidden;
+}
+
+/* 取り出しボタンラベル */
+TABLE#tblMediaEject
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 130;
+  LEFT        : 388px;
+  WIDTH       : 117px;
+  POSITION    : absolute;
+  TOP         : 216px;
+  HEIGHT      : 40px;
+  VISIBILITY  : hidden;
+}
+
+/* クライアントUTLボタン */
+IMG#imgUtility
+{
+  Z-INDEX    : 110;
+  LEFT       : 508px;
+  WIDTH      : 158px;
+  POSITION   : absolute;
+  TOP        : 216px;
+  HEIGHT     : 40px;
+  VISIBILITY : hidden;
+}
+
+/* クライアントUTLボタン */
+IMG#imgUtilityDisable
+{
+  Z-INDEX    : 120;
+  LEFT       : 508px;
+  WIDTH      : 158px;
+  POSITION   : absolute;
+  TOP        : 216px;
+  HEIGHT     : 40px;
+  VISIBILITY : hidden;
+}
+
+/* クライアントUTL */
+TABLE#tblUtility
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 130;
+  LEFT        : 546px;
+  WIDTH       : 112px;
+  POSITION    : absolute;
+  TOP         : 216px;
+  HEIGHT      : 40px;
+  VISIBILITY  : hidden;
+}
+
+/* 装置名称ラベル */
+TABLE#tblDeviceName
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 110;
+  LEFT        : 64px;
+  WIDTH       : 112px;
+  POSITION    : absolute;
+  TOP         : 32px;
+  HEIGHT      : 40px;
+}
+
+/* 装置状態テキスト */
+TABLE#tblDeviceStatusTxt
+{
+  Z-INDEX          : 160;
+  FONT-WEIGHT      : bold;
+  TEXT-ALIGN       : left;
+  BORDER-TOP       : #6B6B6B 2px solid;
+  BORDER-BOTTOM    : #A1A1A1 1px solid;
+  BORDER-LEFT      : #6B6B6B 2px solid;
+  BORDER-RIGHT     : #A1A1A1 1px solid;
+  BACKGROUND-COLOR : white;
+  LEFT             : 192px;
+  WIDTH            : 472px;
+  POSITION         : absolute;
+  TOP              : 96px;
+  HEIGHT           : 40px;
+}
+
+/* 装置状態ラベル */
+TABLE#tblDeviceStatus
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 110;
+  LEFT        : 64px;
+  WIDTH       : 112px;
+  POSITION    : absolute;
+  TOP         : 96px;
+  HEIGHT      : 40px;
+}
+
+/* 用途テキスト */
+TABLE#tblUseTypeTxt
+{
+  Z-INDEX          : 160;
+  FONT-WEIGHT      : bold;
+  TEXT-ALIGN       : left;
+  BORDER-TOP       : #6B6B6B 2px solid;
+  BORDER-BOTTOM    : #A1A1A1 1px solid;
+  BORDER-LEFT      : #6B6B6B 2px solid;
+  BORDER-RIGHT     : #A1A1A1 1px solid;
+  BACKGROUND-COLOR : white;
+  LEFT             : 192px;
+  WIDTH            : 160px;
+  POSITION         : absolute;
+  TOP              : 160px;
+  HEIGHT           : 40px;
+}
+
+/* 用途ラベル */
+TABLE#tblUseType
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 110;
+  LEFT        : 64px;
+  WIDTH       : 112px;
+  POSITION    : absolute;
+  TOP         : 160px;
+  HEIGHT      : 40px;
+}
+
+/* 書込設定テキスト */
+TABLE#tblWritableTxt
+{
+  Z-INDEX          : 160;
+  TEXT-ALIGN       : left;
+  FONT-WEIGHT      : bold;
+  BORDER-TOP       : #6B6B6B 2px solid;
+  BORDER-BOTTOM    : #A1A1A1 1px solid;
+  BORDER-LEFT      : #6B6B6B 2px solid;
+  BORDER-RIGHT     : #A1A1A1 1px solid;
+  BACKGROUND-COLOR : white;
+  LEFT             : 504px;
+  WIDTH            : 160px;
+  POSITION         : absolute;
+  TOP              : 160px;
+  HEIGHT           : 40px;
+}
+
+/* 書込設定ラベル */
+TABLE#tblWritable
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 110;
+  LEFT        : 376px;
+  WIDTH       : 112px;
+  POSITION    : absolute;
+  TOP         : 160px;
+  HEIGHT      : 40px;
+}
+
+/* プルダウンボタン */
+IMG#imgPull
+{
+  Z-INDEX  : 60;
+  POSITION : absolute;
+  WIDTH    : 35px;
+  HEIGHT   : 35px;
+}
+
+/* コンボボックス上部 */
+TABLE#tblHead
+{
+  Z-INDEX       : 50;
+  COLOR         : black;
+  POSITION      : absolute;
+  FONT-WEIGHT   : bold;
+  FONT-SIZE     : 16px;
+  HEIGHT        : 41px;
+  CURSOR        : default;
+  BORDER-RIGHT  : 3px inset;
+  BORDER-TOP    : 3px inset;
+  BORDER-LEFT   : 3px inset;
+  BORDER-BOTTOM : 3px inset;
+  OVERFLOW      : hidden;
+}
+
+TD#tdHead
+{
+  BACKGROUND-COLOR : White;
+  OVERFLOW         : hidden;
+  CURSOR           : default;
+}
+
+DIV#divHead
+{
+  OVERFLOW : hidden;
+}

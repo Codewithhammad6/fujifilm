@@ -1,0 +1,24 @@
+/******************************************************************************
+  Sub_EditPatient.css 
+
+  	Sub_EditPatientのスタイルシート
+
+
+     更新履歴    担当       Ver.        内容
+     2004/12/21   畑       -----       新規作成
+
+******************************************************************************/
+BODY
+{
+  OVERFLOW   : hidden;
+}
+IFRAME#EDITPATIENT_CTRL
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 0px;
+  HEIGHT     : 600px;
+  WIDTH      : 800px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}

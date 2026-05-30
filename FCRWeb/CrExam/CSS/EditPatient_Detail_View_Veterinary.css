@@ -1,0 +1,203 @@
+/******************************************************************************
+  EditPatientId_View.css 
+
+  	EditPatient_Detail_View動物用のスタイルシート
+
+     更新履歴    担当       Ver.        内容
+     2009/12/01  FF 星野   1.1(B)       新規作成 
+
+******************************************************************************/
+
+/* 種別ラベル*/
+DIV#DivPatientSpeciesDescription_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80;
+  LEFT        : 48px;
+  TOP         : 322px;  
+  WIDTH       : 200px;
+  HEIGHT      : 8px;  
+  POSITION    : absolute;
+  TEXT-ALIGN  : left;
+  
+}
+/* 種別テキストボックス*/
+INPUT#txtPatientSpeciesDescription
+{
+  FONT-WEIGHT : bold; 
+  FONT-SIZE   : 125%; 
+  Z-INDEX     : 70; 
+  LEFT        : 48px; 
+  TOP         : 342px; 
+  POSITION    : absolute; 
+  WIDTH       : 270px; 
+  HEIGHT      : 31px;
+  color       : #AAAAAA;
+  background-color : #ECC2AC;
+}
+
+/*  品種ラベル*/
+DIV#DivPatientBreedDescription_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80;
+  LEFT        : 330px;
+  TOP         : 322px;  
+  WIDTH       : 200px;
+  HEIGHT      : 8px;
+  POSITION    : absolute;
+  TEXT-ALIGN  : left;
+}
+
+/* 品種テキストボックス*/
+INPUT#txtPatientBreedDescription
+{
+  FONT-WEIGHT : bold; 
+  FONT-SIZE   : 125%; 
+  Z-INDEX     : 70; 
+  LEFT        : 330px; 
+  TOP         : 342px; 
+  POSITION    : absolute; 
+  WIDTH       : 448px; 
+  HEIGHT      : 31px;
+  color       : #AAAAAA;
+  background-color : #ECC2AC;
+}
+
+/* 責任者ラベル*/
+DIV#DivResponsiblePerson_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80;
+  LEFT        : 48px;
+  TOP         : 382px;  
+  WIDTH       : 200px;
+  HEIGHT      : 8px;
+  POSITION    : absolute;
+  TEXT-ALIGN  : left;
+}
+
+/* 責任者テキストボックス*/
+INPUT#txtResponsiblePerson
+{
+  FONT-WEIGHT : bold; 
+  FONT-SIZE   : 125%; 
+  Z-INDEX     : 70; 
+  LEFT        : 48px; 
+  TOP         : 402px; 
+  POSITION    : absolute; 
+  WIDTH       : 270px; 
+  HEIGHT      : 31px;
+  color       : #AAAAAA;
+  background-color : #ECC2AC;
+}
+
+/* 所属先ラベル*/
+DIV#DivResponsibleOrganization
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80;
+  LEFT        : 330px;
+  TOP         : 382px;  
+  WIDTH       : 200px;
+  HEIGHT      : 8px;
+  POSITION    : absolute;
+  TEXT-ALIGN  : left;
+}
+
+/* 所属先テキストボックス*/
+INPUT#txtResponsibleOrganization
+{
+  FONT-WEIGHT : bold; 
+  FONT-SIZE   : 125%; 
+  Z-INDEX     : 70; 
+  LEFT        : 330px; 
+  TOP         : 402px; 
+  POSITION    : absolute; 
+  WIDTH       : 350px; 
+  HEIGHT      : 31px;
+  color       : #AAAAAA;
+  background-color : #ECC2AC;
+}
+
+/* 去勢/避妊ラベル*/
+DIV#DivSexNeutred_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80;
+  LEFT        : 514px;
+  TOP         : 260px;
+  WIDTH       : 200px;
+  HEIGHT      : 8px;
+  POSITION    : absolute;
+  TEXT-ALIGN  : left;
+}
+
+/* 去勢有りボタンテキスト*/
+DIV#DivSexNeutredAltered_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80; 
+  LEFT        : 522px; 
+  TOP         : 292px; 
+  POSITION    : absolute; 
+  WIDTH       : 65px; 
+  HEIGHT      : 16px;
+  TEXT-ALIGN  : center;
+}
+
+/* 去勢有りボタンIMG*/
+IMG.SexAltered
+{
+  Z-INDEX          : 60; 
+  LEFT             : 514px; 
+  TOP              : 280px; 
+  POSITION         : absolute; 
+  BACKGROUND-COLOR : transparent;
+}
+
+/* 去勢無しボタンテキスト*/
+DIV#DivSexNeutredUnAltered_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80; 
+  LEFT        : 610px; 
+  TOP         : 292px; 
+  POSITION    : absolute; 
+  WIDTH       : 65px; 
+  HEIGHT      : 16px;
+  TEXT-ALIGN  : center;
+}
+
+/* 去勢無しボタンIMG*/
+IMG.SexUnAltered
+{
+  Z-INDEX          : 60; 
+  LEFT             : 602px; 
+  POSITION         : absolute; 
+  TOP              : 280px; 
+  BACKGROUND-COLOR : transparent;
+}
+
+/* 不明ボタンテキスト*/
+DIV#DivSexNeutredUnknown_Value
+{
+  FONT-WEIGHT : bold;
+  Z-INDEX     : 80; 
+  LEFT        : 698px; 
+  TOP         : 292px; 
+  POSITION    : absolute; 
+  WIDTH       : 80px; 
+  HEIGHT      : 16px;
+  TEXT-ALIGN  : center;
+}
+
+/* 不明ボタンIMG*/
+IMG.SexUnknown
+{
+  Z-INDEX          : 60; 
+  LEFT             : 690px; 
+  POSITION         : absolute; 
+  TOP              : 280px; 
+  BACKGROUND-COLOR : transparent;
+}

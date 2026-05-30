@@ -1,0 +1,151 @@
+﻿/****************************************************************************
+
+  @file Printer_View.css 
+
+  @brief Printer_Viewのスタイルシート
+
+
+  @author YSK菅野
+
+  Copyright(c) 2004-2006 FUJI PHOTO FILM CO., LTD. All rights reseved.
+
+         更新履歴  担当        Ver.       内容
+  -----  --------  ----------  --------   -------------------------------
+  @date  04/12/21  YSK菅野     XX-XX      新規作成
+
+****************************************************************************/
+
+BODY
+{
+  FONT-WEIGHT      : bold;
+  FONT-SIZE        : 16px;
+  BACKGROUND-COLOR : Transparent;
+  CURSOR           : default;
+ }
+
+/* 装置名称ラベル */
+TABLE#tblDeviceName
+{
+  DISPLAY  : inline;
+  FONT-WEIGHT      : bold;
+  Z-INDEX  : 100;
+  LEFT     : 72px;
+  WIDTH    : 120px;
+  POSITION : absolute;
+  TOP      : 64px;
+  HEIGHT   : 40px;
+  VERTICAL-ALIGN : middle;
+}
+
+/* 装置状態ラベル */
+TABLE#tblDeviceStatus
+{
+  DISPLAY  : inline;
+  FONT-WEIGHT      : bold;
+  Z-INDEX  : 100;
+  LEFT     : 72px;
+  WIDTH    : 120px;
+  POSITION : absolute;
+  TOP      : 128px;
+  HEIGHT   : 40px;
+  VERTICAL-ALIGN : middle;
+}
+
+/* 詳細情報ラベル */
+TABLE#tblDetail
+{
+  DISPLAY  : inline;
+  FONT-WEIGHT      : bold;
+  Z-INDEX  : 100;
+  LEFT     : 72px;
+  WIDTH    : 120px;
+  POSITION : absolute;
+  TOP      : 200px;
+  HEIGHT   : 40px;
+  VERTICAL-ALIGN : middle;
+}
+
+/* 装置状態 */
+TABLE#tblDeviceStatusTxt
+{
+  POSITION         : absolute;
+  TOP              : 128px;
+  LEFT             : 200px;
+  HEIGHT           : 40px;
+  WIDTH            : 448px;
+  BORDER-TOP       : #6B6B6B 2px solid;
+  BORDER-BOTTOM    : #A1A1A1 1px solid;
+  BORDER-LEFT      : #6B6B6B 2px solid;
+  BORDER-RIGHT     : #A1A1A1 1px solid;
+  BACKGROUND-COLOR : white;
+  FONT-WEIGHT      : bold;
+  TEXT-ALIGN       : left;	
+  Z-INDEX          : 100;
+  OVERFLOW         : hidden;
+  VERTICAL-ALIGN   : middle;
+}
+
+/* 詳細情報テキスト */
+DIV#divDetailTxt
+{
+  POSITION         : absolute;
+  TOP              : 200px;
+  LEFT             : 200px;
+  HEIGHT           : 136px;
+  WIDTH            : 448px;
+  BORDER-TOP       : #6B6B6B 2px solid;
+  BORDER-BOTTOM    : #A1A1A1 1px solid;
+  BORDER-LEFT      : #6B6B6B 2px solid;
+  BORDER-RIGHT     : #A1A1A1 1px solid;
+  BACKGROUND-COLOR : white;
+  FONT-WEIGHT      : bold;
+  TEXT-ALIGN       : left;	
+  Z-INDEX          : 100;
+  OVERFLOW         : auto;
+/*
+  SCROLLBAR-3DLIGHT-COLOR    : #f7f1e6;
+  SCROLLBAR-ARROW-COLOR      : black;
+  SCROLLBAR-DARKSHADOW-COLOR : #f7f1e6;
+  SCROLLBAR-FACE-COLOR       : #f7f1e6;
+  SCROLLBAR-HIGHLIGHT-COLOR  : black;
+  SCROLLBAR-SHADOW-COLOR     : black;
+*/
+}
+
+/* プルダウンボタン */
+IMG#imgPull
+{
+  Z-INDEX  : 60;
+  POSITION : absolute;
+  WIDTH    : 35px;
+  HEIGHT   : 35px;
+}
+
+/* コンボボックス上部 */
+TABLE#tblHead
+{
+  Z-INDEX       : 50;
+  COLOR         : black;
+  POSITION      : absolute;
+  FONT-WEIGHT   : bold;
+  FONT-SIZE     : 16px;
+  HEIGHT        : 41px;
+  CURSOR        : default;
+  BORDER-RIGHT  : 3px inset;
+  BORDER-TOP    : 3px inset;
+  BORDER-LEFT   : 3px inset;
+  BORDER-BOTTOM : 3px inset;
+  OVERFLOW      : hidden;
+}
+
+TD#tdHead
+{
+  BACKGROUND-COLOR : White;
+  OVERFLOW         : hidden;
+  CURSOR           : default;
+}
+
+DIV#divHead
+{
+  OVERFLOW : hidden;
+}

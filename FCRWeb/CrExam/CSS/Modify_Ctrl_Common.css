@@ -1,0 +1,40 @@
+/******************************************************************************
+  Modify_Ctrl_Common.css 
+
+  	Modify_Ctrl、Modify_Ctrl_CE の共通スタイルシート
+
+
+     更新履歴    担当       Ver.        内容
+     2006/09/29  HSK酒井    -----       新規作成
+     2007/03/01  YSK齋藤   V2.0        ×ボタン押下対応(PVCS#1956)
+
+******************************************************************************/
+BODY
+{
+  OVERFLOW   : hidden;
+}
+IFRAME#INFORMATION_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 0px;
+  HEIGHT     : 83px;
+  WIDTH      : 800px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+IFRAME#EKARTEDATA_GET_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}
+IFRAME#STUDYDATA_GET_PROC
+{
+/* 2007/03/01 PVCS#1956 H.SAITO -ST- */
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+/* 2007/03/01 PVCS#1956 H.SAITO -ED- */
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}

@@ -1,0 +1,34 @@
+BODY
+{
+  OVERFLOW   : hidden;
+}
+IFRAME#SORTMENU_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 83px;
+  HEIGHT     : 517px;
+  WIDTH      : 800px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+IFRAME#INFORMATION_VIEW
+{
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 0px;
+  HEIGHT     : 83px;
+  WIDTH      : 800px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+IFRAME#STUDYDATA_GET_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;  
+}
+IFRAME#SORTMENU_UPDATE_PROC
+{
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+}

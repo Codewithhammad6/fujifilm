@@ -1,0 +1,335 @@
+/* 処理中画面テーブル */
+TABLE#TABLE_ProcFrame
+{
+
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;    
+  HEIGHT     : 600px;
+  WIDTH      : 800px;
+  PADDING    : 0,0,0,0;
+  MARGIN     : 0,0,0,0;
+  VISIBILITY : visible;
+  Z-INDEX    : 100;
+}
+/* 処理中画面ボックス */
+TABLE#TABLE_ProcBox
+{
+  POSITION          : absolute;
+  TOP               : 140px;
+  LEFT              : 220px; 
+  HEIGHT            : 200px;
+  WIDTH             : 380px;
+  BACKGROUND-COLOR  : #FFE79F;
+  BORDER-COLOR      : gray;
+  BORDER-STYLE      : solid;
+  BORDER-WIDTH      : 1px;
+  TEXT-ALIGN        : center;
+  /* 2005/06/22 003 H.SAITO BackGround Color Change.
+  FONT-SIZE         : 200%;
+  */
+  FONT-WEIGHT       : bold;
+  COLOR             : #000000;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 101;
+}
+/* エラー画面テーブル */
+TABLE#TABLE_ErrorFrame
+{
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;    
+  HEIGHT     : 600px;
+  WIDTH      : 800px;
+  VISIBILITY : hidden;
+  Z-INDEX    : 200;
+}
+/* エラー画面ボックス */
+TABLE#TABLE_ErrorBox
+{
+  POSITION          : absolute;
+  TOP               : 125px;
+  LEFT              : 125px; 
+  HEIGHT            : 250px;
+  WIDTH             : 550px;
+  BACKGROUND-COLOR  : #FFE79F;
+  BORDER-COLOR      : gray;
+  BORDER-STYLE      : solid;
+  BORDER-WIDTH      : 1px;
+  TEXT-ALIGN        : center;
+  FONT-SIZE         : 25px;
+  FONT-WEIGHT       : bold;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_ErrorTitle1
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 15px;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_ErrorTitle2
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 18px;
+  FONT-WEIGHT       : bold;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_ErrorText
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 18px;
+  FONT-WEIGHT       : bold;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_ErrorCode
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 15px;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+/* エラー画面 ボタン クリック領域 for V1.4 061006 神立 */
+DIV#DIV_ErrorButton
+{
+  POSITION          : absolute;
+  Z-INDEX           : 240;
+  TOP               : 325px;
+  LEFT              : 340px;
+}
+/* エラー画面ボタン */
+IMG#IMG_ErrorButton
+{
+  POSITION          : inherit; /* 061127 神立 */
+  TOP               : 0px; /* 325px;*//* 061006 神立 */
+  LEFT              : 0px; /* 340px;*//* 061006 神立 */
+  Z-INDEX           : 220;
+}
+TABLE#TABLE_ErrorButton
+{
+  POSITION          : absolute;
+  TOP               : 240px;
+  LEFT              : 370px; 
+  HEIGHT            : 40px;
+  WIDTH             : 90px;
+  BACKGROUND-COLOR  : aliceblue;
+  BORDER-COLOR      : gray;
+  BORDER-STYLE      : solid;
+  BORDER-WIDTH      : 1px;
+  TEXT-ALIGN        : center;
+  FONT-SIZE         : 20px;
+  FONT-WEIGHT       : bold;
+  COLOR             : dodgerblue;
+  Z-INDEX           : 220;
+  VISIBILITY        : hidden;
+}
+/* エラーＯＫボタンテキスト */
+DIV#DIV_ErrorOkText
+{
+  POSITION          : absolute;
+  TOP               : 10px; /* 335px; 061006 神立 */
+  LEFT              : 0px;  /* 340px; 061006 神立 */
+  HEIGHT            : 18px;
+  WIDTH             : 102px;
+  TEXT-ALIGN        : center;
+  COLOR             : #000000;
+  FONT-SIZE         : 16px;
+  FONT-WEIGHT       : bold;
+  OVERFLOW          : hidden; 
+  Z-INDEX           : 230;
+}
+
+/* 確認ダイアログテーブル */
+TABLE#TABLE_ConfirmFrame
+{
+  POSITION   : absolute;
+  TOP        : 0px;
+  LEFT       : 0px;
+  HEIGHT     : 600px;
+  WIDTH      : 800px;
+  PADDING    : 0,0,0,0;
+  MARGIN     : 0,0,0,0;
+  VISIBILITY : hidden;
+  Z-INDEX    : 100;
+}
+/* 確認ダイアログボックス */
+/* 確認画面30pxずつ下に下げました061026神立@V1.4 */
+TABLE#TABLE_ConfirmBox
+{
+  POSITION          : absolute;
+  TOP               : 130px; /* 100px;061026神立 */
+  LEFT              : 175px; 
+  HEIGHT            : 300px;
+  WIDTH             : 450px;
+  TEXT-ALIGN        : left;
+  COLOR             : #000000;
+  FONT-SIZE         : 130%;
+  FONT-WEIGHT       : bold;
+  BACKGROUND-COLOR  : #FFE79F;
+  BORDER-COLOR      : gray;
+  BORDER-STYLE      : solid;
+  BORDER-WIDTH      : 1px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 220;
+}
+TD#TD_ConfirmTitle1
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 15px;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_ConfirmTitle2
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 18px;
+  FONT-WEIGHT       : bold;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_ConfirmText
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 18px;
+  FONT-WEIGHT       : bold;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+TD#TD_ConfirmCode
+{
+  TEXT-ALIGN        : left;
+  FONT-SIZE         : 15px;
+  COLOR             : #000000;
+  Z-INDEX           : 210;
+}
+/* ＯＫボタン クリック領域 for V1.4 061010 神立 */
+DIV#DIV_ConfirmOkButton
+{
+  POSITION          : absolute;
+  Z-INDEX           : 240;
+  TOP               : 370px; /* 340px;061026神立 */
+  LEFT              : 500px;
+  display           : none; /* ｸﾘｯｸ不可にする 061204 神立 */
+}
+/* ＯＫボタン */
+IMG#IMG_ConfirmOkButton
+{
+  POSITION          : inherit; /* 061127 神立 */
+  TOP               : 0px;  /*340px;*//* 061010 神立 */
+  LEFT              : 0px;  /*500px;*//* 061010 神立 */
+  VISIBILITY        : hidden;
+  Z-INDEX           : 220;
+}
+TABLE#TABLE_ConfirmOkButton
+{
+  POSITION          : absolute;
+  TOP               : 320px; /* 290px;061026 神立*/
+  LEFT              : 420px; 
+  HEIGHT            : 40px;
+  WIDTH             : 110px;
+  BACKGROUND-COLOR  : #000000;
+  BORDER-COLOR      : gray;
+  BORDER-STYLE      : solid;
+  BORDER-WIDTH      : 1px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 220;
+}
+/* ＯＫボタンテキスト */
+DIV#DIV_ConfirmOkText
+{
+  POSITION          : absolute;
+  TOP               : 10px;  /*350px;*//* 061010 神立 */
+  LEFT              : 0px;   /*500px;*//* 061010 神立 */
+  HEIGHT            : 18px;
+  WIDTH             : 102px;
+  TEXT-ALIGN        : center;
+  COLOR             : #000000;
+  FONT-WEIGHT       : bold;
+  OVERFLOW          : hidden; 
+  VISIBILITY        : hidden;
+  Z-INDEX           : 225;
+}
+/* キャンセルボタン クリック領域 for V1.4 061010 神立 */
+DIV#DIV_ConfirmCancelButton
+{
+  POSITION          : absolute;
+  Z-INDEX           : 240;
+  TOP               : 370px; /* 340px;061026 神立*/
+  LEFT              : 190px;
+  display           : none; /* ｸﾘｯｸ不可にする 061204 神立 */
+}
+/* キャンセルボタン */
+IMG#IMG_ConfirmCancelButton
+{
+  POSITION          : inherit; /* 061127 神立 */
+  TOP               : 0px;  /*340px;*//* 061010 神立 */
+  LEFT              : 0px;  /*190px;*//* 061010 神立 */
+  VISIBILITY        : hidden;
+  Z-INDEX           : 220;
+}
+TABLE#TABLE_ConfirmCancelButton
+{
+  POSITION          : absolute;
+  TOP               : 320px; /* 290px; 061026 神立*/
+  LEFT              : 290px; 
+  HEIGHT            : 40px;
+  WIDTH             : 110px;
+  BACKGROUND-COLOR  : aliceblue;
+  BORDER-COLOR      : gray;
+  BORDER-STYLE      : solid;
+  BORDER-WIDTH      : 1px;
+  VISIBILITY        : hidden;
+  Z-INDEX           : 220;
+}
+/* キャンセルボタンテキスト */
+DIV#DIV_ConfirmCancelText
+{
+  POSITION          : absolute;
+  TOP               : 10px; /*350px;*//* 061010 神立 */
+  LEFT              : 0px;  /*190px;*//* 061010 神立 */
+  HEIGHT            : 18px;
+  WIDTH             : 102px;
+  TEXT-ALIGN        : center;
+  COLOR             : #000000;
+  FONT-WEIGHT       : bold;
+  OVERFLOW          : hidden; 
+  VISIBILITY        : hidden;
+  Z-INDEX           : 225;
+}
+/* スキップボタン クリック領域 for V1.4 */
+/* 061010 神立 */
+DIV#DIV_ConfirmSkipButton
+{
+  POSITION          : absolute;
+  Z-INDEX           : 240;
+  TOP               : 370; /* 340px; 061026 神立*/
+  LEFT              : 340px; 
+  display           : none; /* ｸﾘｯｸ不可にする 061204 神立 */
+}
+/* スキップボタン */
+IMG#IMG_ConfirmSkipButton
+{
+  POSITION          : inherit; /* 061127 神立 */
+  TOP               : 0px;  /*340px;*//* 061010 神立 */
+  LEFT              : 0px;  /*340px;*//* 061010 神立 */
+  VISIBILITY        : hidden;
+  Z-INDEX           : 220;
+}
+/* スキップボタンテキスト */
+DIV#DIV_ConfirmSkipText
+{
+  POSITION          : absolute;
+  TOP               : 10px;  /*350px;*//* 061010 神立 */
+  LEFT              : 0px;   /*340px;*//* 061010 神立 */
+  HEIGHT            : 18px;
+  WIDTH             : 102px;
+  TEXT-ALIGN        : center;
+  COLOR             : #000000;
+  FONT-WEIGHT       : bold;
+  OVERFLOW          : hidden; 
+  VISIBILITY        : hidden;
+  Z-INDEX           : 225;
+}

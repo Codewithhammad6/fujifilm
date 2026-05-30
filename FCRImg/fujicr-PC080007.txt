@@ -1,0 +1,7 @@
+Patient ID:C295
+Patient Name:TEHMEENA
+Sex:F
+Date of Exposure:08.DEC.2025
+Anatomical Region:CHEST
+Exposure Menu Name:CHEST PA
+Modality:CR

@@ -1,0 +1,7 @@
+Patient ID:00372
+Patient Name:SHAHZAIB
+Sex:M
+Date of Exposure:17.MAR.2026
+Anatomical Region:UP_EXM
+Exposure Menu Name:ELBOW AP
+Modality:CR

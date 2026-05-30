@@ -1,0 +1,293 @@
+/****************************************************************************
+
+  @file MediaList_View.css 
+
+  @brief MediaList_Viewのスタイルシート
+
+
+
+
+  @author YSK菅野
+
+  Copyright(c) 2004-2006 FUJI PHOTO FILM CO., LTD. All rights reseved.
+
+         更新履歴  担当        Ver.       内容
+  -----  --------  ----------  --------   -------------------------------
+  @date  04/12/21  YSK菅野     XX-XX      新規作成
+
+****************************************************************************/
+
+BODY
+{
+  FONT-WEIGHT      : bold;
+  FONT-SIZE        : 16px;
+  BACKGROUND-COLOR : Transparent;
+  CURSOR           : default;
+}
+
+/* ヘッダ */
+IMG#imgHeader
+{
+  Z-INDEX  : 110;
+  LEFT     : 0px;
+  WIDTH    : 800px;
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 28px;
+}
+/* 2005/05/24 ============= */
+IMG#imgHeader1
+{
+  Z-INDEX  : 110;
+  LEFT     : 285px;
+  WIDTH    : 1px;
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 28px;
+}
+IMG#imgHeader2
+{
+  Z-INDEX  : 110;
+  LEFT     : 435px;
+  WIDTH    : 1px;
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 28px;
+}
+IMG#imgHeader3
+{
+  Z-INDEX  : 110;
+  LEFT     : 585px;
+  WIDTH    : 1px;
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 28px;
+}
+/* ======================== */
+
+/* ヘッダ(メディア名) */
+TABLE#tblMediaName
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  TEXT-ALIGN  : left;
+  Z-INDEX     : 120;
+  LEFT        : 41px;
+  WIDTH       : 250px;
+  POSITION    : absolute;
+  TOP         : 0px;
+  HEIGHT      : 28px;
+}
+
+/* ヘッダ(書き込み開始日時) */
+TABLE#tblStart
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  TEXT-ALIGN  : left;
+  Z-INDEX     : 120;
+  LEFT        : 291px;
+  WIDTH       : 150px;
+  POSITION    : absolute;
+  TOP         : 0px;
+  HEIGHT      : 28px;
+}
+
+/* ヘッダ(書き込み終了日時) */
+TABLE#tblEnd
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  TEXT-ALIGN  : left;
+  Z-INDEX     : 120;
+  LEFT        : 441px;
+  WIDTH       : 150px;
+  POSITION    : absolute;
+  TOP         : 0px;
+  HEIGHT      : 28px;
+}
+
+/* ヘッダ(ステータス) */
+TABLE#tblStatus
+{
+  DISPLAY     : inline;
+  FONT-WEIGHT : bold;
+  TEXT-ALIGN  : left;
+  Z-INDEX     : 120;
+  LEFT        : 591px;
+  WIDTH       : 193px;
+  POSITION    : absolute;
+  TOP         : 0px;
+  HEIGHT      : 28px;
+}
+
+/* ページ表示 */
+TABLE#tblPage
+{
+  DISPLAY        : inline;
+  FONT-WEIGHT    : bold;
+  TEXT-ALIGN     : center;
+  VERTICAL-ALIGN : middle;
+  Z-INDEX        : 110;
+  LEFT           : 328px;
+  WIDTH          : 144px;
+  POSITION       : absolute;
+  TOP            : 232px;
+  HEIGHT         : 40px;
+}
+/* 前ページボタン */
+IMG#imgPrevPage
+{
+  Z-INDEX  : 130;
+  LEFT     : 16px;
+  WIDTH    : 118px;
+  POSITION : absolute;
+  TOP      : 232px;
+  HEIGHT   : 40px;
+}
+
+/* 前ページボタン(非活性) */
+IMG#imgPrevPageDisable
+{
+  Z-INDEX  : 120;
+  LEFT     : 16px;
+  WIDTH    : 118px;
+  POSITION : absolute;
+  TOP      : 232px;
+  HEIGHT   : 40px;
+}
+
+/* 次ページボタン */
+IMG#imgNextPage
+{
+  Z-INDEX  : 130;
+  LEFT     : 664px;
+  WIDTH    : 118px;
+  POSITION : absolute;
+  TOP      : 232px;
+  HEIGHT   : 40px;
+}
+
+/* 次ページボタン(非活性) */
+IMG#imgNextPageDisable
+{
+  Z-INDEX  : 120;
+  LEFT     : 664px;
+  WIDTH    : 118px;
+  POSITION : absolute;
+  TOP      : 232px;
+  HEIGHT   : 40px;
+}
+
+/* 保管用ディスク一覧 */
+DIV#divMediaList
+{
+  Z-INDEX                    : 110;
+  LEFT                       : 0px;
+  OVERFLOW                   : auto;
+  WIDTH                      : 794px;
+  POSITION                   : absolute;
+  TOP                        : 28px;
+  HEIGHT                     : 204px;
+/*
+  SCROLLBAR-3DLIGHT-COLOR    : #f7f1e6;
+  SCROLLBAR-ARROW-COLOR      : black;
+  SCROLLBAR-DARKSHADOW-COLOR : #f7f1e6;
+  SCROLLBAR-FACE-COLOR       : #f7f1e6;
+  SCROLLBAR-HIGHLIGHT-COLOR  : black;
+  SCROLLBAR-SHADOW-COLOR     : black;
+*/
+}
+
+TABLE#table
+{
+  FONT-WEIGHT : bold;
+  FONT-SIZE   : 15px;
+  Z-INDEX     : 120;
+  LEFT        : 0px;
+  WIDTH       : 100%;
+  POSITION    : absolute;
+  TOP         : 0px;
+  HEIGHT      : 100%;
+}
+
+/* リスト行 */
+TR#TR
+{
+  HEIGHT: 30px;
+}
+
+/* スペース列 */
+TD#tdSpace
+{
+  WIDTH  : 41px;
+}
+
+/* メディア名列 */
+TD#tdDiskName
+{
+  WIDTH      : 250px;
+  WORD-BREAK : break-all;
+}
+
+DIV#divDiskNameTxt
+{
+  WIDTH    : 240px;
+}
+
+/* 書き込み開始日時 */
+TD#tdWriteStart
+{
+  WIDTH      : 150px;
+  WORD-BREAK : break-all;
+}
+
+DIV#divWriteStartTxt
+{
+  WIDTH    : 140px;
+}
+
+/* 書き込み終了日時 */
+TD#tdWriteEnd
+{
+  WIDTH      : 150px;
+  WORD-BREAK : break-all;
+}
+
+DIV#divWriteEndTxt
+{
+  WIDTH    : 140px;
+}
+
+/* ステータス */
+TD#tdStatus
+{
+  WIDTH      : 193px;
+  WORD-BREAK : break-all;
+}
+
+DIV#divStatusTxt
+{
+  WIDTH    : 183px;
+}
+
+/* リスト境界線(上) */
+HR#hrTop
+{
+  Z-INDEX  : 120;
+  LEFT     : 0px;
+  WIDTH    : 794px;
+  POSITION : absolute;
+  TOP      : 232px;
+}
+
+/* リスト境界線(下) */
+HR#hrBottom
+{
+  Z-INDEX  : 120;
+  LEFT     : 0px;
+  WIDTH    : 794px;
+  POSITION : absolute;
+  TOP      : 272px;
+}
+

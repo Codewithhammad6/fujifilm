@@ -1,0 +1,61 @@
+﻿/****************************************************************************
+
+  @file Indicator.css 
+
+  @brief Indicatorのスタイルシート
+
+
+  @author YSK菅野
+
+  Copyright(c) 2004-2006 FUJI PHOTO FILM CO., LTD. All rights reseved.
+
+         更新履歴  担当        Ver.       内容
+  -----  --------  ----------  --------   -------------------------------
+  @date  04/12/21  YSK菅野     XX-XX      新規作成
+　@date  09/05/29  FF蔵敷						　NAS対応　V60_NAS
+  @date  14/03/20  TYK 石井    V3.0       DR装置画面対応
+****************************************************************************/
+
+/* BODY */
+	/*V60_NAS */
+	 /* WIDTH  : 192px; */
+BODY
+{
+  WIDTH   :267px; /*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 229px→267pxに変更*/
+  HEIGHT : 37px;
+}
+
+/* インジケータ表示フレーム */
+	/*V60_NAS */
+ /* WIDTH  : 192px; */
+IFRAME#INDICATOR_VIEW
+{
+  Z-INDEX  : 100;
+  LEFT     : 0px;
+  OVERFLOW : hidden;
+  WIDTH     :267px; /*2014.03.20 V3.0(B) TYK石井 DR装置画面追加 229px→267pxに変更*/
+  POSITION : absolute;
+  TOP      : 0px;
+  HEIGHT   : 38px;
+}
+
+/* 情報取得フレーム */
+IFRAME#INDICATOR_GET_PROC
+{
+  Z-INDEX    : 100;
+  LEFT       : 0px;
+  VISIBILITY : hidden;
+  WIDTH      : 0px;
+  POSITION   : absolute;
+  TOP        : 0px;
+  HEIGHT     : 0px
+}
+
+/* ログ出力フレーム */
+IFRAME#LOGGER_PROC
+{
+  VISIBILITY : hidden;
+  WIDTH      : 0px;
+  HEIGHT     : 0px
+}
+

@@ -1,0 +1,493 @@
+/******************************************************************************
+  Ouptput_View.css 
+
+  	Ouptput_Viewのスタイルシート
+
+
+
+     更新履歴    担当       Ver.        内容
+     2004/01/08  畑      -----       新規作成
+
+******************************************************************************/
+/* ボディ */
+BODY
+{  
+  CURSOR	          : default;
+  BACKGROUND-COLOR  : #F4E6DC;
+}
+/* コマンドボタン領域の色 */
+DIV#DIV_CommandBackGround
+{
+  POSITION   : absolute;
+  TOP        : 425px;
+  LEFT       : 0px;
+  HEIGHT     : 105px;
+  WIDTH      : 800px; 
+  background-color:#F4EEE4;
+}
+/* リストとコマンドボタンの境界 */
+IMG#IMG_List-Command_Border
+{
+  POSITION   : absolute;
+  TOP        : 419px;
+  LEFT       : 0px;
+  HEIGHT     : 7px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+}
+/*2005/05/24-ST*/
+/* メッセージと主要画面の境界 */
+TD#DIV_List_Border
+{
+  POSITION   : absolute;
+  TOP        : 1px;
+  LEFT       : 0px;
+  HEIGHT     : 5px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+  BACKGROUND-COLOR : #ECC2AC;
+}
+/*2005/05/24-EN*/
+/* ヘッダー*/
+DIV#divOutputDevice0
+{
+	Z-INDEX  : 80; 
+	LEFT     : 40px; 
+	WIDTH    : 200px; 
+	POSITION : absolute; 
+	TOP      : 40px; 
+	HEIGHT   : 24px;
+	FONT-WEIGHT: bold; 
+}
+DIV#divOutputDevice1
+{
+	Z-INDEX  : 80; 
+	LEFT     : 40px; 
+	WIDTH    : 200px; 
+	POSITION : absolute; 
+	TOP      : 120px; 
+	HEIGHT   : 24px;
+	FONT-WEIGHT: bold; 
+}
+DIV#divOutputDevice2
+{
+	Z-INDEX  : 80; 
+	LEFT     : 40px; 
+	WIDTH    : 200px; 
+	POSITION : absolute; 
+	TOP      : 200px; 
+	HEIGHT   : 24px;
+	FONT-WEIGHT: bold; 
+}
+DIV#divOutputDevice3
+{
+	Z-INDEX  : 80; 
+	LEFT     : 40px; 
+	WIDTH    : 200px; 
+	POSITION : absolute; 
+	TOP      : 200px; 
+	HEIGHT   : 24px;
+	FONT-WEIGHT: bold; 
+}
+/*コンボボックス解除領域*/
+table#ComboBoxFrame 
+{
+	 z-index    : 100; 
+	 visibility : hidden; 
+	 position   : absolute; 
+	 top        : 0px; 
+	 left       : 0px; 
+	 width      : 800px; 
+	 height     : 600px;
+}
+/*コンボボックスリスト*/
+table#tblHead 
+{
+	z-index       : 90; 
+	color         : black; 
+	background-color:white; 
+	position      : absolute; 
+	top           : 100px; 
+	left          : 100px; 
+	width         : 206px; 
+	height        : 41px; 
+	cursor        : default;
+	BORDER-RIGHT  : 3px inset; 
+	BORDER-TOP    : 3px inset; 
+	BORDER-LEFT   : 3px inset; 
+	BORDER-BOTTOM : 3px inset; 
+	cursor        : hand; 
+	OVERFLOW      : hidden;
+	FONT-WEIGHT: bold; 
+}
+/*コンボボックス*/
+table#ComboBox 
+{ 
+	z-index       : 100; 
+	background-color : white; 
+	visibility    : hidden; 
+	position      : absolute; 
+	width         : 206px; 
+	top           : 141px; 
+	left          : 100px; 
+	BORDER-RIGHT  : black 1px solid; 
+	BORDER-TOP    : black 1px solid; 
+	BORDER-LEFT   : black 1px solid; 
+	BORDER-BOTTOM : black 1px solid;
+	FONT-WEIGHT: bold; 
+	visibility    : hidden; 
+}
+td#head 
+{ 
+	OVERFLOW:hidden;
+}
+div#divHeader
+{
+	OVERFLOW : hidden; 
+	width    : 200px; 
+}
+
+/*コンボボックスボタンIMG*/
+img#pull 
+{ 
+	z-index  : 110; 
+	position : absolute; 
+	top      : 103px; 
+	left     : 268px; 
+	width    : 35px; 
+	height   : 35px; 
+	visibility    : hidden; 
+}
+
+/* 2005/08/10 Kanno UPDATE ST デザイン修正 */
+/*出力タイミング(確認時)*/
+/*IMG#IMG_ConfirmBtn_Enable         */
+/*{                                 */
+/*	z-index  : 50;                  */
+/*	LEFT     : 250px;               */
+/*	WIDTH    : 135px;               */
+/*	POSITION : absolute;            */
+/*	TOP      : 110px;               */
+/*	HEIGHT   : 40px;                */
+/*  visibility: hidden              */
+/*}                                 */
+/*IMG#IMG_ConfirmBtn_Disable        */
+/*{                                 */
+/*	z-index  : 50;                  */
+/*	LEFT     : 250px;               */
+/*	WIDTH    : 135px;               */
+/*	POSITION : absolute;            */
+/*	TOP      : 110px;               */
+/*	HEIGHT   : 40px;                */
+/*  visibility: hidden              */
+/*}                                 */
+/*DIV#DIV_ConfirmText               */
+/*{                                 */
+/*	Z-INDEX    : 80;                */
+/*	LEFT       : 250px;             */
+/*	WIDTH      : 135px;             */
+/*	POSITION   : absolute;          */
+/*	TOP        : 120px;             */
+/*	HEIGHT     : 40px;              */
+/*	text-align :center;             */
+/*	FONT-WEIGHT: bold;              */
+/*}                                 */
+/*                                  */
+/*出力タイミング(確定時)*/
+/*                                  */
+/*IMG#IMG_DecisionBtn               */
+/*{                                 */
+/*	z-index  : 50;                  */
+/*	LEFT     : 385px;               */
+/*	WIDTH    : 135px;               */
+/*	POSITION : absolute;            */
+/*	TOP      : 110px;               */
+/*	HEIGHT   : 40px;                */
+/*  visibility: hidden              */
+/*}                                 */
+/*DIV#DIV_DecisionText              */
+/*{                                 */
+/*	Z-INDEX    : 80;                */
+/*	LEFT       : 385px;             */
+/*	WIDTH      : 135px;             */
+/*	POSITION   : absolute;          */
+/*	TOP        : 120px;             */
+/*	HEIGHT     : 40px;              */
+/*	text-align :center;             */
+/*	FONT-WEIGHT: bold;              */
+/*}                                 */
+/*出力タイミング(確認時)*/
+IMG#IMG_ConfirmBtn_Enable
+{
+	z-index  : 50; 
+	LEFT     : 250px; 
+	WIDTH    : 190px; 
+	POSITION : absolute; 
+	TOP      : 110px; 
+	HEIGHT   : 48px;
+  visibility: hidden
+}
+IMG#IMG_ConfirmBtn_Disable
+{
+	z-index  : 50; 
+	LEFT     : 250px; 
+	WIDTH    : 190px; 
+	POSITION : absolute; 
+	TOP      : 110px; 
+	HEIGHT   : 48px;
+  visibility: hidden
+}
+DIV#DIV_ConfirmText
+{
+	Z-INDEX    : 80;
+	LEFT       : 250px; 
+	WIDTH      : 190px; 
+	POSITION   : absolute; 
+	TOP        : 125px; 
+	HEIGHT     : 23px;
+	text-align :center;
+	FONT-WEIGHT: bold; 
+}
+
+/*出力タイミング(確定時)*/
+
+IMG#IMG_DecisionBtn
+{
+	z-index  : 50; 
+	LEFT     : 440px; 
+	WIDTH    : 190px; 
+	POSITION : absolute; 
+	TOP      : 110px; 
+	HEIGHT   : 48px;
+  visibility: hidden
+}
+DIV#DIV_DecisionText
+{
+	Z-INDEX    : 80;
+	LEFT       : 440px; 
+	WIDTH      : 190px; 
+	POSITION   : absolute; 
+	TOP        : 125px; 
+	HEIGHT     : 23px;
+	text-align :center;
+	FONT-WEIGHT: bold; 
+}
+/* 2005/08/10 Kanno UPDATE ED デザイン修正 */
+/*出力密度(高密時)*/
+DIV#DIV_DensityHighBtn
+{
+	Z-INDEX    : 90;
+  visibility: hidden
+}
+IMG#IMG_MidBtn
+{
+	z-index  : 50; 
+	LEFT     : 250px; 
+/* 2005/07/04 004 H.SAITO HQ Option.
+	WIDTH    : 135px; 
+*/
+	WIDTH    : 428px; 
+	POSITION : absolute; 
+	TOP      : 192px; 
+	HEIGHT   : 40px;
+}
+DIV#DIV_MidText
+{
+	Z-INDEX    : 80;
+	LEFT       : 250px; 
+/* 2005/07/04 004 H.SAITO HQ Option.
+	WIDTH      : 135px; 
+*/
+	WIDTH      : 428px; 
+	POSITION   : absolute; 
+	TOP        : 202px; 
+	HEIGHT     : 40px;
+	text-align :center;
+	FONT-WEIGHT: bold; 
+}
+/*出力密度(通密時)*/
+DIV#DIV_DensityHighBtn
+{
+	Z-INDEX    : 90;
+  visibility: hidden
+}
+IMG#IMG_HighBtn
+{
+	z-index  : 50; 
+/* 2005/07/04 006 H.SAITO HQ Option.
+	LEFT     : 385px; 
+	WIDTH    : 135px; 
+*/
+	LEFT     : 250px; 
+	WIDTH    : 428px; 
+	POSITION : absolute; 
+/* 2005/07/04 004 H.SAITO HQ Option.
+	TOP      : 192px; 
+*/
+	TOP      : 242px; 
+	HEIGHT   : 40px;
+}
+DIV#DIV_HighText
+{
+	Z-INDEX    : 80;
+/* 2005/07/04 006 H.SAITO HQ Option.
+	LEFT       : 385px; 
+	WIDTH      : 135px; 
+*/
+	LEFT       : 250px; 
+	WIDTH      : 428px; 
+	POSITION   : absolute; 
+/* 2005/07/04 004 H.SAITO HQ Option.
+	TOP        : 202px; 
+*/
+	TOP        : 252px; 
+	HEIGHT     : 40px;
+	text-align :center;
+	FONT-WEIGHT: bold; 
+}
+/* 出力枚数テキストボックス*/
+table#tblOutputCount 
+{
+	z-index       : 90; 
+	color         : black; 
+	background-color:white; 
+	position      : absolute; 
+	top           : 194px; 
+	left          : 250px; 
+	width         : 130px; 
+	height        : 40px; 
+	cursor        : default;
+	BORDER-RIGHT  : 3px inset; 
+	BORDER-TOP    : 3px inset; 
+	BORDER-LEFT   : 3px inset; 
+	BORDER-BOTTOM : 3px inset; 
+	cursor        : hand; 
+	OVERFLOW      : hidden;
+	FONT-WEIGHT: bold; 
+}
+div#divOutputCount
+{
+	OVERFLOW : hidden; 
+	width    : 130px;
+	text-align :right; 
+}
+
+/* 出力枚数カウントアップボタン*/
+IMG#IMG_UpBtn_Enable
+{
+	Z-INDEX  : 50;
+	LEFT     : 390px; 
+	WIDTH    : 65px; 
+	POSITION : absolute; 
+	TOP      : 194px; 
+	HEIGHT   : 40px;
+}
+IMG#IMG_UpBtn_Disable
+{
+	Z-INDEX  : 50;
+	LEFT     : 390px; 
+	WIDTH    : 65px; 
+	POSITION : absolute; 
+	TOP      : 194px; 
+	HEIGHT   : 40px;
+}
+IMG#IMG_DownBtn_Enable
+{
+	Z-INDEX  : 50;
+	LEFT     : 455px; 
+	WIDTH    : 65px; 
+	POSITION : absolute; 
+	TOP      : 194px; 
+	HEIGHT   : 40px;
+}
+IMG#IMG_DownBtn_Disable
+{
+	Z-INDEX  : 50;
+	LEFT     : 455px; 
+	WIDTH    : 65px; 
+	POSITION : absolute; 
+	TOP      : 194px; 
+	HEIGHT   : 40px;
+}
+	 
+
+/* 戻るボタン背景 */
+IMG#IMG_Cancel_BackGround 
+{
+  POSITION   : absolute;
+  TOP        : 470px;
+  LEFT       : 10px;    
+  Z-INDEX    : 10;
+}
+/* 戻るボタン クリック領域 */
+TABLE#TABLE_CancelBtn
+{
+  POSITION   : absolute;
+  TOP        : 476px;
+  LEFT       : 18px;    
+  HEIGHT     : 32px;
+  WIDTH      : 102px;
+  Z-INDEX    : 30;
+  VISIBILITY : visible;
+}
+/* 戻るボタン */
+IMG#IMG_CancelBtn 
+{
+  POSITION   : absolute;
+  TOP        : 476px;
+  LEFT       : 18px;    
+  Z-INDEX    : 20;
+}
+/* 戻るテキスト */
+DIV#DIV_CancelText 
+{
+  POSITION   : absolute;
+  TOP        : 484px;
+  LEFT       : 18px;    
+  HEIGHT     : 18px;
+  WIDTH      : 102px; 
+  FONT-WEIGHT: bold;
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : hidden;
+}
+/* 修正完了ボタン背景 */
+IMG#IMG_Update_BackGround 
+{
+  POSITION   : absolute;
+  TOP        : 405px;
+  LEFT       : 685px;    
+  Z-INDEX    : 10;
+}
+/* 修正完了ボタン クリック領域 */
+TABLE#TABLE_UpdateBtn
+{
+  POSITION   : absolute;
+  TOP        : 422px;
+  LEFT       : 690px;    
+  HEIGHT     : 90px;
+  WIDTH      : 90px;
+  Z-INDEX    : 30;
+  VISIBILITY : visible;
+}
+/* 修正完了ボタン */
+IMG#IMG_UpdateBtn_Enable 
+{
+  POSITION   : absolute;
+  TOP        : 422px;
+  LEFT       : 690px;    
+  Z-INDEX    : 20;
+  VISIBILITY : visible;
+}
+/* 修正完了テキスト */
+DIV#DIV_UpdateText 
+{
+  POSITION   : absolute;
+  TOP        : 460px;
+  LEFT       : 690px;    
+  HEIGHT     : 18px;
+  WIDTH      : 90px; 
+  FONT-WEIGHT: bold;
+  TEXT-ALIGN : center;
+  Z-INDEX    : 20;
+  OVERFLOW   : hidden;

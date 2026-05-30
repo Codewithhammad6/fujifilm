@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ServiceInfo>
+  <ServiceName>Hobbit Study Table Regist</ServiceName>
+  <ServiceName>Hobbit Image Retrieve Request</ServiceName>
+  <ServiceName>Hobbit Selected Patient Notice</ServiceName>
+  <ServiceName>ActiveLineService</ServiceName>
+  <ServiceName>MeasurementsSendService</ServiceName>
+  <ServiceName>PlusStorageUploadFileCreateService</ServiceName>
+  <ServiceName>MirroringService</ServiceName>
+  <ServiceName>FFDRInputService</ServiceName>
+</ServiceInfo>

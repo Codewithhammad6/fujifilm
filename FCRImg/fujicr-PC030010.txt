@@ -1,0 +1,7 @@
+Patient ID:C038
+Patient Name:ASIF RAZA
+Sex:M
+Date of Exposure:03.JAN.2026
+Anatomical Region:CHEST
+Exposure Menu Name:CHEST PA
+Modality:CR

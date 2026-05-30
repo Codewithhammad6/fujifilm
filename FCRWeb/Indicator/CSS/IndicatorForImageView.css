@@ -1,0 +1,53 @@
+/****************************************************************************
+
+  @file IndicatorForImageView.css 
+
+  @brief IndicatorForImageViewのスタイルシート
+
+
+  @author YSK菅野
+
+  Copyright(c) 2004-2006 FUJI PHOTO FILM CO., LTD. All rights reseved.
+
+         更新履歴  担当        Ver.       内容
+  -----  --------  ----------  --------   -------------------------------
+  @date  05/03/12  YSK菅野     XX-XX      新規作成
+  @date  09/05/29  FF蔵敷　　　 V6.0          NAS対応　V60_NAS
+****************************************************************************/
+
+/* BODY */
+BODY
+{
+  /* V60_NAS */
+  /*WIDTH            : 200px;*/
+  WIDTH             :240px;          
+  HEIGHT           : 48px;
+  BACKGROUND-COLOR : Black;
+}
+
+/* インジケータ表示フレーム */
+IFRAME#INDICATOR_VIEW
+{
+  Z-INDEX  : 100;
+  LEFT     : 9px;
+  OVERFLOW : hidden;
+  /* V60_NAS */
+  /*WIDTH            : 192px;*/
+  WIDTH             :229px;         
+  POSITION : absolute;
+  TOP      : 6px;
+  HEIGHT   : 38px;
+}
+
+/* 情報取得フレーム */
+IFRAME#INDICATOR_GET_PROC
+{
+  VISIBILITY : hidden;
+}
+
+/* ログ出力フレーム */
+IFRAME#LOGGER_PROC
+{
+  VISIBILITY : hidden;
+}
+

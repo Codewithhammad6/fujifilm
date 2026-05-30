@@ -1,0 +1,51 @@
+/******************************************************************************
+  Main.css 
+
+  	Mainのスタイルシート
+
+
+     更新履歴    担当       Ver.        内容
+     2004/01/03   畑       -----       新規作成
+
+******************************************************************************/
+BODY
+{
+  OVERFLOW   : hidden;
+  CURSOR	          : default;
+}
+IFRAME#frmIndicator
+{
+  POSITION   : absolute;
+  TOP        : 9px; 
+  LEFT       : 610px; 
+  Z-INDEX    : 50;
+  WIDTH      : 190px; 
+  HEIGHT     : 37px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#DispFrame
+{
+  Z-INDEX    : 30;
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 0px;
+  HEIGHT     : 0px;
+  WIDTH      : 0px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+
+IFRAME#MainFrame
+{
+  Z-INDEX    : 30;
+  POSITION   : absolute;
+  LEFT       : 0px;
+  TOP        : 0px;
+  HEIGHT     : 600px;
+  WIDTH      : 800px;
+  VISIBILITY : visible;
+  PADDING    : 0,0,0,0;
+}
+

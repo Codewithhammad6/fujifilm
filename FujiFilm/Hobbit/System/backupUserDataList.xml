@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<BackupUserDataList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <userDataList>
+    <anyType xsi:type="xsd:string">USER_DATA_FOLDER\Config</anyType>
+    <anyType xsi:type="xsd:string">USER_DATA_FOLDER\Param</anyType>
+    <anyType xsi:type="xsd:string">USER_DATA_FOLDER\LUT</anyType>
+    <anyType xsi:type="xsd:string">USER_DATA_FOLDER\UserMarker</anyType>
+    <anyType xsi:type="xsd:string">USER_DATA_FOLDER\UserSchema</anyType>
+    <anyType xsi:type="xsd:string">USER_DATA_FOLDER\UserReportFormat</anyType>
+<anyType xsi:type="xsd:string">USER_ICON_FOLDER</anyType>
+  </userDataList>
+</BackupUserDataList>

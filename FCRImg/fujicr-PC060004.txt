@@ -1,0 +1,7 @@
+Patient ID:C680
+Patient Name:SHAHID IMRAN
+Sex:M
+Date of Exposure:06.NOV.2025
+Anatomical Region:ABDOMEN
+Exposure Menu Name:KUB
+Modality:CR

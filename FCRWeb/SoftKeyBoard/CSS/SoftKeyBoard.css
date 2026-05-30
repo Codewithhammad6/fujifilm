@@ -1,0 +1,206 @@
+/* 外部スタイルシート、
+ファイル名：style_KeyBoard.css */
+/* フォント */
+BODY
+{  
+  CURSOR	          : default;
+  color            : "#000000";
+  BACKGROUND-COLOR  : #F4E6DC;
+}
+/* コマンドボタン領域の色 */
+DIV#DIV_CommandBackGround
+{
+  POSITION   : absolute;
+  TOP        : 250px;
+  LEFT       : 0px;
+  HEIGHT     : 105px;
+  WIDTH      : 800px; 
+  background-color:#F4EEE4;
+}
+/* ソフトキーボードの境界 */
+IMG#IMG_SoftKeyBoard_Border
+{
+  POSITION   : absolute;
+  TOP        : 5px;
+  LEFT       : 0px;
+  HEIGHT     : 7px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+}
+
+/* リストとコマンドボタンの境界 */
+IMG#IMG_List-Command_Border
+{
+  POSITION   : absolute;
+  TOP        : 248px;
+  LEFT       : 0px;
+  HEIGHT     : 7px;
+  WIDTH      : 800px;
+  Z-INDEX    : 10;
+}
+DIV#divKeyChar 
+{
+	POSITION: absolute;
+	width   : 585px;
+	height  : 225px;
+	top     : 10px;
+	left    : 18px;
+	z-index:150;
+}
+DIV#divKeyNum 
+{
+	z-index:150;
+	POSITION: absolute;
+	width   : 145px;
+	height  : 200px;
+	top     : 10px;
+	left    : 630px;
+}
+table.Board
+{
+	z-index:150;
+	color: #EEEEFF;
+  cursor: default;
+  background-color : "#413A3A";
+}
+td.KeyAlphA   
+{
+	background-image:url(../../Bmp/crKeyaBtnU.gif);
+  font-weight: bold;
+	width: 46px;
+  height: 46px;
+	text-align: center;
+	z-index:150;
+}
+td.KeyAlphB   
+{
+	background-image:url(../../Bmp/crKeybBtnU.gif);
+  font-weight: bold;
+	width: 46px;
+  height: 46px;
+	text-align: center;
+	z-index:150;
+}
+td.KeyKanaA   
+{
+	background-image:url(../../Bmp/crKeyaBtnU.gif);
+  font-weight: bold;
+	width: 46px;
+    height: 46px;
+	text-align: center;
+	z-index:150;
+}
+td.KeyKanaB   
+{
+	background-image:url(../../Bmp/crKeybBtnU.gif);
+  font-weight: bold;
+	width: 46px;
+    height: 46px;
+	text-align: center;
+	z-index:150;
+}
+
+td.KeyNothing  
+{
+	background-color: #444444;
+	width: 46px;
+  height: 46px;
+	z-index:150;
+}
+
+DIV#divKeyBoard_other
+{
+  Z-INDEX : 103; 
+  LEFT    : 248px; 
+  POSITION: absolute; 
+  TOP     : 255px;
+}
+td.KeyOther   
+{
+	background-image:url(../../Bmp/crSpaceBtnU.gif);
+  font-weight: bold;
+	width: 85px;
+  height: 46px;
+	text-align: center;
+}
+/*タブキー*/
+IMG#imgtab_Left
+{ 
+  Z-INDEX : 102; 
+  LEFT    : 18px; 
+  POSITION: absolute; 
+  TOP     : 252px;
+    
+}
+/*タブキー*/
+IMG#imgtab_Center
+{ 
+  Z-INDEX : 102; 
+  LEFT    : 88px; 
+  POSITION: absolute; 
+  TOP     : 252px;
+    
+}
+/*タブキー*/
+IMG#imgtab_Right
+{ 
+  Z-INDEX : 102; 
+  LEFT    : 158px; 
+  POSITION: absolute; 
+  TOP     : 252px;
+    
+}
+/*タブキー*/
+IMG#IMG_Tab_Select
+{ 
+  Z-INDEX  : 110;
+  POSITION : absolute;
+  LEFT     : 18px;
+  TOP      : 252px;
+}
+
+/*タブキーテキスト*/
+DIV#DIV_Tab_Left
+{ 
+  Z-INDEX : 150; 
+  LEFT    : 18px; 
+  TOP     : 260px;
+  POSITION: absolute; 
+  WIDTH   : 70px;
+  HEIGHT  : 20px;
+  TEXT-ALIGN : center;   
+  font-weight: bold;
+}
+/*タブキーテキスト*/
+DIV#DIV_Tab_Center
+{ 
+  Z-INDEX : 150; 
+  LEFT    : 88px; 
+  TOP     : 260px;
+  POSITION: absolute; 
+  WIDTH   : 70px;
+  HEIGHT  : 20px;
+  TEXT-ALIGN : center;   
+  font-weight: bold;
+}
+/*タブキーテキスト*/
+DIV#DIV_Tab_Right
+{ 
+  Z-INDEX : 150; 
+  LEFT    : 158px; 
+  TOP     : 260px;
+  POSITION: absolute; 
+  WIDTH   : 70px;
+  HEIGHT  : 20px;
+  TEXT-ALIGN : center;   
+  font-weight: bold;
+}
+/* ボタン背景*/
+IMG#IMG_Button_Back
+{
+  Z-INDEX   : 10; 
+  LEFT      : 587px; 
+  TOP       : 202px;
+  POSITION  : absolute; 
+  BACKGROUND-COLOR : Transparent;
+}

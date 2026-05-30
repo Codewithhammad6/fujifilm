@@ -1,0 +1,7 @@
+Patient ID:00716
+Patient Name:faheem
+Sex:M
+Date of Exposure:25.APR.2026
+Anatomical Region:UP_EXM
+Exposure Menu Name:HAND
+Modality:CR

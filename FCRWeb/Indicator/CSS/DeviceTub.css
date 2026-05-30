@@ -1,0 +1,186 @@
+/****************************************************************************
+
+  @file DeviceTub.css 
+
+  @brief DeviceTubのスタイルシート
+
+
+
+  @author TYK石井
+
+  Copyright(c) 2014 FUJIFILM Corporation All rights reserved.
+
+         更新履歴  担当        Ver.       内容
+  -----  --------  ----------  --------   -------------------------------
+  @date  14/03/11  TYK石井     V3.0       新規作成
+
+****************************************************************************/
+
+BODY
+{
+  FONT-WEIGHT : bold;
+  FONT-SIZE   : 16px;
+  CURSOR      : default;
+}
+
+/* 装置表示用フレーム */
+IFRAME#DEVICE_VIEW
+{
+  Z-INDEX    : 110;
+  LEFT       : 0px;
+  WIDTH      : 800px;
+  POSITION   : absolute;
+  TOP        : 41px;
+  HEIGHT     : 521;
+}
+
+/* ログ出力用フレーム */
+IFRAME#LOGGER_PROC
+{
+  VISIBILITY : hidden;
+}
+
+/* DRタブ */
+IMG#imgDRTub
+{
+  z-index    : 110;
+  position   : absolute;
+  top        : 0px;
+  left       : 0px;
+  height     : 48px;
+  width      : 160px;
+  VISIBILITY : hidden;
+}
+
+/* DRタブテキスト */
+DIV#divDRTubText
+{
+  z-index    : 120;
+  position   : absolute;
+  top        : 16px;
+  left       : 50px;
+  height     : 32px;
+  width      : 88px;
+  VISIBILITY : hidden;
+}
+
+/* DRタブ非表示 */
+IMG#imgDRTubHidden
+{
+  z-index    : 130;
+  position   : absolute;
+  top        : 0px;
+  left       : 0px;
+  height     : 48px;
+  width      : 160px;
+  VISIBILITY : hidden;
+}
+
+/* RUタブ */
+IMG#imgRUTub
+{
+  z-index    : 110;
+  position   : absolute;
+  top        : 0px;
+  left       : 160px;
+  height     : 48px;
+  width      : 160px;
+  VISIBILITY : hidden;
+}
+
+/* RUタブテキスト */
+DIV#divRUTubText
+{
+  z-index    : 120;
+  position   : absolute;
+  top        : 16px;
+  left       : 210px;
+  height     : 32px;
+  width      : 88px;
+  VISIBILITY : hidden;
+}
+
+/* RUタブ非表示 */
+IMG#imgRUTubHidden
+{
+  z-index    : 130;
+  position   : absolute;
+  top        : 0px;
+  left       : 160px;
+  height     : 48px;
+  width      : 160px;
+  VISIBILITY : hidden;
+}
+
+/* ダミータブ1非表示 */
+IMG#imgDummyTubHidden1
+{
+  z-index    : 130;
+  position   : absolute;
+  top        : 0px;
+  left       : 320px;
+  height     : 48px;
+  width      : 160px;
+  VISIBILITY : hidden;
+}
+
+/* ダミータブ2非表示 */
+IMG#imgDummyTubHidden2
+{
+  z-index    : 130;
+  position   : absolute;
+  top        : 0px;
+  left       : 480px;
+  height     : 48px;
+  width      : 160px;
+  VISIBILITY : hidden;
+}
+
+/* ダミータブ3非表示 */
+IMG#imgDummyTubHidden3
+{
+  z-index    : 130;
+  position   : absolute;
+  top        : 0px;
+  left       : 640px;
+  height     : 48px;
+  width      : 160px;
+  VISIBILITY : hidden;
+}
+
+/* タブ操作制御用テーブル */
+TABLE#tblTubDisable
+{
+  Z-INDEX          : 200;
+  LEFT             : 0px;
+  VISIBILITY       : hidden;
+  WIDTH            : 800px;
+  POSITION         : absolute;
+  TOP              : 0px;
+  HEIGHT           : 48px;
+}
+
+/* 下部背景 */
+DIV#divFooter
+{
+  Z-INDEX          : 100;
+  LEFT             : 0px;
+  WIDTH            : 800px;
+  POSITION         : absolute;
+  TOP              : 0px;
+  HEIGHT           : 521px;
+  BACKGROUND-COLOR : #F7F1E6;
+}
+
+/* 背景 */
+IMG#imgFooter
+{
+  Z-INDEX          : 100;
+  LEFT             : 0px;
+  WIDTH            : 800px;
+  POSITION         : absolute;
+  TOP              : 41px;
+  HEIGHT           : 7px;
+  BACKGROUND-COLOR : #F5E7DD;
+  VISIBILITY       : hidden;
+}

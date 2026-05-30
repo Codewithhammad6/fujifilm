@@ -1,0 +1,7 @@
+Patient ID:co lab
+Patient Name:m faizan
+Sex:M
+Date of Exposure:19.NOV.2025
+Anatomical Region:LOW_EXM
+Exposure Menu Name:ANKLE AP
+Modality:CR

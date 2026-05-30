@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="shift_jis" ?>
+<Data>
+  <Resources>
+    <Resource><ID>HMIMR0001</ID><Value>【WARNING】</Value></Resource>
+    <Resource><ID>HMIMR0002</ID><Value>【INFO】</Value></Resource>
+    <Resource><ID>HMIMR0003</ID><Value>【ERROR】</Value></Resource>
+    <Resource><ID>HMIMR0011</ID><Value> StudySeq：</Value></Resource>
+    <Resource><ID>HMIMR0012</ID><Value> DataFileSeq：</Value></Resource>
+    <Resource><ID>HMIMR0013</ID><Value> URL：</Value></Resource>
+    <Resource><ID>HMIMR0014</ID><Value> All：</Value></Resource>
+    <Resource><ID>HMIMR0015</ID><Value> Success：</Value></Resource>
+    <Resource><ID>HMIMR0016</ID><Value> Error：</Value></Resource>
+    <Resource><ID>HMIMR0017</ID><Value> Folder Path：</Value></Resource>
+    <Resource><ID>HMIMR0018</ID><Value> Tag No：</Value></Resource>
+
+    <Resource><ID>HMIMR0101</ID><Value>Hobbit Relocation ConvTool</Value></Resource>
+    <Resource><ID>HMIMR0102</ID><Value>Create Folder</Value></Resource>
+    <Resource><ID>HMIMR0103</ID><Value>Convert</Value></Resource>
+    <Resource><ID>HMIMR0104</ID><Value>Exit</Value></Resource>
+
+    <Resource><ID>HMIMR0201</ID><Value>Create Folder</Value></Resource>
+    <Resource><ID>HMIMR0202</ID><Value>Select root Drive</Value></Resource>
+    <Resource><ID>HMIMR0203</ID><Value>Start</Value></Resource>
+    <Resource><ID>HMIMR0204</ID><Value>Close</Value></Resource>
+    
+    <Resource><ID>HMIMR0301</ID><Value>Convert</Value></Resource>
+    <Resource><ID>HMIMR0302</ID><Value>1. Select Folder</Value></Resource>
+    <Resource><ID>HMIMR0303</ID><Value>2. Check Folder</Value></Resource>
+    <Resource><ID>HMIMR0304</ID><Value>3. Convert</Value></Resource>
+    <Resource><ID>HMIMR0305</ID><Value>Src</Value></Resource>
+    <Resource><ID>HMIMR0306</ID><Value>Dst</Value></Resource>
+    <Resource><ID>HMIMR0307</ID><Value>Study Count</Value></Resource>
+    <Resource><ID>HMIMR0308</ID><Value>Total Size</Value></Resource>
+    <Resource><ID>HMIMR0309</ID><Value>Free Size</Value></Resource>
+    <Resource><ID>HMIMR0310</ID><Value>Move Limit Size</Value></Resource>
+    <Resource><ID>HMIMR0311</ID><Value>MB</Value></Resource>
+    <Resource><ID>HMIMR0312</ID><Value>MB</Value></Resource>
+    <Resource><ID>HMIMR0313</ID><Value>MB</Value></Resource>
+    <Resource><ID>HMIMR0314</ID><Value>…</Value></Resource>
+    <Resource><ID>HMIMR0315</ID><Value>Start</Value></Resource>
+    <Resource><ID>HMIMR0316</ID><Value>Start</Value></Resource>
+    <Resource><ID>HMIMR0317</ID><Value>Close</Value></Resource>
+
+    <Resource><ID>HMIMR0401</ID><Value>In process...</Value></Resource>
+    <Resource><ID>HMIMR0402</ID><Value>/</Value></Resource>
+    <Resource><ID>HMIMR0403</ID><Value>Canncel</Value></Resource>
+
+  </Resources>
+</Data>

@@ -1,0 +1,7 @@
+Patient ID:00596
+Patient Name:M ABUBAKAR
+Sex:M
+Date of Exposure:30.APR.2026
+Anatomical Region:CHEST
+Exposure Menu Name:CHEST PA
+Modality:CR

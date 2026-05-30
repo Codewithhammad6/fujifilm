@@ -1,0 +1,159 @@
+﻿/****************************************************************************
+
+  @file DR_Ctrl.css 
+
+  @brief DR_Ctrlのスタイルシート
+
+  @author TYK石井
+
+  Copyright(c) 2014 FUJI PHOTO FILM CO., LTD. All rights reseved.
+
+         更新履歴  担当        Ver.       内容
+  -----  --------  ----------  --------   -------------------------------
+  @date  14/03/11  TYK石井     V3.0(B)    新規作成
+
+****************************************************************************/
+
+BODY
+{
+  FONT-WEIGHT : bold;
+  FONT-SIZE   : 16px;
+  CURSOR      : default;
+}
+
+/* OKボタン背景 */
+IMG#imgOKBtnBack
+{
+  Z-INDEX  : 110;
+  LEFT     : 643px;
+  WIDTH    : 102;
+  POSITION : absolute;
+  TOP      : 351px;
+  HEIGHT   : 115px;
+}
+
+/* OKボタン */
+IMG#imgOK
+{
+  Z-INDEX  : 120;
+  LEFT     : 649px;
+  WIDTH    : 90px;
+  POSITION : absolute;
+  TOP      : 369px;
+  HEIGHT   : 90px;
+}
+
+/* OKボタンラベル */
+DIV#divOK
+{
+  DISPLAY    : inline;
+  Z-INDEX    : 130;
+  LEFT       : 659px;
+  WIDTH      : 70px;
+  POSITION   : absolute;
+  TOP        : 407px;
+  HEIGHT     : 15px;
+  TEXT-ALIGN : center;
+}
+
+/* リフレッシュボタン背景 */
+IMG#imgRefreshBtnBack
+{
+  Z-INDEX  : 110;
+  LEFT     : 48px;
+  WIDTH    : 102;
+  POSITION : absolute;
+  TOP      : 351px;
+  HEIGHT   : 115px;
+}
+
+/* リフレッシュボタン */
+IMG#imgRefresh
+{
+  Z-INDEX  : 120;
+  LEFT     : 54px;
+  WIDTH    : 90px;
+  POSITION : absolute;
+  TOP      : 369px;
+  HEIGHT   : 90px;
+}
+
+/* リフレッシュボタンラベル */
+DIV#divRefresh
+{
+  DISPLAY    : inline;
+  Z-INDEX    : 130;
+  LEFT       : 64px;
+  WIDTH      : 70px;
+  POSITION   : absolute;
+  TOP        : 407px;
+  HEIGHT     : 15px;
+  TEXT-ALIGN : center;
+}
+
+/* DRステータス表示用フレーム */
+IFRAME#DRSTATUS_VIEW
+{
+  Z-INDEX    : 110;
+  LEFT       : 0px;
+  WIDTH      : 794px;
+  POSITION   : absolute;
+  TOP        : 0px;
+  HEIGHT     : 463px;
+  VISIBILITY : visible;
+}
+
+/* DRステータス取得用フレーム */
+IFRAME#DRSTATUS_GET_PROC
+{
+  VISIBILITY : hidden;
+}
+
+/* DR操作監視用フレーム */
+IFRAME#DR_WATCH_PROC
+{
+  VISIBILITY : hidden;
+}
+
+/* ログ出力用フレーム */
+IFRAME#LOGGER_PROC
+{
+  VISIBILITY : hidden;
+}
+
+/* 下部背景 */
+DIV#divFooter
+{
+  Z-INDEX          : 100;
+  LEFT             : 0px;
+  WIDTH            : 800px;
+  POSITION         : absolute;
+  TOP              : 0px;
+  HEIGHT           : 365px;
+  BACKGROUND-COLOR : #F5E7DD;
+}
+
+/* 背景 */
+IMG#imgFooter
+{
+  Z-INDEX          : 100;
+  LEFT             : 0px;
+  WIDTH            : 800px;
+  POSITION         : absolute;
+  TOP              : 365px;
+  HEIGHT           : 7px;
+  BACKGROUND-COLOR : #F5E7DD;
+}
+
+/* 背景 */
+DIV#divBackGround
+{
+  Z-INDEX          : 100;
+  LEFT             : 0px;
+  WIDTH            : 800px;
+  POSITION         : absolute;
+  TOP              : 372px;
+  HEIGHT           : 100px;
+  BACKGROUND-COLOR : #F7F1E6;
+}
+

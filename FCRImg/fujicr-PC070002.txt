@@ -1,0 +1,7 @@
+Patient ID:A74
+Patient Name:RIUM FATIMA
+Sex:F
+Date of Exposure:07.SEP.2025
+Anatomical Region:LOW_EXM
+Exposure Menu Name:TIB-FIB AP
+Modality:CR
