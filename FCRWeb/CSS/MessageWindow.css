@@ -1,7 +1,7 @@
-/* ƒGƒ‰[‰æ–Êƒe[ƒuƒ‹ */
+/* ã‚¨ãƒ©ãƒ¼ç”»é¢ãƒ†ãƒ¼ãƒ–ãƒ« */
 TABLE#TABLE_MainErrorFrame
 {
-  POSITION   : absolute;
+  POSITION   : absolute; 
   TOP        : 0px;
   LEFT       : 0px;    
   /* 2005/11/11 H.SAITO -ST-
@@ -14,7 +14,7 @@ TABLE#TABLE_MainErrorFrame
   VISIBILITY : hidden;
   Z-INDEX    : 200;
 }
-/* ƒGƒ‰[‰æ–Êƒ{ƒbƒNƒX */
+/* ã‚¨ãƒ©ãƒ¼ç”»é¢ãƒœãƒƒã‚¯ã‚¹ */
 TABLE#TABLE_MainErrorBox
 {
   POSITION          : absolute;
@@ -64,8 +64,8 @@ TD#TD_MainErrorCode
   COLOR             : #000000;
   Z-INDEX           : 210;
 }
-/* ƒGƒ‰[‰æ–Êƒ{ƒ^ƒ“ */
-/* ƒGƒ‰[‰æ–ÊOKƒ{ƒ^ƒ“ƒNƒŠƒbƒN—Ìˆæ 061012 _—§ */
+/* ã‚¨ãƒ©ãƒ¼ç”»é¢ãƒœã‚¿ãƒ³ */
+/* ã‚¨ãƒ©ãƒ¼ç”»é¢OKãƒœã‚¿ãƒ³ã‚¯ãƒªãƒƒã‚¯é ˜åŸŸ 061012 ç¥žç«‹ */
 DIV#DIV_MainErrorButton
 {
   POSITION          : absolute;
@@ -75,9 +75,9 @@ DIV#DIV_MainErrorButton
 }
 IMG#IMG_MainErrorButton
 {
-  POSITION          : inherit; /* 061127 _—§ */
-  TOP               : 0px; /* 325px; 061012 _—§ */
-  LEFT              : 0px; /* 340px; 061012 _—§ */
+  POSITION          : inherit; /* 061127 ç¥žç«‹ */
+  TOP               : 0px; /* 325px; 061012 ç¥žç«‹ */
+  LEFT              : 0px; /* 340px; 061012 ç¥žç«‹ */
   Z-INDEX           : 220;
 }
 TABLE#TABLE_MainErrorButton
@@ -99,12 +99,12 @@ TABLE#TABLE_MainErrorButton
   COLOR             : dodgerblue;
   Z-INDEX           : 220;
 }
-/* ƒGƒ‰[‚n‚jƒ{ƒ^ƒ“ƒeƒLƒXƒg */
+/* ã‚¨ãƒ©ãƒ¼ï¼¯ï¼«ãƒœã‚¿ãƒ³ãƒ†ã‚­ã‚¹ãƒˆ */
 DIV#DIV_MainErrorOkText
 {
   POSITION          : absolute;
-  TOP               : 7px; /* 332px; 061012 _—§ */
-  LEFT              : 0px; /* 340px; 061012 _—§ */
+  TOP               : 7px; /* 332px; 061012 ç¥žç«‹ */
+  LEFT              : 0px; /* 340px; 061012 ç¥žç«‹ */
   HEIGHT            : 18px;
   WIDTH             : 102px;
   TEXT-ALIGN        : center;
