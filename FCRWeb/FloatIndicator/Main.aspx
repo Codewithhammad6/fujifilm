@@ -8,7 +8,7 @@
 
   @file Main.aspx 
 
-  @brief IndicatorメインASPX
+  @brief IndicatorメインASPX 
 
   @author FF星野
 
