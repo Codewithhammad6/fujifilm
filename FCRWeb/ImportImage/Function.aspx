@@ -1,6 +1,6 @@
 <%@ Page language="c#" Codebehind="Function.aspx.cs" AutoEventWireup="false" Inherits="ImportImage.Function" ASPCOMPAT="true" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
-<HTML>
+<HTML> 
 	<HEAD>
 		<title>Now Loading...</title>
 		<META http-equiv="Pragma" content="no-cache">
@@ -15,16 +15,16 @@
 		<SCRIPT LANGUAGE="JavaScript" SRC="../Include/FixToKB912945.js" CHARSET="UTF-8"></SCRIPT>
 		<SCRIPT LANGUAGE="JavaScript" CHARSET="UTF-8">
         <!--
-//070918 HSKR–{ ”Ä—p‰æ‘œæ‹@”\ DEL-ST
-//ƒ^ƒCƒgƒ‹‚Ìİ’è‚ÍMain‘¤‚Ås‚¤
-//        // ƒ^ƒCƒgƒ‹İ’è
-//        top.SetTitle("<=Title>");¦%•\‹L‚¾‚Æ“Ç‚İ‚Ü‚ê‚Ä‚µ‚Ü‚¤‚Ì‚Åíœ‚µ‚½
-//070918 HSKR–{ ”Ä—p‰æ‘œæ‹@”\ DEL-ED
+//070918 HSKå±±æœ¬ æ±ç”¨ç”»åƒå–è¾¼æ©Ÿèƒ½ DEL-ST
+//ã‚¿ã‚¤ãƒˆãƒ«ã®è¨­å®šã¯Mainå´ã§è¡Œã†
+//        // ã‚¿ã‚¤ãƒˆãƒ«è¨­å®š
+//        top.SetTitle("<=Title>");â€»%è¡¨è¨˜ã ã¨èª­ã¿è¾¼ã¾ã‚Œã¦ã—ã¾ã†ã®ã§å‰Šé™¤ã—ãŸ
+//070918 HSKå±±æœ¬ æ±ç”¨ç”»åƒå–è¾¼æ©Ÿèƒ½ DEL-ED
 
         /**
         * @private
-        * ƒuƒ‰ƒEƒUI—¹ƒCƒxƒ“ƒg 
-        * onBeforeUnload‚ÉŒÄ‚Î‚ê‚é 
+        * ãƒ–ãƒ©ã‚¦ã‚¶çµ‚äº†æ™‚ã‚¤ãƒ™ãƒ³ãƒˆ 
+        * onBeforeUnloadæ™‚ã«å‘¼ã°ã‚Œã‚‹ 
         **/
         function OnBeforeUnload()
         {
@@ -41,45 +41,45 @@
 
         /**
         * @private
-        * Šeíˆã—p‰æ‘œæ‰æ–Ê‚Ì‰Šú‰»
-        * onLoad‚ÉŒÄ‚Î‚ê‚é
+        * å„ç¨®åŒ»ç”¨ç”»åƒå–è¾¼ç”»é¢ã®åˆæœŸåŒ–
+        * onLoadæ™‚ã«å‘¼ã°ã‚Œã‚‹
         **/
         function Onload()
         {
             var windowWidth = 1024;
-// 2007/10/01 HSK“üR V3.0‘Î‰ UPD START
-//// 2007/05/16 HSK“üR PVCS#2190 UPD START
+// 2007/10/01 HSKå…¥å±± V3.0å¯¾å¿œ UPD START
+//// 2007/05/16 HSKå…¥å±± PVCS#2190 UPD START
 ////          var windowHeight = 768;
 //            var windowHeight = 778;
-//// 2007/05/16 HSK“üR PVCS#2190 UPD END
+//// 2007/05/16 HSKå…¥å±± PVCS#2190 UPD END
             var windowHeight = 914;
-// 2007/10/01 HSK“üR V3.0‘Î‰
-// 2007/04/09 HSK–p B•[#265 UPT START
+// 2007/10/01 HSKå…¥å±± V3.0å¯¾å¿œ
+// 2007/04/09 HSKæœ´ Bç¥¨#265 UPT START
             try
             {
                 top.window.resizeTo(windowWidth,windowHeight);
             }
             catch(e)
             {
-                //WindowSizeİ’èƒGƒ‰[‚Ìê‡–³‹‚·‚éB 
+                //WindowSizeè¨­å®šã‚¨ãƒ©ãƒ¼ã®å ´åˆç„¡è¦–ã™ã‚‹ã€‚ 
             }
             try
             {
                 //top.window.resizeTo(windowWidth,windowHeight);
-// 2007/04/09 HSK–p B•[#265 UPT END
-// 2007/06/08 HSK“üR PVCS#2312 UPD START
+// 2007/04/09 HSKæœ´ Bç¥¨#265 UPT END
+// 2007/06/08 HSKå…¥å±± PVCS#2312 UPD START
 //                if(!ImportImageCtrl.Initialize('<%=LoginUserID%>','<%=LoginTime%>'))
-//070914 HSKR–{ V3.0”Ä—p‰æ‘œæ‹@”\ UPDATE-ST
+//070914 HSKå±±æœ¬ V3.0æ±ç”¨ç”»åƒå–è¾¼æ©Ÿèƒ½ UPDATE-ST
 //                if(!ImportImageCtrl.Initialize("<%=LoginUserID%>","<%=LoginTime%>"))
                 if(!ImportImageCtrl.Initialize("<%=LoginUserID%>","<%=LoginTime%>","<%=ScreenType%>"))
-//070914 HSKR–{ V3.0”Ä—p‰æ‘œæ‹@”\ UPDATE-ED
-// 2007/06/08 HSK“üR PVCS#2312 UPD END
+//070914 HSKå±±æœ¬ V3.0æ±ç”¨ç”»åƒå–è¾¼æ©Ÿèƒ½ UPDATE-ED
+// 2007/06/08 HSKå…¥å±± PVCS#2312 UPD END
                 {
-// 2007/03/31 HSK–p B•[#79,81 UPT START
+// 2007/03/31 HSKæœ´ Bç¥¨#79,81 UPT START
                     // window.open('../Close.html','_self');
                     //window.top.open('../Close.html','_self');
                     top.WU_CloseWindow(window);
-// 2007/03/31 HSK–p B•[#79,81 UPT END
+// 2007/03/31 HSKæœ´ Bç¥¨#79,81 UPT END
                     return;
                 }
 
@@ -105,14 +105,14 @@
 		<SCRIPT LANGUAGE="JavaScript" CHARSET="UTF-8">
         function ImportImageCtrl::RequestFinish()
         {
-            // ‰æ–ÊI—¹—v‹ƒCƒxƒ“ƒg
+            // ç”»é¢çµ‚äº†è¦æ±‚ã‚¤ãƒ™ãƒ³ãƒˆ
             try
             {
-// 2007/03/31 HSK–p B•[#79,81 UPT START
+// 2007/03/31 HSKæœ´ Bç¥¨#79,81 UPT START
                 // window.open('../Close.html','_self');
                 //window.top.open('../Close.html','_self');
                 top.WU_CloseWindow(window);
-// 2007/03/31 HSK–p B•[#79,81 UPT END
+// 2007/03/31 HSKæœ´ Bç¥¨#79,81 UPT END
             }
             catch(e)
             {
@@ -121,75 +121,75 @@
         }
         function ImportImageCtrl::RequestSetGeometry(browserLeft,browserTop)
         {
-// 2007/04/09 HSK–p B•[#274 UPD START
-//          // ƒuƒ‰ƒEƒUˆÊ’uİ’è—v‹ƒCƒxƒ“ƒg
+// 2007/04/09 HSKæœ´ Bç¥¨#274 UPD START
+//          // ãƒ–ãƒ©ã‚¦ã‚¶ä½ç½®è¨­å®šè¦æ±‚ã‚¤ãƒ™ãƒ³ãƒˆ
 //          var browserTitle = 30;
 //          var browserLeftSpace = 4;
 //          //--------------------------------------------------------
-//          // ˆÊ’u•ÏX
-//          // ®A‚±‚ÌˆÊ’u•ÏX‚Í‰æ–ÊƒfƒUƒCƒ“‚ÌWindowsXPƒXƒ^ƒCƒ‹‚Ì‚İ
-//          // —LŒø‚Å‚·BWindowsƒNƒ‰ƒVƒbƒNƒXƒ^ƒCƒ‹‚Í‘Î‰‚µ‚Ä‚¢‚Ü‚¹‚ñB
+//          // ä½ç½®å¤‰æ›´
+//          // å°šã€ã“ã®ä½ç½®å¤‰æ›´ã¯ç”»é¢ãƒ‡ã‚¶ã‚¤ãƒ³ã®WindowsXPã‚¹ã‚¿ã‚¤ãƒ«ã®ã¿
+//          // æœ‰åŠ¹ã§ã™ã€‚Windowsã‚¯ãƒ©ã‚·ãƒƒã‚¯ã‚¹ã‚¿ã‚¤ãƒ«ã¯å¯¾å¿œã—ã¦ã„ã¾ã›ã‚“ã€‚
 //          //--------------------------------------------------------
 //          var iTop = browserTop - browserTitle;
 //          var iLeft = browserLeft - browserLeftSpace;
             var iTop = browserTop;
             var iLeft = browserLeft;
-// 2007/04/09 HSK–p B•[#265 ADD START
+// 2007/04/09 HSKæœ´ Bç¥¨#265 ADD START
             var bError = false;
-// 2007/04/09 HSK–p B•[#265 ADD END
-// 2007/04/09 HSK–p B•[#274 UPD END
+// 2007/04/09 HSKæœ´ Bç¥¨#265 ADD END
+// 2007/04/09 HSKæœ´ Bç¥¨#274 UPD END
             try
             {
                 if( browserLeft != -9999 || browserTop != -9999 )
                 {
                     if (iLeft < 0) 
                     {
-                        // LEFT‚Ì’l‚ªƒ}ƒCƒiƒX‚Ìê‡A0‚ğİ’è
+                        // LEFTã®å€¤ãŒãƒã‚¤ãƒŠã‚¹ã®å ´åˆã€0ã‚’è¨­å®š
                         iLeft = 0;
                     }
                     if (iTop < 0)
                     {
-                        // TOP‚Ì’l‚ªƒ}ƒCƒiƒX‚Ìê‡A0‚ğİ’è
+                        // TOPã®å€¤ãŒãƒã‚¤ãƒŠã‚¹ã®å ´åˆã€0ã‚’è¨­å®š
                         iTop = 0;
                     }
-// 2007/04/09 HSK–p B•[#265 DEL START
+// 2007/04/09 HSKæœ´ Bç¥¨#265 DEL START
 //                  top.window.moveTo(iLeft,iTop);
-// 2007/04/09 HSK–p B•[#265 DEL END
+// 2007/04/09 HSKæœ´ Bç¥¨#265 DEL END
                 }
                 else
                 {
-                    // ‰‰ñ—p
-// 2007/04/09 HSK–p B•[#274 UPD START
+                    // åˆå›æ™‚ç”¨
+// 2007/04/09 HSKæœ´ Bç¥¨#274 UPD START
                     var windowWidth  = 1024;
-// 2007/10/01 HSK“üR V3.0‘Î‰ UPD START
-//// 2007/05/25 HSK“üR PVCS#2277 ADD START
+// 2007/10/01 HSKå…¥å±± V3.0å¯¾å¿œ UPD START
+//// 2007/05/25 HSKå…¥å±± PVCS#2277 ADD START
 //                    var windowHeight = 778;
-//// 2007/05/25 HSK“üR PVCS#2277 ADD END
+//// 2007/05/25 HSKå…¥å±± PVCS#2277 ADD END
                     var windowHeight = 914;
-// 2007/10/01 HSK“üR V3.0‘Î‰ UPD END
+// 2007/10/01 HSKå…¥å±± V3.0å¯¾å¿œ UPD END
 
-// 2007/05/16 HSK“üR PVCS#2190 UPD START
+// 2007/05/16 HSKå…¥å±± PVCS#2190 UPD START
 //                  var windowHeight = 768;
 //                  var windowHeight = 778;
-// 2007/05/16 HSK“üR PVCS#2190 UPD END
+// 2007/05/16 HSKå…¥å±± PVCS#2190 UPD END
 //                  var windowWidth  = document.body.offsetWidth + browserLeftSpace;
 //                  var windowHeight = document.body.offsetHeight + browserTitle;
-// 2007/04/09 HSK–p B•[#274 UPD END
+// 2007/04/09 HSKæœ´ Bç¥¨#274 UPD END
                     iLeft = (screen.width-windowWidth) / 2;
                     iTop = (screen.height-windowHeight) / 2;
-// 2007/04/09 HSK–p B•[#265 DEL START
+// 2007/04/09 HSKæœ´ Bç¥¨#265 DEL START
 //                  top.window.moveTo(iLeft, iTop);
-// 2007/04/09 HSK–p B•[#265 DEL END
+// 2007/04/09 HSKæœ´ Bç¥¨#265 DEL END
                 }
             }
             catch(e)
             {
-// 2007/04/09 HSK–p B•[#265 ADD START
+// 2007/04/09 HSKæœ´ Bç¥¨#265 ADD START
                 bError = true;
-// 2007/04/09 HSK–p B•[#265 ADD END
+// 2007/04/09 HSKæœ´ Bç¥¨#265 ADD END
                 ErrorHandler( FATAL_ERROR, "RequestSetGeometry Exception" );
             }
-// 2007/04/09 HSK–p B•[#265 ADD START
+// 2007/04/09 HSKæœ´ Bç¥¨#265 ADD START
             try
             {
                 if(!bError)
@@ -199,9 +199,9 @@
             }
             catch(e)
             {
-                // Window”z’u•ÏX’†ƒGƒ‰[‚Ìê‡–³‹‚·‚éB
+                // Windowé…ç½®å¤‰æ›´ä¸­ã‚¨ãƒ©ãƒ¼ã®å ´åˆç„¡è¦–ã™ã‚‹ã€‚
             }
-// 2007/04/09 HSK–p B•[#265 ADD END
+// 2007/04/09 HSKæœ´ Bç¥¨#265 ADD END
         }
 		</SCRIPT>
 	</BODY>
